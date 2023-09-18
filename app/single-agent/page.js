@@ -1,13 +1,17 @@
-import FilterForm from "@/components/FilterForm";
+import AgentSearch from "@/components/AgentSearch";
+import ContactAgent from "@/components/ContactAgent";
+import TourForm from "@/components/TourForm";
 import React from "react";
 import { FaPhone, FaSearch } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
+import { BiLogoFacebook, BiLogoLinkedin, BiLogoTwitter } from "react-icons/bi";
 
 const SingleAgent = () => {
   const properties = [
     {
       title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: "PKR 3000000 (3 Crore)",
+      price: 7500,
       beds: 4,
       baths: 2,
       area: 1150,
@@ -15,7 +19,7 @@ const SingleAgent = () => {
     {
       title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: "PKR 3000000 (3 Crore)",
+      price: 7500,
       beds: 4,
       baths: 2,
       area: 1150,
@@ -23,7 +27,7 @@ const SingleAgent = () => {
     {
       title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: "PKR 3000000 (3 Crore)",
+      price: 7500,
       beds: 4,
       baths: 2,
       area: 1150,
@@ -31,7 +35,7 @@ const SingleAgent = () => {
     {
       title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: "PKR 3000000 (3 Crore)",
+      price: 7500,
       beds: 4,
       baths: 2,
       area: 1150,
@@ -43,15 +47,93 @@ const SingleAgent = () => {
       <section className="min-h-screen ">
         <div className="flex justify-center mt-10">
           <div className="grid md:grid-cols-3 gap-8 w-[80%] border p-4 relative">
-            <div className="flex flex-col items-start gap-2 border col-span-2 ">
+            <div className="flex flex-col items-start gap-2 border col-span-2 relative ">
               {" "}
-              <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">
-                Property Listing
-              </h1>
-              <p className=" text-neutral-700 text-sm font-normal font-['Poppins'] leading-snug">
-                There are currently 164,814 properties.
-              </p>
               <div className="flex flex-col gap-6 ">
+                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
+                  <img src="/assets/propertyimg.png" className="w-[400px]" />
+                  <div className="flex flex-col  flex-wrap max-w-[680px] ">
+                    <h1 className=" text-zinc-900 text-[27.79px] font-bold font-['Poppins']">
+                      Cameron Williamson
+                    </h1>
+                    <p className="">
+                      <span className="text-neutral-400 text-lg font-normal font-['Poppins'] leading-relaxed">
+                        Company Agent at{" "}
+                      </span>
+                      <span className="text-zinc-900 text-lg font-bold font-['Mulish'] leading-relaxed">
+                        Themesflat
+                      </span>
+                    </p>
+                    <div className=" flex flex-col gap-2 mt-6 mb-3">
+                      <p className="flex items-center gap-2 text-green-500">
+                        <img src="/assets/callinbound.png" /> +7-445-556-8337
+                      </p>
+                      <p className="flex items-center gap-2 ">
+                        <img src="/assets/envelope.png" />{" "}
+                        cameronwilliamson@gmail.com
+                      </p>
+                      <p className="flex items-center gap-2 ">
+                        <CiLocationOn size={22} />
+                        1901 Thornridge Cir. Shiloh, Hawaii 81063
+                      </p>
+                    </div>
+
+                    <hr className="my-2" />
+                    <div className="flex  gap-4  items-center mt-3">
+                      <BiLogoFacebook size={35} color="#8E8E93" />
+                      <BiLogoTwitter size={35} color="#8E8E93" />
+                      <BiLogoLinkedin size={35} color="#8E8E93" />
+                    </div>
+                  </div>
+                </div>
+                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-1 relative shadow-md rounded-xl p-2">
+                  <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                    About Cameron Williamson
+                  </h1>
+                  <p className=" text-neutral-700 text-lg font-normal font-['Poppins'] leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aliquam risus leo, blandit vitae diam a, vestibulum viverra
+                    nisi. Vestibulum ullamcorper velit eget mattis aliquam.
+                    Proin dapibus luctus pulvinar. Integer et libero ut purus
+                    bibendum gravida non ac tellus. Proin sed tellus porttitor,
+                    varius mauris vitae, tincidunt augue. Sed consectetur magna
+                    elit, sit amet faucibus tortor sodales vitae. Maecenas quis
+                    arcu est. Nam sit amet neque vestibulum, fringilla elit sit
+                    amet, volutpat nunc.
+                  </p>
+                </div>
+                <div className="max-w-[1070px] min-h-[300px] max-h-[360px]  flex flex-wrap gap-1 relative shadow-md rounded-xl p-4">
+                  <img
+                    src="/assets/videotag.png"
+                    className="absolute top-0 left-0"
+                  />
+                  <img
+                    src="/assets/propertyimg.png"
+                    className="w-full h-full "
+                  />
+                </div>
+                <div className="max-w-[1070px] min-h-[300px] max-h-[360px]  flex flex-wrap gap-1 relative shadow-md rounded-xl p-4">
+                  <img
+                    src="/assets/agencytag.png"
+                    className="absolute top-8 left-3"
+                  />
+                  <img
+                    src="/assets/propertyimg.png"
+                    className="w-full h-full "
+                  />
+                </div>
+                <div className="flex items-center gap-4">
+                  <h1 className="border-b-4 border-b-green-500 text-[22.74px] font-semibold font-['Poppins'] text-green-500">
+                    For Rent
+                  </h1>
+                  <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                    For sale
+                  </h1>
+                  <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                    Stories
+                  </h1>
+                </div>
+                <hr />
                 {properties.map((property) => (
                   <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
                     <img src="/assets/propertyimg.png" className="w-[330px]" />
@@ -63,7 +145,7 @@ const SingleAgent = () => {
                         {property.desc}
                       </p>
                       <h1 className="text-[#25C55B] text-[20.96px] font-extrabold font-['Mulish']">
-                        {property.price}
+                        $ {property.price}
                       </h1>
                       <p className="flex items-center gap-2">
                         <img src="/assets/bed.png" /> Beds: {property.beds}
@@ -74,156 +156,25 @@ const SingleAgent = () => {
                       <p className="flex items-center gap-2">
                         <img src="/assets/area.png" /> Sqft: {property.area}
                       </p>
-                      <div className="flex justify-center gap-2 flex-wrap items-center">
-                        <button className="w-[150px] h-[56px] flex justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white  text-xl font-semibold font-['Poppins'] leading-[30.54px]">
-                          Call
-                        </button>
-
-                        <button className="w-[170px] h-[56px] flex justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-xl font-semibold font-['Poppins'] leading-[30.54px]">
-                          Message
-                        </button>
-                        <button className="w-[220px] h-[56px] flex justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md text-green-500  text-xl font-semibold font-['Poppins'] leading-[30.54px]">
-                          Whatsapp
-                        </button>
+                      <hr />
+                      <div className="flex  gap-2  items-center">
+                        <img
+                          src="/assets/propertyimg.png"
+                          className="w-[35px] h-[35px] rounded-full"
+                        />
+                        <h1 className="text-neutral-700 text-[13px] font-semibold font-['Poppins'] leading-tight">
+                          Kathryn Murphy
+                        </h1>
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className=" max-w-[600px] relative border flex flex-col gap-4 justify-center p-3  ">
-              <FilterForm />
-              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 border">
-                <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
-                  Featured listings
-                </h1>
-                <div className="flex items-center gap-3 flex-wrap">
-                  <img src="/assets/propertyimg.png" className="w-[100px]" />
-                  <div className="flex flex-col gap-3">
-                    <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
-                      Gorgeous Apartment Building
-                    </h1>
-                    <p className=" text-zinc-900 text-base font-semibold font-['Poppins'] leading-normal">
-                      $7,500
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 flex-wrap">
-                  <img src="/assets/propertyimg.png" className="w-[100px]" />
-                  <div className="flex flex-col gap-3">
-                    <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
-                      Gorgeous Apartment Building
-                    </h1>
-                    <p className=" text-zinc-900 text-base font-semibold font-['Poppins'] leading-normal">
-                      $7,500
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3 flex-wrap">
-                  <img src="/assets/propertyimg.png" className="w-[100px]" />
-                  <div className="flex flex-col gap-3">
-                    <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
-                      Gorgeous Apartment Building
-                    </h1>
-                    <p className=" text-zinc-900 text-base font-semibold font-['Poppins'] leading-normal">
-                      $7,500
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className=" w-[80%]   flex flex-col gap-2 p-3 border">
-                <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins'] pb-2">
-                  Real estate near you
-                </h1>
-                <div className="grid grid-cols-2 gap-2 ">
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[160px] h-[90px] rounded-xl"
-                  />{" "}
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[160px] h-[90px] rounded-xl"
-                  />{" "}
-                </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[160px] h-[90px] rounded-xl"
-                  />{" "}
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[160px] h-[90px] rounded-xl"
-                  />{" "}
-                </div>
-                <div className="grid grid-cols-2 gap-2 ">
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[160px] h-[90px] rounded-xl"
-                  />{" "}
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[160px] h-[90px] rounded-xl"
-                  />{" "}
-                </div>
-              </div>
-              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 border">
-                <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
-                  Hot Projects
-                </h1>
-
-                <div className="flex items-center gap-3 flex-wrap">
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[68px] h-[68px] rounded-full"
-                  />
-                  <div className="flex flex-col gap-3">
-                    <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
-                      Iconic Valley
-                    </h1>
-                    <p className=" text-neutral-700 text-sm font-semibold font-['Poppins'] leading-snug">
-                      Book plots on installments now
-                      <br />
-                      get extra 10% discount on total
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <hr />
-                <div className="flex items-center gap-3 flex-wrap">
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[68px] h-[68px] rounded-full"
-                  />
-                  <div className="flex flex-col gap-3">
-                    <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
-                      Iconic Valley
-                    </h1>
-                    <p className=" text-neutral-700 text-sm font-semibold font-['Poppins'] leading-snug">
-                      Book plots on installments now
-                      <br />
-                      get extra 10% discount on total
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                <hr />
-                <div className="flex items-center gap-3 flex-wrap">
-                  <img
-                    src="/assets/propertyimg.png"
-                    className="w-[68px] h-[68px] rounded-full"
-                  />
-                  <div className="flex flex-col gap-3">
-                    <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
-                      Iconic Valley
-                    </h1>
-                    <p className=" text-neutral-700 text-sm font-semibold font-['Poppins'] leading-snug">
-                      Book plots on installments now
-                      <br />
-                      get extra 10% discount on total
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className=" max-w-[600px]  border flex flex-col gap-4  p-3  ">
+              <ContactAgent />
+              <AgentSearch />
+              <TourForm />
             </div>
           </div>
         </div>
