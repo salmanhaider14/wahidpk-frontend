@@ -1,113 +1,448 @@
-import Image from 'next/image'
+import Header from "@/components/Header";
+import {
+  FaArrowAltCircleRight,
+  FaArrowRight,
+  FaBath,
+  FaBed,
+  FaChartArea,
+  FaEnvelope,
+  FaHome,
+  FaPhone,
+  FaPlus,
+  FaUser,
+} from "react-icons/fa";
+import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
+  const stories = [
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+  ];
+  const properties = [
+    {
+      img: "/assets/propertyimg.png",
+      title: "Gorgeous Apartment Building",
+      desc: "58 Hullbrook Road, Billesley, B13 0LA",
+      price: 7500,
+      beds: 4,
+      baths: 2,
+      sqft: 1150,
+    },
+    {
+      img: "/assets/propertyimg.png",
+      title: "Gorgeous Apartment Building",
+      desc: "58 Hullbrook Road, Billesley, B13 0LA",
+      price: 7500,
+      beds: 4,
+      baths: 2,
+      sqft: 1150,
+    },
+    {
+      img: "/assets/propertyimg.png",
+      title: "Gorgeous Apartment Building",
+      desc: "58 Hullbrook Road, Billesley, B13 0LA",
+      price: 7500,
+      beds: 4,
+      baths: 2,
+      sqft: 1150,
+    },
+    {
+      img: "/assets/propertyimg.png",
+      title: "Gorgeous Apartment Building",
+      desc: "58 Hullbrook Road, Billesley, B13 0LA",
+      price: 7500,
+      beds: 4,
+      baths: 2,
+      sqft: 1150,
+    },
+    {
+      img: "/assets/propertyimg.png",
+      title: "Gorgeous Apartment Building",
+      desc: "58 Hullbrook Road, Billesley, B13 0LA",
+      price: 7500,
+      beds: 4,
+      baths: 2,
+      sqft: 1150,
+    },
+  ];
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+    <>
+      <main className="">
+        <Header />
+        <section className="min-h-[60vh] bg-white">
+          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+            Featured Stories
+          </h1>
+          <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
+            Featured stories, a quick look of any property
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <div className="flex justify-center items-center gap-2 flex-wrap mt-6">
+            {stories.map((story) => (
+              <div className="w-[190] h-[280px] relative cursor-pointer">
+                <img src={story.img} className="w-full h-full" />
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="min-h-screen bg-white">
+          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+            Featured properties
+          </h1>
+          <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
+            Supreme Plus properties available for sale or rent
           </p>
-        </a>
+          <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
+            {properties.map((property) => (
+              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-around items-center gap-4 mt-3">
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/bed.png" /> {property.beds}
+                  </p>
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/bath.png" /> {property.baths}
+                  </p>
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/area.png" /> {property.sqft}
+                  </p>
+                </div>
+                <hr />
+                <div className="flex justify-between items-center">
+                  <p className="flex items-center gap-2">
+                    <FaPlus color="green" /> Compare
+                  </p>
+                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2">3 Years Ago</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="min-h-screen bg-[#E6FFE0]  bg-opacity-7 ">
+          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+            Latest Properties For Rent
+          </h1>
+          <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
+            Check out the latest properties available for rent in Pakistan
           </p>
-        </a>
+          <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
+            {properties.map((property) => (
+              <div className="w-[330px] h-[480px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-around items-center gap-4 mt-3">
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/bed.png" /> {property.beds}
+                  </p>
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/bath.png" /> {property.baths}
+                  </p>
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/area.png" /> {property.sqft}
+                  </p>
+                </div>
+                <hr />
+                <div className="flex justify-between items-center">
+                  <p className="flex items-center gap-2">
+                    <FaPlus color="#25C55B" /> Compare
+                  </p>
+                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2">3 Years Ago</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="min-h-screen bg-white">
+          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+            Properties For Sale
+          </h1>
+          <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
+            lobortis justo
           </p>
-        </a>
-      </div>
-    </main>
-  )
+          <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
+            {properties.map((property) => (
+              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3">
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
+
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-around items-center gap-4 mt-3">
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/bed.png" /> {property.beds}
+                  </p>
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/bath.png" /> {property.baths}
+                  </p>
+                  <p className="flex justify-center items-center gap-2">
+                    <img src="/assets/area.png" /> {property.sqft}
+                  </p>
+                </div>
+                <hr />
+                <div className="flex justify-between items-center">
+                  <p className="flex items-center gap-2">
+                    <FaPlus color="green" /> Compare
+                  </p>
+                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2">3 Years Ago</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="min-h-[60vh] bg-neutral-100">
+          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+            Featured Agencies
+          </h1>
+          <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
+            Our top notch real estate agents
+          </p>
+          <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
+            <div className="w-[350px] h-[300px] p-1 relative ">
+              <img src="/assets/propertyimg.png" className="h-[80%] w-full" />
+              <div className="flex justify-between items-center mt-4">
+                <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                  Wade Warren
+                </h1>
+                <div className="flex items-center gap-2">
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaPhone color="#8E8E93" size={20} />
+                  </div>{" "}
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaEnvelope color="#8E8E93" size={20} />
+                  </div>{" "}
+                </div>
+              </div>
+              <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+                Salesperson
+              </p>
+            </div>
+            <div className="w-[350px] h-[300px] p-1 relative ">
+              <img src="/assets/propertyimg.png" className="h-[80%] w-full" />
+              <div className="flex justify-between items-center mt-4">
+                <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                  Wade Warren
+                </h1>
+                <div className="flex items-center gap-2">
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaPhone color="#8E8E93" size={20} />
+                  </div>{" "}
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaEnvelope color="#8E8E93" size={20} />
+                  </div>{" "}
+                </div>
+              </div>
+              <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+                Salesperson
+              </p>
+            </div>
+            <div className="w-[350px] h-[300px] p-1 relative ">
+              <img src="/assets/propertyimg.png" className="h-[80%] w-full" />
+              <div className="flex justify-between items-center mt-4">
+                <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                  Wade Warren
+                </h1>
+                <div className="flex items-center gap-2">
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaPhone color="#8E8E93" size={20} />
+                  </div>{" "}
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaEnvelope color="#8E8E93" size={20} />
+                  </div>{" "}
+                </div>
+              </div>
+              <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+                Salesperson
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          className="min-h-screen "
+          style={{ backgroundImage: "/assets/contactbg.png" }}
+        >
+          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
+            <div className="flex md:justify-end md:items-end justify-center items-center  flex-wrap w-full min-h-[500px]">
+              <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ">
+                <h1 className=" text-black md:text-[45px] text-[30px]  font-extrabold font-['Mulish']">
+                  We provide the most <br /> suitable and quality
+                  <br />
+                  real estate.
+                </h1>
+                <p className=" text-neutral-400 text-sm font-normal font-['Poppins'] leading-[21px]">
+                  Fill in your basic information and one of our representative
+                  will be in touch.
+                </p>
+                <div className="flex items-center md:flex-row flex-col gap-8 mt-7 flex-wrap">
+                  <img src="/assets/locationico.png" />
+                  <div className="w-[429px] h-[71px] flex-col justify-start items-start gap-0.5 inline-flex">
+                    <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
+                      Office address
+                    </div>
+                    <div className="self-stretch text-neutral-700 text-base font-normal font-['Poppins'] leading-normal">
+                      Office 6, Street 22nd, Block J<br />
+                      Al-Rehman Garden Phase 2 Lahore
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center md:flex-row flex-col gap-8 mt-7 flex-wrap">
+                  <img src="/assets/callico.png" />
+                  <div className="w-[429px] h-[61px] flex-col justify-start items-start gap-0.5 inline-flex">
+                    <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
+                      Request a call back
+                    </div>
+                    <div className="self-stretch text-[#25C55B] text-3xl font-extrabold font-['Mulish']">
+                      +92 (312) 4823-680
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center md:flex-row flex-col gap-8 mt-7 flex-wrap">
+                  <img src="/assets/mailico.png" />
+                  <div className="w-[429px] h-[47px] flex-col justify-start items-start gap-0.5 inline-flex">
+                    <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
+                      Email us
+                    </div>
+                    <div className="self-stretch text-[#25C55B] text-base font-normal font-['Poppins'] leading-normal">
+                      info@wahid.pk
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ContactForm />
+          </div>
+        </section>
+        <section className="min-h-[70vh] bg-green-100">
+          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
+            <div className="flex justify-center  items-center flex-col gap-5 mt-8">
+              <h1 className="text-zinc-900 text-5xl font-bold font-['Poppins'] leading-[56.72px]">
+                Become Our Agents
+              </h1>
+              <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-snug">
+                Become an agent and get the commission you deserve
+              </p>
+              <img src="/assets/quoteico.png" />
+              <p className=" w-2/3 text-center text-neutral-700 text-[16.81px] font-medium font-['Poppins'] leading-relaxed">
+                With a great working history, we have built strong relationships
+                with more than 1000+ real estate business partners, providing
+                profitable opportunities for investors in all cities of
+                Pakistan. We are proud to work with agents and business partners
+                who are just as passionate about bringing the best properties to
+                everyone as we are.{" "}
+              </p>
+              <div className="w-[292.01px] h-[69px] flex-col justify-start items-center inline-flex">
+                <div className="self-stretch text-center text-zinc-900 text-[16.81px] font-semibold font-['Poppins'] leading-relaxed">
+                  MA Sheikh
+                </div>
+                <div className="self-stretch text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-snug">
+                  CEO and founder at Wahid Properties (PVT) Limited
+                </div>
+              </div>
+              <img
+                className="w-[138.65px] h-[51.47px]"
+                src="/assets/sign.png"
+              />
+              <div className="flex items-center gap-5 flex-wrap">
+                <button
+                  type="submit"
+                  class="text-white mt-2 flex items-center gap-2 bg-[#25C55B] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <FaArrowAltCircleRight /> Join Us
+                </button>
+                <button
+                  type="submit"
+                  class="text-white mt-2 flex items-center gap-2 bg-[#25C55B] hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  <FaPhone /> Contact Us
+                </button>
+              </div>
+            </div>
+            <img src="/assets/largeimg.png " className="w-full h-full" />
+          </div>
+        </section>
+        <section className="min-h-screen w-full relative ">
+          {" "}
+          <h1 className=" text-center pt-8 text-black text-[45px] font-bold font-['Poppins'] leading-[54px]">
+            From our blog
+          </h1>
+          <p className="pt-2 text-center text-neutral-400 text-sm  font-normal font-['Poppins'] leading-[21px]">
+            Read our recent blogs an stay updated with local & international
+            market trends.
+          </p>
+          <div className="flex justify-center flex-wrap items-center gap-8 mt-12">
+            <div className="w-[320px] h-[430px] p-4   cursor-pointer flex flex-col gap-3  hover:scale-90 transition-all ">
+              <img src="/assets/propertyimg.png" alt="thumbnail of article" />
+              <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins']">
+                Building gains into housing stocks and how to trade the sector
+              </h1>
+              <Link href={"#"}>
+                {" "}
+                <p className=" text-green-600 flex items-center gap-2">
+                  Read More <FaArrowRight />
+                </p>{" "}
+              </Link>
+            </div>
+            <div className="w-[320px] h-[430px] p-4   cursor-pointer flex flex-col gap-3  hover:scale-90 transition-all ">
+              <img src="/assets/propertyimg.png" alt="thumbnail of article" />
+              <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins']">
+                Building gains into housing stocks and how to trade the sector
+              </h1>
+              <Link href={"#"}>
+                {" "}
+                <p className=" text-green-600 flex items-center gap-2">
+                  Read More <FaArrowRight />
+                </p>{" "}
+              </Link>
+            </div>
+            <div className="w-[320px] h-[430px] p-4   cursor-pointer flex flex-col gap-3  hover:scale-90 transition-all ">
+              <img src="/assets/propertyimg.png" alt="thumbnail of article" />
+              <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins']">
+                Building gains into housing stocks and how to trade the sector
+              </h1>
+              <Link href={"#"}>
+                {" "}
+                <p className=" text-green-600 flex items-center gap-2">
+                  Read More <FaArrowRight />
+                </p>{" "}
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
+  );
 }
