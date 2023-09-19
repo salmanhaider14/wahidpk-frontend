@@ -8,13 +8,13 @@ const ContactForm = () => {
         <h1 className=" text-zinc-900 text-3xl font-bold font-['Poppins']">
           Contact us
         </h1>
-        <p className=" text-neutral-400 text-sm font-normal py-1 font-['Poppins'] leading-[21px]">
+        <p className=" text-neutral-400 text-sm font-normal  pb-4 font-['Poppins'] leading-[21px]">
           We will respond as soon as we receive your message.
         </p>
         <div class="mb-6">
           <label
             for="email"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
           >
             Your name
           </label>
@@ -34,7 +34,7 @@ const ContactForm = () => {
           <div class="mb-6">
             <label
               for="email"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
             >
               Email
             </label>
@@ -53,7 +53,7 @@ const ContactForm = () => {
           <div class="mb-6">
             <label
               for="email"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
             >
               Phone
             </label>
@@ -73,7 +73,7 @@ const ContactForm = () => {
         <div class="mb-6">
           <label
             for="email"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-bold text-gray-900 dark:text-white"
           >
             Property type
           </label>
@@ -93,7 +93,7 @@ const ContactForm = () => {
         <div class="sm:col-span-2">
           <label
             for="message"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+            class="block mb-2 text-sm font-bold text-gray-900 dark:text-gray-400"
           >
             Message
           </label>

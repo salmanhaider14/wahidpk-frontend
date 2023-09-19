@@ -14,7 +14,7 @@ const AgentSearch = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="md:w-[80%] w-full relative  border flex flex-col gap-5 p-3 bg-neutral-50 rounded-lg">
+    <div className="md:w-[80%] w-full relative  border flex flex-col gap-5 p-3  bg-[#E5E5EA] rounded-lg">
       <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Agent Search
       </h1>
@@ -23,9 +23,9 @@ const AgentSearch = () => {
         type="text"
         placeholder="Property Type"
         id="default-input"
-        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        class="h-[56px] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
-      <FormControl>
+      <FormControl className="bg-white">
         <InputLabel id="demo-simple-select-label">City</InputLabel>
         <Select
           labelId="demo-simple-select-label"

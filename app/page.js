@@ -121,15 +121,18 @@ export default function Home() {
                   <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
-                  <div className="flex justify-around items-center gap-4 mt-3">
+                  <div className="flex justify-start items-center gap-3 mt-3">
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bed.png" /> {property.beds}
+                      <img src="/assets/bed.png" /> Beds:{" "}
+                      <span className="font-bold"> {property.beds} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bath.png" /> {property.baths}
+                      <img src="/assets/bath.png" /> Baths:{" "}
+                      <span className="font-bold"> {property.baths} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/area.png" /> {property.sqft}
+                      <img src="/assets/area.png" /> Sqft:{" "}
+                      <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
                   <hr />
@@ -175,15 +178,18 @@ export default function Home() {
                   <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
-                  <div className="flex justify-around items-center gap-4 mt-3">
+                  <div className="flex justify-start items-center gap-3 mt-3">
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bed.png" /> {property.beds}
+                      <img src="/assets/bed.png" /> Beds:{" "}
+                      <span className="font-bold"> {property.beds} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bath.png" /> {property.baths}
+                      <img src="/assets/bath.png" /> Baths:{" "}
+                      <span className="font-bold"> {property.baths} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/area.png" /> {property.sqft}
+                      <img src="/assets/area.png" /> Sqft:{" "}
+                      <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
                   <hr />
@@ -230,15 +236,18 @@ export default function Home() {
                   <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
-                  <div className="flex justify-around items-center gap-4 mt-3">
+                  <div className="flex justify-start items-center gap-3 mt-3">
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bed.png" /> {property.beds}
+                      <img src="/assets/bed.png" /> Beds:{" "}
+                      <span className="font-bold"> {property.beds} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bath.png" /> {property.baths}
+                      <img src="/assets/bath.png" /> Baths:{" "}
+                      <span className="font-bold"> {property.baths} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/area.png" /> {property.sqft}
+                      <img src="/assets/area.png" /> Sqft:{" "}
+                      <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
                   <hr />
@@ -328,7 +337,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
             <div className="flex md:justify-end md:items-end justify-center items-center  flex-wrap w-full min-h-[500px]">
               <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ">
-                <h1 className=" text-black md:text-[45px] text-[30px]  font-extrabold font-['Mulish']">
+                <h1 className=" text-black md:text-[45px] text-[30px] font-['Poppins']  font-extrabold ">
                   We provide the most <br /> suitable and quality
                   <br />
                   real estate.
@@ -355,7 +364,7 @@ export default function Home() {
                     <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                       Request a call back
                     </div>
-                    <div className="self-stretch text-[#25C55B] text-3xl font-extrabold font-['Mulish']">
+                    <div className="self-stretch text-[#25C55B] text-3xl font-extrabold font-['Poppins']">
                       +92 (312) 4823-680
                     </div>
                   </div>

@@ -7,7 +7,7 @@ const FilterForm = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="md:w-[80%] w-full relative  border flex flex-col gap-3 p-3  rounded-lg">
+    <div className="md:w-[80%] w-full relative  border flex flex-col gap-3 p-3 bg-[#E5E5EA] rounded-lg">
       <div className="flex items-center gap-2">
         <button className="bg-main hover:bg-green-700 flex justify-center items-center text-white font-bold w-[90px] h-[56px] rounded-xl">
           Rent
@@ -34,14 +34,14 @@ const FilterForm = () => {
             <input
               type="search"
               id="search"
-              class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Search"
               required
             />
           </div>
         </div>
       </form>
-      <FormControl fullWidth>
+      <FormControl fullWidth className="bg-white">
         <InputLabel id="demo-simple-select-label">Property Type</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -55,7 +55,7 @@ const FilterForm = () => {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      <FormControl fullWidth>
+      <FormControl fullWidth className="bg-white">
         <InputLabel id="demo-simple-select-label">Location</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -69,7 +69,7 @@ const FilterForm = () => {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      <FormControl fullWidth>
+      <FormControl fullWidth className="bg-white">
         <InputLabel id="demo-simple-select-label">Baths</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -83,7 +83,7 @@ const FilterForm = () => {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      <FormControl fullWidth>
+      <FormControl fullWidth className="bg-white">
         <InputLabel id="demo-simple-select-label">Beds</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -97,7 +97,7 @@ const FilterForm = () => {
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-      <FormControl fullWidth>
+      <FormControl fullWidth className="bg-white">
         <InputLabel id="demo-simple-select-label">Select Area Unit</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -115,7 +115,7 @@ const FilterForm = () => {
         Price
       </h1>
       <div className="grid grid-cols-2 gap-4">
-        <FormControl>
+        <FormControl className="bg-white">
           <InputLabel id="demo-simple-select-label">Min</InputLabel>
           <Select
             labelId="demo-simple-select-label"
@@ -129,7 +129,7 @@ const FilterForm = () => {
             <MenuItem value={30}>Thirty</MenuItem>
           </Select>
         </FormControl>
-        <FormControl fullWidth>
+        <FormControl fullWidth className="bg-white">
           <InputLabel id="demo-simple-select-label">Max</InputLabel>
           <Select
             labelId="demo-simple-select-label"
@@ -148,7 +148,7 @@ const FilterForm = () => {
         Area
       </h1>
       <div className="grid grid-cols-2 gap-4">
-        <FormControl>
+        <FormControl className="bg-white">
           <InputLabel id="demo-simple-select-label">Min</InputLabel>
           <Select
             labelId="demo-simple-select-label"
@@ -162,7 +162,7 @@ const FilterForm = () => {
             <MenuItem value={30}>Thirty</MenuItem>
           </Select>
         </FormControl>
-        <FormControl fullWidth>
+        <FormControl fullWidth className="bg-white">
           <InputLabel id="demo-simple-select-label">Max</InputLabel>
           <Select
             labelId="demo-simple-select-label"

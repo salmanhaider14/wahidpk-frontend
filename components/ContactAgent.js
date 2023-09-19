@@ -8,7 +8,7 @@ const ContactAgent = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="md:w-[80%] w-full relative   border flex flex-col gap-5 p-3  bg-neutral-50 rounded-lg">
+    <div className="md:w-[80%] w-full relative   border flex flex-col gap-5 p-3  bg-[#E5E5EA] rounded-lg">
       <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Contact Agent
       </h1>
@@ -33,19 +33,19 @@ const ContactAgent = () => {
         type="text"
         placeholder="Full Name"
         id="default-input"
-        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        class="h-[56px] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
       <input
         type="text"
         placeholder="Phone Number"
         id="default-input"
-        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        class="h-[56px] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
       <input
         type="text"
         placeholder="Email Address"
         id="default-input"
-        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        class="h-[56px] bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
       <TextField
         required
@@ -54,6 +54,7 @@ const ContactAgent = () => {
         multiline
         maxRows={6}
         minRows={4}
+        className="bg-white"
       />
       <div className="grid grid-cols-3 gap-3">
         <button className="col-span-2 text-center text-white rounded-md bg-[#25C55B] gap-2 text-base font-bold font-['Poppins'] leading-normal h-[56px] flex justify-center items-center">

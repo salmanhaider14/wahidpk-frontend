@@ -13,10 +13,6 @@ export default function Projects() {
     { img: "/assets/storyimg.png" },
     { img: "/assets/storyimg.png" },
     { img: "/assets/storyimg.png" },
-    { img: "/assets/storyimg.png" },
-    { img: "/assets/storyimg.png" },
-    { img: "/assets/storyimg.png" },
-    { img: "/assets/storyimg.png" },
   ];
   const properties = [
     {
@@ -141,7 +137,7 @@ export default function Projects() {
           </p>
           <div className="flex justify-center items-center gap-2 flex-wrap mt-6">
             {developers.map((story) => (
-              <div className="w-[190] h-[160px] relative cursor-pointer">
+              <div className="w-[210px] h-[150px] relative cursor-pointer">
                 <img src={story.img} className="w-full h-full" />
               </div>
             ))}
@@ -195,7 +191,7 @@ export default function Projects() {
           <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
             <div className="flex md:justify-end md:items-end justify-center items-center  flex-wrap w-full min-h-[500px]">
               <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ">
-                <h1 className=" text-black md:text-[45px] text-[30px]  font-extrabold font-['Mulish']">
+                <h1 className=" text-black md:text-[45px] text-[30px]  font-extrabold font-['Poppins']">
                   We provide the most <br /> suitable and quality
                   <br />
                   real estate.
@@ -222,7 +218,7 @@ export default function Projects() {
                     <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                       Request a call back
                     </div>
-                    <div className="self-stretch text-[#25C55B] text-3xl font-extrabold font-['Mulish']">
+                    <div className="self-stretch text-[#25C55B] text-3xl font-extrabold font-['Poppins']">
                       +92 (312) 4823-680
                     </div>
                   </div>

@@ -22,13 +22,14 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import SubBar from "./SubBar";
 
 export default function Header() {
   const [age, setAge] = useState();
   const handleChange = () => {};
   return (
     <div className="min-h-screen  bg-[#25C55B] relative p-2">
-      <div className="flex justify-between items-center flex-wrap w-full">
+      {/* <div className="flex justify-between items-center flex-wrap w-full">
         <div className="flex items-center md:gap-3 gap-2 ml-5 mt-5 text-lg">
           <Link
             href={"#"}
@@ -109,7 +110,9 @@ export default function Header() {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
+      <SubBar />
+      <hr />
       <h1 className=" text-center text-white text-[61.84px] font-bold font-['Poppins'] pt-[150px] leading-[74.21px]">
         Search Properties For <br /> Sale, Rent or Buy
       </h1>

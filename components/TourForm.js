@@ -20,7 +20,7 @@ const TourForm = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="md:w-[90%] w-full relative  border flex flex-col gap-5 p-3  bg-neutral-50 rounded-lg">
+    <div className="md:w-[90%] w-full relative  border flex flex-col gap-5 p-3  bg-[#E5E5EA] rounded-lg">
       <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Schedule a Tour
       </h1>
@@ -28,7 +28,7 @@ const TourForm = () => {
         Choose the most suitable day
       </p>
       <div className=" justify-start items-start gap-[12.14px] inline-flex flex-wrap">
-        <div className=" p-[19.43px] rounded-xl border-2 border-gray-200 flex-col justify-center items-center gap-[7.29px] inline-flex">
+        <div className=" p-[19.43px] rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon
           </div>
@@ -50,7 +50,7 @@ const TourForm = () => {
             Apr
           </div>
         </div>
-        <div className=" p-[19.43px] rounded-xl border-2 border-gray-200 flex-col justify-center items-center gap-[7.29px] inline-flex">
+        <div className=" p-[19.43px] rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon
           </div>
@@ -61,7 +61,7 @@ const TourForm = () => {
             Apr
           </div>
         </div>
-        <div className=" p-[19.43px] rounded-xl border-2 border-gray-200 flex-col justify-center items-center gap-[7.29px] inline-flex">
+        <div className=" p-[19.43px] rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon
           </div>
@@ -79,7 +79,7 @@ const TourForm = () => {
       <button className="text-center gap-3 text-white rounded-md bg-[#25C55B] text-base font-bold font-['Poppins'] leading-normal h-[56px] flex justify-center items-center">
         In Person <AiOutlineCheckCircle size={25} />
       </button>
-      <FormControl>
+      <FormControl className="bg-white">
         <InputLabel id="demo-simple-select-label">Choose Time</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -118,6 +118,7 @@ const TourForm = () => {
         multiline
         maxRows={6}
         minRows={4}
+        className="bg-white"
       />
 
       <button className="text-center gap-3 text-white rounded-md bg-[#25C55B] text-base font-bold font-['Poppins'] leading-normal h-[56px] flex justify-center items-center">

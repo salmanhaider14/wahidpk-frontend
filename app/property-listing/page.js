@@ -70,7 +70,7 @@ const PropertyListing = () => {
                     />
                     <img src="/assets/propertyimg.png" className="w-[330px]" />
                     <div className="flex flex-col gap-3 flex-wrap max-w-[680px] ">
-                      <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
+                      <h1 className=" text-zinc-900 text-[15.87px] font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
                       <p className=" text-neutral-700 text-xs font-normal font-['Poppins'] leading-[18.87px]">
