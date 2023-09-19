@@ -90,22 +90,22 @@ const Navbar = () => {
         } transition-all duration-300 ease-in-out`}
       >
         <div className="flex flex-col items-center">
-          <Link className="block py-2" href="#">
+          <Link className="block py-2" href="/">
             Home
           </Link>
-          <Link className="block py-2" href="#">
+          <Link className="block py-2" href="/projects">
             Projects
           </Link>
-          <Link className="block py-2" href="#">
+          <Link className="block py-2" href="/agents">
             Agents
           </Link>
-          <Link className="block py-2" href="#">
+          <Link className="block py-2" href="/about">
             About
           </Link>
-          <Link className="block py-2" href="#">
+          <Link className="block py-2" href="/contact">
             Contact
           </Link>
-          <Link className="block py-2" href="#">
+          <Link className="block py-2" href="/tools">
             Tools
           </Link>
           <Link className="block py-2" href="/login">
