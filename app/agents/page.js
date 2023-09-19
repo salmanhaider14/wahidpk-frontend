@@ -58,7 +58,7 @@ export default function Agents() {
           <FaArrowCircleDown
             color="black"
             size={40}
-            className="cursor-pointer"
+            className="cursor-pointer animate-bounce"
           />
         </section>
         <section className="min-h-[60vh] bg-white">

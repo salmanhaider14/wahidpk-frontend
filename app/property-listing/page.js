@@ -37,13 +37,20 @@ const PropertyListing = () => {
       area: 1150,
     },
   ];
+  const stories = [
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+    { img: "/assets/storyimg.png" },
+  
+  ];
 
   return (
     <div>
       <section className="min-h-screen ">
         <div className="flex justify-center mt-10">
-          <div className="grid md:grid-cols-3 gap-8 w-[80%] border p-4 relative">
-            <div className="flex flex-col items-start gap-2 border col-span-2 ">
+          <div className="grid md:grid-cols-3 gap-8 w-[80%]  p-4 relative">
+            <div className="flex flex-col items-start gap-2  col-span-2 ">
               {" "}
               <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">
                 Property Listing
@@ -89,11 +96,18 @@ const PropertyListing = () => {
                     </div>
                   </div>
                 ))}
+                 <div className="flex justify-start items-center gap-2 flex-wrap mt-6">
+            {stories.map((story) => (
+              <div className="w-[190] h-[280px] relative cursor-pointer">
+                <img src={story.img} className="w-full h-full" />
+              </div>
+            ))}
+          </div>
               </div>
             </div>
-            <div className=" max-w-[600px] relative border flex flex-col gap-4 justify-center p-3  ">
+            <div className=" max-w-[600px] relative  flex flex-col gap-4 justify-center p-3  ">
               <FilterForm />
-              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 border">
+              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 ">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
