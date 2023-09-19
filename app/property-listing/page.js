@@ -46,7 +46,7 @@ const PropertyListing = () => {
 
   return (
     <div>
-      <section className="min-h-screen ">
+      <section className="min-h-screen  ">
         <div className="flex justify-center mt-10">
           <div className="grid md:grid-cols-3 gap-8 w-[80%]  p-4 relative">
             <div className="flex flex-col items-start gap-2  col-span-2 ">
@@ -57,7 +57,7 @@ const PropertyListing = () => {
               <p className=" text-neutral-700 text-sm font-normal font-['Poppins'] leading-snug">
                 There are currently 164,814 properties.
               </p>
-              <div className="flex flex-col gap-6 ">
+              <div className="flex flex-col justify-start item-start gap-6 ">
                 {properties.map((property) => (
                   <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
                     <img
@@ -112,7 +112,7 @@ const PropertyListing = () => {
                 </div>
               </div>
             </div>
-            <div className=" max-w-[600px] relative  flex flex-col gap-4 justify-center p-3  ">
+            <div className="  relative  flex flex-col gap-4  p-3  ">
               <FilterForm />
               <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 ">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">

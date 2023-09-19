@@ -185,7 +185,7 @@ const SingleAgent = () => {
                 ))}
               </div>
             </div>
-            <div className=" max-w-[600px]   flex flex-col gap-4  p-3  ">
+            <div className=" flex flex-col gap-4  p-3  ">
               <ContactAgent />
               <AgentSearch />
               <TourForm />

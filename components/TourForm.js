@@ -20,7 +20,7 @@ const TourForm = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="md:w-[90%] w-full relative  border flex flex-col gap-5 p-3  bg-[#E5E5EA] rounded-lg">
+    <div className=" w-full relative  border flex flex-col gap-5 p-3  bg-[#E5E5EA] rounded-lg">
       <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Schedule a Tour
       </h1>
