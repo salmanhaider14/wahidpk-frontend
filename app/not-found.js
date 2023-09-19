@@ -20,7 +20,7 @@ export default function NotFound() {
             Let’s find a better place for you to go.
           </p>
           <Link href={"/"}>
-            <button className="bg-green-500 hover:bg-green-600 text-white font-semibold px-4  py-2 mt-4 rounded-lg">
+            <button className="bg-main hover:bg-green-600 text-white font-semibold px-4  py-2 mt-4 rounded-lg">
               Back to Home
             </button>
           </Link>

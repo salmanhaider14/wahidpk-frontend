@@ -51,12 +51,12 @@ export default function Agents() {
   return (
     <>
       <main className="">
-        <section className="min-h-[50vh]  bg-[#E6FFE0] relative p-2 flex justify-center items-center flex-col gap-4">
+        <section className="min-h-[50vh]  bg-[#E6FFE0] relative p-2 flex justify-center items-center flex-col gap-6">
           <h1 className="text-green-800 text-5xl font-bold">
             Explore Our Agents
           </h1>
           <FaArrowCircleDown
-            color="black"
+            color="green"
             size={40}
             className="cursor-pointer animate-bounce"
           />

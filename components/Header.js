@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <div className="min-h-screen  bg-[#25C55B] relative p-2">
       <div className="flex justify-between items-center flex-wrap w-full">
-        <div className="flex items-center md:gap-3 gap-2 ml-5 mt-5">
+        <div className="flex items-center md:gap-3 gap-2 ml-5 mt-5 text-lg">
           <Link
             href={"#"}
             className="flex justify-center items-center gap-1 text-white"
@@ -109,7 +109,7 @@ export default function Header() {
       </p>
 
       <div className="max-w-[1100px] min-h-[170px] bg-white m-auto mt-10 rounded-md flex flex-wrap p-4 gap-2">
-        <FormControl className="w-[200px]">
+        <FormControl className="w-[200px] ">
           <InputLabel id="demo-simple-select-label">City</InputLabel>
           <Select
             labelId="demo-simple-select-label"
@@ -140,7 +140,7 @@ export default function Header() {
           className="w-[200px]"
           label="Property Type"
         />
-        <div className="w-[330px] h-[56px] border">
+        <div className="w-[330px] h-[56px] ">
           <div className="flex items-center justify-between gap-3">
             <FormControl sx={{ minWidth: 120 }}>
               <InputLabel htmlFor="grouped-native-select">Min Price</InputLabel>
@@ -230,6 +230,35 @@ export default function Header() {
             <MenuItem value={30}>3</MenuItem>
           </Select>
         </FormControl>
+      </div>
+      <div className="flex justify-center items-center gap-3 mt-8 flex-wrap">
+        <p className="flex items-center gap-2 text-white">
+          <img src="/assets/house.png" /> Houses
+        </p>
+        <p className="flex items-center gap-2 text-white">
+          <img src="/assets/house.png" /> Bungalow
+        </p>
+        <p className="flex items-center gap-2 text-white">
+          <img src="/assets/shop.png" /> Shop
+        </p>
+        <p className="flex items-center gap-2 text-white">
+          <img src="/assets/office.png" /> Office
+        </p>
+        <p className="flex items-center gap-2 text-white">
+          <img src="/assets/portion.png" /> Portion
+        </p>
+        <p className="flex items-center gap-2 text-white">
+          <img src="/assets/portion.png" /> Flat
+        </p>
+        <p className="flex items-center gap-2 text-white">
+          <img src="/assets/portion.png" /> Mansion
+        </p>
+      </div>
+      <div className="flex justify-center items-center flex-col gap-3 mt-[150px]">
+        <h1 className="text-center text-white text-base font-semibold font-['Poppins'] leading-normal">
+          Scroll
+        </h1>
+        <img src="/assets/scroll.png" className="animate-bounce" />
       </div>
     </div>
   );

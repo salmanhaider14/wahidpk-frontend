@@ -42,7 +42,6 @@ const PropertyListing = () => {
     { img: "/assets/storyimg.png" },
     { img: "/assets/storyimg.png" },
     { img: "/assets/storyimg.png" },
-  
   ];
 
   return (
@@ -61,6 +60,14 @@ const PropertyListing = () => {
               <div className="flex flex-col gap-6 ">
                 {properties.map((property) => (
                   <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
+                    <img
+                      src="/assets/supremetag.png"
+                      className="absolute top-5 left-0"
+                    />
+                    <img
+                      src="/assets/saletag2.png"
+                      className="absolute top-12 left-0"
+                    />
                     <img src="/assets/propertyimg.png" className="w-[330px]" />
                     <div className="flex flex-col gap-3 flex-wrap max-w-[680px] ">
                       <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
@@ -96,13 +103,13 @@ const PropertyListing = () => {
                     </div>
                   </div>
                 ))}
-                 <div className="flex justify-start items-center gap-2 flex-wrap mt-6">
-            {stories.map((story) => (
-              <div className="w-[190] h-[280px] relative cursor-pointer">
-                <img src={story.img} className="w-full h-full" />
-              </div>
-            ))}
-          </div>
+                <div className="flex justify-start items-center gap-2 flex-wrap mt-6">
+                  {stories.map((story) => (
+                    <div className="w-[190] h-[280px] relative cursor-pointer">
+                      <img src={story.img} className="w-full h-full" />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
             <div className=" max-w-[600px] relative  flex flex-col gap-4 justify-center p-3  ">

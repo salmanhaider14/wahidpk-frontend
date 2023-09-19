@@ -7,7 +7,18 @@ const FilterForm = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="md:w-[80%] w-full relative  border flex flex-col gap-3 p-3">
+    <div className="md:w-[80%] w-full relative  border flex flex-col gap-3 p-3  rounded-lg">
+      <div className="flex items-center gap-2">
+        <button className="bg-main hover:bg-green-700 flex justify-center items-center text-white font-bold w-[90px] h-[56px] rounded-xl">
+          Rent
+        </button>
+        <button className="bg-[#E6FFE0] hover:bg-green-700 flex justify-center items-center text-black font-bold w-[90px] h-[56px] rounded-xl">
+          Buy
+        </button>
+        <button className="bg-[#E6FFE0] hover:bg-green-700 flex justify-center items-center text-black font-bold w-[90px] h-[56px] rounded-xl">
+          Projects
+        </button>
+      </div>
       <form className="w-[100%] ">
         <div>
           <label

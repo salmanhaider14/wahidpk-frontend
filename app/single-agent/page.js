@@ -46,8 +46,8 @@ const SingleAgent = () => {
     <div>
       <section className="min-h-screen ">
         <div className="flex justify-center mt-10">
-          <div className="grid md:grid-cols-3 gap-8 w-[80%] border p-4 relative">
-            <div className="flex flex-col items-start gap-2 border col-span-2 relative ">
+          <div className="grid md:grid-cols-3 gap-8 w-[80%]  p-4 relative">
+            <div className="flex flex-col items-start gap-2  col-span-2 relative ">
               {" "}
               <div className="flex flex-col gap-6 ">
                 <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
@@ -65,7 +65,7 @@ const SingleAgent = () => {
                       </span>
                     </p>
                     <div className=" flex flex-col gap-2 mt-6 mb-3">
-                      <p className="flex items-center gap-2 text-green-500">
+                      <p className="flex items-center gap-2 text-main">
                         <img src="/assets/callinbound.png" /> +7-445-556-8337
                       </p>
                       <p className="flex items-center gap-2 ">
@@ -123,7 +123,7 @@ const SingleAgent = () => {
                   />
                 </div>
                 <div className="flex items-center gap-4">
-                  <h1 className="border-b-4 border-b-green-500 text-[22.74px] font-semibold font-['Poppins'] text-green-500">
+                  <h1 className="border-b-4 border-b-main text-[22.74px] font-semibold font-['Poppins'] text-main">
                     For Rent
                   </h1>
                   <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
@@ -136,6 +136,14 @@ const SingleAgent = () => {
                 <hr />
                 {properties.map((property) => (
                   <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
+                    <img
+                      src="/assets/supremetag.png"
+                      className="absolute top-5 left-0"
+                    />
+                    <img
+                      src="/assets/saletag.png"
+                      className="absolute top-12 left-0"
+                    />
                     <img src="/assets/propertyimg.png" className="w-[330px]" />
                     <div className="flex flex-col gap-3 flex-wrap max-w-[680px] ">
                       <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
@@ -171,7 +179,7 @@ const SingleAgent = () => {
                 ))}
               </div>
             </div>
-            <div className=" max-w-[600px]  border flex flex-col gap-4  p-3  ">
+            <div className=" max-w-[600px]   flex flex-col gap-4  p-3  ">
               <ContactAgent />
               <AgentSearch />
               <TourForm />

@@ -146,7 +146,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <div className="w-3 h-3 relative origin-top-left -rotate-90"></div>
-                <Link href="/about-us">
+                <Link href="/agents">
                   <span className="text-white text-sm font-normal font-'Poppins' leading-5 opacity-70">
                     Our Agents
                   </span>
@@ -154,7 +154,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <div className="w-3 h-3 relative origin-top-left -rotate-90"></div>
-                <Link href="/about-us">
+                <Link href="/terms">
                   <span className="text-white text-sm font-normal font-'Poppins' leading-5 opacity-70">
                     Terms Of Use
                   </span>
@@ -162,7 +162,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <div className="w-3 h-3 relative origin-top-left -rotate-90"></div>
-                <Link href="/about-us">
+                <Link href="/privacy-policy">
                   <span className="text-white text-sm font-normal font-'Poppins' leading-5 opacity-70">
                     Privacy Policy
                   </span>
@@ -170,7 +170,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2 mt-2">
                 <div className="w-3 h-3 relative origin-top-left -rotate-90"></div>
-                <Link href="/about-us">
+                <Link href="/contact">
                   <span className="text-white text-sm font-normal font-'Poppins' leading-5 opacity-70">
                     Contact Us
                   </span>
@@ -232,36 +232,36 @@ const Footer = () => {
             </div>
           </div>
           <div class="flex items-center gap-4 mb-4 lg:mb-0">
-            <a
-              href="#"
+            <Link
+              href="/"
               class="text-white text-base font-semibold font-'Poppins' leading-normal"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/projects"
               class="text-white text-base font-semibold font-'Poppins' leading-normal"
             >
               Property
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               class="text-white text-base font-semibold font-'Poppins' leading-normal"
             >
               Page
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               class="text-white text-base font-semibold font-'Poppins' leading-normal"
             >
               Blog
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/contact"
               class="text-white text-base font-semibold font-'Poppins' leading-normal"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
