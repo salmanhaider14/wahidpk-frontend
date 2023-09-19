@@ -5,6 +5,7 @@ import React from "react";
 import { FaPhone, FaSearch } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { BiLogoFacebook, BiLogoLinkedin, BiLogoTwitter } from "react-icons/bi";
+import Link from "next/link";
 
 const SingleAgent = () => {
   const properties = [
