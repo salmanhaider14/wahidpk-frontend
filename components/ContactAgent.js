@@ -29,26 +29,23 @@ const ContactAgent = () => {
           </p>
         </div>
       </div>
-      <TextField
-        required
-        InputProps={{
-          className: "h-[56px] ", // Add Tailwind CSS height class here
-        }}
-        label="Full name"
+      <input
+        type="text"
+        placeholder="Full Name"
+        id="default-input"
+        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
-      <TextField
-        required
-        InputProps={{
-          className: "h-[56px] ", // Add Tailwind CSS height class here
-        }}
-        label="Phone number"
+      <input
+        type="text"
+        placeholder="Phone Number"
+        id="default-input"
+        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
-      <TextField
-        required
-        InputProps={{
-          className: "h-[56px] ", // Add Tailwind CSS height class here
-        }}
-        label="Email address"
+      <input
+        type="text"
+        placeholder="Email Address"
+        id="default-input"
+        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
       <TextField
         required

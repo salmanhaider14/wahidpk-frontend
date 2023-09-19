@@ -123,22 +123,22 @@ export default function Header() {
             <MenuItem value={30}>Islamabad</MenuItem>
           </Select>
         </FormControl>
-        <TextField
-          InputProps={{
-            className: "h-[56px] ", // Add Tailwind CSS height class here
-          }}
-          className="w-[65%]"
-          label="Location"
+
+        <input
+          type="text"
+          placeholder="Location"
+          id="default-input"
+          class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[65%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
+
         <button class=" flex items-center gap-2 h-[56px] text-white text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
           Search Now <FaSearch />
         </button>
-        <TextField
-          InputProps={{
-            className: "h-[56px] ", // Add Tailwind CSS height class here
-          }}
-          className="w-[200px]"
-          label="Property Type"
+        <input
+          type="text"
+          placeholder="Property Type"
+          id="default-input"
+          class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[200px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
         <div className="w-[330px] h-[56px] ">
           <div className="flex items-center justify-between gap-3">

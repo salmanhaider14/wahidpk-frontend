@@ -18,13 +18,11 @@ const ReviewForm = () => {
         <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
           Your Name
         </h1>{" "}
-        <TextField
-          InputProps={{
-            className: "h-[56px] ", // Add Tailwind CSS height class here
-          }}
-          label="Your Name"
-          fullWidth
-          required
+        <input
+          type="text"
+          placeholder="Your Name"
+          id="default-input"
+          class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
       </div>{" "}
       <div className="grid md:grid-cols-2 gap-5 items-center ">
@@ -32,24 +30,22 @@ const ReviewForm = () => {
           <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
             Email Address
           </h1>
-          <TextField
-            InputProps={{
-              className: "h-[56px] ", // Add Tailwind CSS height class here
-            }}
-            label="Your email"
-            fullWidth
+          <input
+            type="text"
+            placeholder="Email Address"
+            id="default-input"
+            class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
         <div>
           <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
             Phone Number
           </h1>
-          <TextField
-            InputProps={{
-              className: "h-[56px] ", // Add Tailwind CSS height class here
-            }}
-            label="Your phone"
-            fullWidth
+          <input
+            type="text"
+            placeholder="Phone Number"
+            id="default-input"
+            class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
         </div>
       </div>

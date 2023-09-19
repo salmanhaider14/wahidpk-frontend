@@ -19,11 +19,11 @@ const AgentSearch = () => {
         Agent Search
       </h1>
 
-      <TextField
-        InputProps={{
-          className: "h-[56px] ", // Add Tailwind CSS height class here
-        }}
-        label="Property type"
+      <input
+        type="text"
+        placeholder="Property Type"
+        id="default-input"
+        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
       <FormControl>
         <InputLabel id="demo-simple-select-label">City</InputLabel>
@@ -39,17 +39,17 @@ const AgentSearch = () => {
           <MenuItem value={30}>Islamabad</MenuItem>
         </Select>
       </FormControl>
-      <TextField
-        InputProps={{
-          className: "h-[56px] ", // Add Tailwind CSS height class here
-        }}
-        label="Locations"
+      <input
+        type="text"
+        placeholder="Locations"
+        id="default-input"
+        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
-      <TextField
-        InputProps={{
-          className: "h-[56px] ", // Add Tailwind CSS height class here
-        }}
-        label="Company Name"
+      <input
+        type="text"
+        placeholder="Company Name"
+        id="default-input"
+        class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       />
 
       <button className="text-center gap-3 text-white rounded-md bg-[#25C55B] text-base font-bold font-['Poppins'] leading-normal h-[56px] flex justify-center items-center">
