@@ -100,46 +100,48 @@ export default function Home() {
           </p>
           <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
             {properties.map((property) => (
-              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
-                <img
-                  src="/assets/featuredtag.png"
-                  className="absolute top-5 left-0"
-                />
-                <img
-                  src="/assets/saletag.png"
-                  className="absolute top-12 left-0"
-                />
-                <img src={property.img} className="w-full h-1/2" />
-                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
-                  {property.title}
-                </h1>
+              <Link href={"/single-property"}>
+                <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
+                  <img
+                    src="/assets/featuredtag.png"
+                    className="absolute top-5 left-0"
+                  />
+                  <img
+                    src="/assets/saletag.png"
+                    className="absolute top-12 left-0"
+                  />
+                  <img src={property.img} className="w-full h-1/2" />
+                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                    {property.title}
+                  </h1>
 
-                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
-                  {property.desc}
-                </p>
-                <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
-                  ${property.price}
-                </h1>
-                <div className="flex justify-around items-center gap-4 mt-3">
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bed.png" /> {property.beds}
+                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                    {property.desc}
                   </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bath.png" /> {property.baths}
-                  </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/area.png" /> {property.sqft}
-                  </p>
+                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                    ${property.price}
+                  </h1>
+                  <div className="flex justify-around items-center gap-4 mt-3">
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bed.png" /> {property.beds}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bath.png" /> {property.baths}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/area.png" /> {property.sqft}
+                    </p>
+                  </div>
+                  <hr />
+                  <div className="flex justify-between items-center">
+                    <p className="flex items-center gap-2">
+                      <FaPlus color="green" /> Compare
+                    </p>
+                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2">3 Years Ago</p>
+                  </div>
                 </div>
-                <hr />
-                <div className="flex justify-between items-center">
-                  <p className="flex items-center gap-2">
-                    <FaPlus color="green" /> Compare
-                  </p>
-                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                  <p className="flex items-center gap-2">3 Years Ago</p>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -152,46 +154,48 @@ export default function Home() {
           </p>
           <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
             {properties.map((property) => (
-              <div className="w-[330px] h-[480px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
-                <img
-                  src="/assets/featuredtag.png"
-                  className="absolute top-5 left-0"
-                />
-                <img
-                  src="/assets/saletag.png"
-                  className="absolute top-12 left-0"
-                />
-                <img src={property.img} className="w-full h-1/2" />
-                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
-                  {property.title}
-                </h1>
+              <Link href={"/single-property"}>
+                <div className="w-[330px] h-[480px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
+                  <img
+                    src="/assets/featuredtag.png"
+                    className="absolute top-5 left-0"
+                  />
+                  <img
+                    src="/assets/saletag.png"
+                    className="absolute top-12 left-0"
+                  />
+                  <img src={property.img} className="w-full h-1/2" />
+                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                    {property.title}
+                  </h1>
 
-                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
-                  {property.desc}
-                </p>
-                <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
-                  ${property.price}
-                </h1>
-                <div className="flex justify-around items-center gap-4 mt-3">
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bed.png" /> {property.beds}
+                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                    {property.desc}
                   </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bath.png" /> {property.baths}
-                  </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/area.png" /> {property.sqft}
-                  </p>
+                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                    ${property.price}
+                  </h1>
+                  <div className="flex justify-around items-center gap-4 mt-3">
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bed.png" /> {property.beds}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bath.png" /> {property.baths}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/area.png" /> {property.sqft}
+                    </p>
+                  </div>
+                  <hr />
+                  <div className="flex justify-between items-center">
+                    <p className="flex items-center gap-2">
+                      <FaPlus color="#25C55B" /> Compare
+                    </p>
+                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2">3 Years Ago</p>
+                  </div>
                 </div>
-                <hr />
-                <div className="flex justify-between items-center">
-                  <p className="flex items-center gap-2">
-                    <FaPlus color="#25C55B" /> Compare
-                  </p>
-                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                  <p className="flex items-center gap-2">3 Years Ago</p>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -205,46 +209,48 @@ export default function Home() {
           </p>
           <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
             {properties.map((property) => (
-              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3">
-                <img
-                  src="/assets/featuredtag.png"
-                  className="absolute top-5 left-0"
-                />
-                <img
-                  src="/assets/saletag.png"
-                  className="absolute top-12 left-0"
-                />
-                <img src={property.img} className="w-full h-1/2" />
-                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
-                  {property.title}
-                </h1>
+              <Link href={"/single-property"}>
+                <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3">
+                  <img
+                    src="/assets/featuredtag.png"
+                    className="absolute top-5 left-0"
+                  />
+                  <img
+                    src="/assets/saletag.png"
+                    className="absolute top-12 left-0"
+                  />
+                  <img src={property.img} className="w-full h-1/2" />
+                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                    {property.title}
+                  </h1>
 
-                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
-                  {property.desc}
-                </p>
-                <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
-                  ${property.price}
-                </h1>
-                <div className="flex justify-around items-center gap-4 mt-3">
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bed.png" /> {property.beds}
+                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                    {property.desc}
                   </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bath.png" /> {property.baths}
-                  </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/area.png" /> {property.sqft}
-                  </p>
+                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                    ${property.price}
+                  </h1>
+                  <div className="flex justify-around items-center gap-4 mt-3">
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bed.png" /> {property.beds}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bath.png" /> {property.baths}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/area.png" /> {property.sqft}
+                    </p>
+                  </div>
+                  <hr />
+                  <div className="flex justify-between items-center">
+                    <p className="flex items-center gap-2">
+                      <FaPlus color="green" /> Compare
+                    </p>
+                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2">3 Years Ago</p>
+                  </div>
                 </div>
-                <hr />
-                <div className="flex justify-between items-center">
-                  <p className="flex items-center gap-2">
-                    <FaPlus color="green" /> Compare
-                  </p>
-                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                  <p className="flex items-center gap-2">3 Years Ago</p>
-                </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>

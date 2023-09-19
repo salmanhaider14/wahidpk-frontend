@@ -187,19 +187,16 @@ const Footer = () => {
                 Sign up to receive the latest articles
               </div>
               <div class="mt-4">
-                <div class="w-56 px-4 py-2 bg-white rounded-md border border-gray-200 flex items-center gap-2.5">
-                  <input
-                    type="email"
-                    placeholder="Your email address"
-                    class="w-full text-neutral-400 text-sm font-normal font-'Poppins' border-none leading-tight bg-transparent focus:outline-none"
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  id="default-input"
+                  class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-56  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                />
+
                 <div class="mt-2">
-                  <button class="w-56 h-12 bg-white bg-opacity-10 rounded-md border border-white border-opacity-10 flex items-center justify-center gap-2.5">
-                    <div class="text-white text-lg font-bold font-'Poppins' leading-snug">
-                      Sign Up
-                    </div>
-                    <div class="w-8 h-8 relative"></div>
+                  <button class="w-56 h-12  bg-white bg-opacity-10 rounded-md border text-white font-bold border-white border-opacity-10 flex items-center justify-center gap-2.5">
+                    Sign Up
                   </button>
                 </div>
                 <div class="mt-4 flex items-center gap-2.5">
@@ -265,16 +262,28 @@ const Footer = () => {
           </div>
           <div class="flex items-center gap-4">
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-              <BiLogoFacebook color="white" size={20} />
+              <Link href={"#"}>
+                {" "}
+                <BiLogoFacebook color="white" size={20} />{" "}
+              </Link>
             </div>
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-              <BiLogoTwitter color="white" size={20} />
+              <Link href={"#"}>
+                {" "}
+                <BiLogoTwitter color="white" size={20} />{" "}
+              </Link>
             </div>
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-              <BiLogoLinkedin color="white" size={20} />
+              <Link href={"#"}>
+                {" "}
+                <BiLogoLinkedin color="white" size={20} />{" "}
+              </Link>
             </div>
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-              <BiLogoInstagram color="white" size={20} />
+              <Link href={"#"}>
+                {" "}
+                <BiLogoInstagram color="white" size={20} />{" "}
+              </Link>
             </div>
           </div>
         </div>

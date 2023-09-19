@@ -51,16 +51,26 @@ export default function Header() {
         </div>
         <div className="flex items-center gap-3 mr-5 mt-5 flex-wrap">
           <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-            <BiLogoFacebook color="white" size={20} />
+            <Link href={"#"}>
+              {" "}
+              <BiLogoFacebook color="white" size={20} />
+            </Link>
           </div>
           <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-            <BiLogoTwitter color="white" size={20} />
+            <Link href={"#"}>
+              <BiLogoTwitter color="white" size={20} />{" "}
+            </Link>
           </div>
           <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-            <BiLogoLinkedin color="white" size={20} />
+            <Link href={"#"}>
+              <BiLogoLinkedin color="white" size={20} />{" "}
+            </Link>
           </div>
           <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
-            <BiLogoInstagram color="white" size={20} />
+            <Link href={"#"}>
+              {" "}
+              <BiLogoInstagram color="white" size={20} />{" "}
+            </Link>
           </div>
 
           <form>
