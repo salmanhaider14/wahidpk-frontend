@@ -70,19 +70,21 @@ export default function Agents() {
           </p>
           <div className="flex justify-center items-center gap-8  flex-wrap mt-6">
             {agents.map((agent) => (
-              <div className="w-[300px] h-[300px] relative cursor-pointer bg-white rounded-2xl shadow-lg p-3">
-                <img src={agent.img} className="w-full h-1/2" />
-                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
-                  {agent.name}
-                </h1>
+              <Link href="/single-agent">
+                <div className="w-[300px] h-[300px] relative cursor-pointer bg-white rounded-2xl shadow-lg p-3">
+                  <img src={agent.img} className="w-full h-1/2" />
+                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                    {agent.name}
+                  </h1>
 
-                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
-                  {agent.desc}
-                </p>
-                <h1 className=" text-[#25C55B] text-lg font-semibold pt-4 font-['Poppins']">
-                  Available
-                </h1>
-              </div>
+                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                    {agent.desc}
+                  </p>
+                  <h1 className=" text-[#25C55B] text-lg font-semibold pt-4 font-['Poppins']">
+                    Available
+                  </h1>
+                </div>
+              </Link>
             ))}
           </div>
         </section>
