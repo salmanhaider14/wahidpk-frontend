@@ -634,13 +634,13 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[350px] h-[680px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="w-[360px] h-[680px] p-[25px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
-                <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
+                <div className=" h-[68px] w-full flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-zinc-900 text-3xl font-bold font-['Poppins']">
                     Developer Standard
                   </div>
-                  <div className="self-stretch text-neutral-700 text-sm font-semibold font-['Poppins'] leading-[21px]">
+                  <div className="self-stretch text-neutral-700 text-sm font-semibold font-['Poppins'] ">
                     Automatically reach potential customers
                   </div>
                 </div>

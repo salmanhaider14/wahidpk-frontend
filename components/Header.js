@@ -28,10 +28,10 @@ export default function Header() {
   const [age, setAge] = useState();
   const handleChange = () => {};
   return (
-    <div className="min-h-screen  bg-[#25C55B] relative p-2">
+    <div className="min-h-screen  bg-[#25C55B] relative ">
       <SubBar />
       <hr />
-      <h1 className=" text-center drop-shadow-md text-white text-[61.84px] font-bold font-['Poppins'] pt-[150px] leading-[74.21px]">
+      <h1 className=" text-center drop-shadow-md text-white text-[61.84px] font-bold font-['Poppins'] pt-[150px] ">
         Search Properties For <br /> Sale, Rent or Buy
       </h1>
       <p className="text-white  text-base text-center pt-4 font-semibold font-['Poppins'] leading-normal">

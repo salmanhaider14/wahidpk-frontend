@@ -7,7 +7,7 @@ const FilterForm = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className=" w-full relative  border flex flex-col gap-3 p-3 bg-[#E5E5EA] rounded-lg">
+    <div className="w-full relative  border flex flex-col gap-3 p-3 bg-[#E5E5EA] rounded-lg">
       <div className="flex items-center gap-2 flex-wrap">
         <button className="bg-main hover:bg-green-700 flex justify-center items-center text-white font-bold w-[90px] h-[56px] rounded-xl">
           Rent

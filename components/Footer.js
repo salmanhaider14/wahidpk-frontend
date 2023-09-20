@@ -214,8 +214,8 @@ const Footer = () => {
         <div class="border-t border-white border-opacity-10 my-8"></div>
         <div class="flex justify-between items-center flex-wrap">
           <div class="flex items-center gap-4 mb-4 lg:mb-0">
-            <div class="w-12 h-12 relative">
-              <div class="w-[500px] h-12 left-0 top-0 absolute">
+            <div class="w-[500px] h-[70px] relative">
+              <div class="w-[500px]  left-0 top-0 absolute">
                 <img src="/assets/footerlogo.png" className="w-[500px]" />
               </div>
             </div>

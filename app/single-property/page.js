@@ -44,7 +44,7 @@ const SingleProperty = () => {
       <section className="min-h-screen  ">
         <div className="flex justify-center mt-10 ">
           <div className="grid lg:grid-cols-3 gap-8 w-[80%]  p-4 relative ">
-            <div className="flex flex-col items-start gap-2  col-span-2 relative  ">
+            <div className="flex flex-col items-start gap-2  md:col-span-2 relative  ">
               {" "}
               <div className="flex flex-col gap-6 ">
                 <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2">

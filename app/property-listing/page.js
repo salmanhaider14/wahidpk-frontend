@@ -49,7 +49,7 @@ const PropertyListing = () => {
       <section className="min-h-screen  ">
         <div className="flex justify-center mt-10">
           <div className="grid lg:grid-cols-3 gap-8 w-[80%]  p-4 relative">
-            <div className="flex flex-col items-start gap-2  col-span-2 ">
+            <div className="flex flex-col items-start gap-2  md:col-span-2 ">
               {" "}
               <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">
                 Property Listing
@@ -112,9 +112,9 @@ const PropertyListing = () => {
                 </div>
               </div>
             </div>
-            <div className="  relative  flex flex-col gap-4  p-3  ">
+            <div className="w-full  relative  flex flex-col gap-4  p-3  ">
               <FilterForm />
-              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 ">
+              <div className="  w-full relative  flex flex-col gap-4 p-3 ">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
@@ -152,7 +152,7 @@ const PropertyListing = () => {
                   </div>
                 </div>
               </div>
-              <div className=" w-[80%]   flex flex-col gap-2 p-3 border">
+              <div className="   flex flex-col gap-2 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins'] pb-2">
                   Real estate near you
                 </h1>
