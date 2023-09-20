@@ -129,7 +129,7 @@ export default function Projects() {
       <main className="">
         <Header />
         <section className="min-h-[60vh] bg-white">
-          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+          <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
             Featured Developers
           </h1>
           <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -145,7 +145,7 @@ export default function Projects() {
         </section>
 
         <section className="min-h-screen bg-[#E6FFE0]  bg-opacity-7 p-3 ">
-          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+          <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
             Latest Properties For Rent
           </h1>
           <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">

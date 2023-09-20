@@ -41,10 +41,10 @@ const SingleProperty = () => {
   ];
   return (
     <div>
-      <section className="min-h-screen ">
-        <div className="flex justify-center mt-10">
-          <div className="grid md:grid-cols-3 gap-8 w-[80%]  p-4 relative">
-            <div className="flex flex-col items-start gap-2  col-span-2 relative ">
+      <section className="min-h-screen  ">
+        <div className="flex justify-center mt-10 ">
+          <div className="grid lg:grid-cols-3 gap-8 w-[80%]  p-4 relative ">
+            <div className="flex flex-col items-start gap-2  col-span-2 relative  ">
               {" "}
               <div className="flex flex-col gap-6 ">
                 <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2">
@@ -392,16 +392,16 @@ const SingleProperty = () => {
                     Map Location
                   </h1>
                   <hr />
-                  <div className="w-full grid md:grid-cols-2 ms-3 gap-6 ">
-                    <div className="flex items-start gap-16 text-start">
+                  <div className="w-full grid lg:grid-cols-2 ms-3 gap-6  ">
+                    <div className="flex items-start gap-16 text-start flex-wrap">
                       <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Address
                       </h1>
                       <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px] text-start">
-                        Lahore ....
+                        Lahore
                       </p>
                     </div>
-                    <div className="flex items-start gap-16 text-start">
+                    <div className="flex items-start gap-16 text-start flex-wrap">
                       <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Postal Code
                       </h1>
@@ -409,7 +409,7 @@ const SingleProperty = () => {
                         7.320
                       </p>
                     </div>
-                    <div className="flex items-start gap-16">
+                    <div className="flex items-start gap-16 flex-wrap">
                       <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         City
                       </h1>
@@ -417,7 +417,7 @@ const SingleProperty = () => {
                         Lahore
                       </p>
                     </div>
-                    <div className="flex items-start gap-16">
+                    <div className="flex items-start gap-16 flex-wrap">
                       <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Area
                       </h1>
@@ -425,15 +425,15 @@ const SingleProperty = () => {
                         7.289
                       </p>
                     </div>
-                    <div className="flex items-start gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <div className="flex items-start gap-16 flex-wrap">
+                      <h1 className="max-w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         State/Country
                       </h1>
                       <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         Lahore....
                       </p>
                     </div>
-                    <div className="flex items-start gap-16">
+                    <div className="flex items-start gap-16 flex-wrap">
                       <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Country
                       </h1>

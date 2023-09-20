@@ -145,7 +145,7 @@ export default function Agents() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
             lobortis justo
           </p>
-          <div className="flex justify-center items-center gap-6  flex-wrap mt-8">
+          <div className="flex justify-center items-start gap-6 min-h-[970px]  flex-wrap mt-14">
             <div className="w-[350px] h-[668px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
@@ -314,7 +314,7 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[350px] h-[750px] p-[30px] bg-[#25C55B] text-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="w-[350px] h-[750px] p-[30px]  bg-[#25C55B] text-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-white text-3xl font-bold font-['Poppins']">
@@ -552,7 +552,7 @@ export default function Agents() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
             lobortis justo
           </p>
-          <div className="flex justify-center items-center gap-6  flex-wrap mt-8">
+          <div className="flex justify-center items-start gap-6  flex-wrap mt-14 min-h-[970px]">
             <div className="w-[350px] h-[668px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">

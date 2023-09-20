@@ -48,7 +48,7 @@ const PropertyListing = () => {
     <div>
       <section className="min-h-screen  ">
         <div className="flex justify-center mt-10">
-          <div className="grid md:grid-cols-3 gap-8 w-[80%]  p-4 relative">
+          <div className="grid lg:grid-cols-3 gap-8 w-[80%]  p-4 relative">
             <div className="flex flex-col items-start gap-2  col-span-2 ">
               {" "}
               <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">

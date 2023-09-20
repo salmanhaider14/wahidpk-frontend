@@ -28,26 +28,6 @@ const SubBar = () => {
     <nav className="p-3 rounded-xl ">
       <div className="flex justify-between items-center gap-4">
         <div className="flex justify-center items-center gap-6">
-          <button
-            className="lg:hidden text-white focus:outline-none mx-4"
-            onClick={toggleMenu}
-          >
-            {/* Hamburger Icon */}
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
-          </button>
           <div
             className={`hidden  lg:flex space-x-4 gap-3 text-md font-bold  text-white `}
           >
@@ -65,7 +45,27 @@ const SubBar = () => {
             </Link>
           </div>
         </div>
-        <div className="md:flex items-center gap-3 hidden mr-3 ">
+        <button
+          className="lg:hidden text-white focus:outline-none mr-6"
+          onClick={toggleMenu}
+        >
+          {/* Hamburger Icon */}
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+        <div className="lg:flex items-center gap-3 hidden mr-3 ">
           <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
             <Link href={"#"}>
               {" "}

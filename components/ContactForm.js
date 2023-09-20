@@ -4,7 +4,7 @@ import { FaEnvelope, FaHome, FaPhone, FaUser } from "react-icons/fa";
 const ContactForm = () => {
   return (
     <div>
-      <form className="max-w-[550px] bg-white shadow-md flex-col items-center gap-2 rounded-lg min-h-[500px] p-6  ">
+      <form className="max-w-[550px] bg-white shadow-md flex-col items-center gap-2 rounded-lg min-h-[500px] p-6 mt-4  ">
         <h1 className=" text-zinc-900 text-3xl font-bold font-['Poppins']">
           Contact us
         </h1>
