@@ -215,18 +215,11 @@ const Footer = () => {
         <div class="flex justify-between items-center flex-wrap">
           <div class="flex items-center gap-4 mb-4 lg:mb-0">
             <div class="w-12 h-12 relative">
-              <div class="w-12 h-12 left-0 top-0 absolute">
-                <img src="/assets/footerico.svg" />
+              <div class="w-[500px] h-12 left-0 top-0 absolute">
+                <img src="/assets/footerlogo.png" className="w-[500px]" />
               </div>
             </div>
-            <div class="flex flex-col">
-              <div class="text-white text-xl font-bold font-'Poppins'">
-                Dream home
-              </div>
-              <div class="text-neutral-400 text-xs font-normal font-'Mulish' leading-5 tracking-[3px]">
-                Real Estate
-              </div>
-            </div>
+            <div class="flex flex-col"></div>
           </div>
           <div class="flex items-center gap-4 mb-4 lg:mb-0">
             <Link
