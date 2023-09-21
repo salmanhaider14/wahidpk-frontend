@@ -71,8 +71,8 @@ export default function Header() {
           id="default-input"
           class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[200px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
-        <div className="w-[330px] h-[56px] ">
-          <div className="flex items-center justify-between gap-3">
+        <div className="w-[330px] h-[60px] ">
+          <div className="flex items-center justify-center gap-4">
             <FormControl sx={{ minWidth: 120 }}>
               <InputLabel htmlFor="grouped-native-select">Min Price</InputLabel>
               <Select
@@ -92,7 +92,7 @@ export default function Header() {
                 </optgroup>
               </Select>
             </FormControl>
-            To
+            <p>To</p>
             <FormControl sx={{ minWidth: 120 }}>
               <InputLabel htmlFor="grouped-select">Any</InputLabel>
               <Select defaultValue="" id="grouped-select" label="Grouping">
@@ -109,8 +109,8 @@ export default function Header() {
             </FormControl>
           </div>
         </div>
-        <div className="w-[330px] h-[56px] border">
-          <div className="flex items-center justify-between gap-3">
+        <div className="w-[330px] h-[60px] ">
+          <div className="flex items-center justify-center gap-4">
             <FormControl sx={{ minWidth: 120 }}>
               <InputLabel htmlFor="grouped-native-select">Min Marla</InputLabel>
               <Select

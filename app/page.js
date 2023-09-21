@@ -100,7 +100,7 @@ export default function Home() {
         <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
           {properties.map((property) => (
             <Link href={"/single-property"}>
-              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
+              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
                 <img
                   src="/assets/featuredtag.png"
                   className="absolute top-5 left-0"
@@ -157,7 +157,7 @@ export default function Home() {
         <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
           {properties.map((property) => (
             <Link href={"/single-property"}>
-              <div className="w-[330px] h-[480px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
+              <div className="w-[330px] h-[480px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
                 <img
                   src="/assets/featuredtag.png"
                   className="absolute top-5 left-0"
@@ -215,7 +215,7 @@ export default function Home() {
         <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
           {properties.map((property) => (
             <Link href={"/single-property"}>
-              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3">
+              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 border rounded-xl">
                 <img
                   src="/assets/featuredtag.png"
                   className="absolute top-5 left-0"
@@ -330,7 +330,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="min-h-screen "
+        className="min-h-screen w-full "
         style={{ backgroundImage: "/assets/contactbg.png" }}
       >
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
@@ -363,7 +363,7 @@ export default function Home() {
                   <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                     Request a call back
                   </div>
-                  <div className="self-stretch text-[#25C55B] text-3xl font-extrabold font-['Poppins']">
+                  <div className="self-stretch text-[#25C55B] text-2xl font-extrabold font-['Poppins']">
                     +92 (312) 4823-680
                   </div>
                 </div>
@@ -374,19 +374,20 @@ export default function Home() {
                   <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                     Email us
                   </div>
-                  <div className="self-stretch text-[#25C55B] text-base font-normal font-['Poppins'] leading-normal">
+                  <div className="self-stretch text-[#25C55B] text-xl font-normal font-['Poppins'] leading-normal">
                     info@wahid.pk
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <ContactForm />
         </div>
       </section>
       <section className="min-h-[70vh] bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
-          <div className="flex justify-center  items-center flex-col gap-5 mt-8">
+          <div className="flex justify-center  items-center flex-col gap-5 ">
             <h1 className="text-zinc-900 text-5xl font-bold font-['Poppins'] leading-[56.72px]">
               Become Our Agents
             </h1>

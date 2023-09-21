@@ -76,6 +76,9 @@ const Footer = () => {
             <div class="text-green-50 text-sm font-normal font-'Poppins' leading-5">
               3517 W. Gray St. Utica, Pennsylvania 57867
             </div>
+            <div class="text-green-50 text-sm font-normal font-'Poppins' leading-5 h-11">
+              {" "}
+            </div>
           </div>
           <div class="flex-grow lg:flex-grow-0 lg:w-1/4">
             <div class="text-white text-lg font-semibold font-'Poppins'">
@@ -211,17 +214,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="border-t border-white border-opacity-10 my-8"></div>
+        <div class="border-t border-white border-opacity-10 my-4"></div>
         <div class="flex justify-between items-center flex-wrap">
-          <div class="flex items-center gap-4 mb-4 lg:mb-0">
-            <div class="w-[500px] h-[70px] relative">
-              <div class="w-[500px]  left-0 top-0 absolute">
-                <img src="/assets/footerlogo.png" className="w-[500px]" />
-              </div>
-            </div>
-            <div class="flex flex-col"></div>
-          </div>
-          <div class="flex items-center gap-4 mb-4 lg:mb-0">
+          <img src="/assets/footerlogo.png" />
+
+          <div class="flex  items-center gap-4 mb-4 grow lg:mb-0">
             <Link
               href="/"
               class="text-white text-base font-semibold font-'Poppins' leading-normal"
@@ -253,7 +250,7 @@ const Footer = () => {
               Contact
             </Link>
           </div>
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 mr-7">
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
               <Link href={"#"}>
                 {" "}
@@ -280,7 +277,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div class="border-t border-white border-opacity-10 my-8"></div>
+        <div class="border-t border-white border-opacity-10 my-4"></div>
         <div class="text-center text-green-50 text-sm font-normal font-'Poppins' leading-5">
           Copyright © 2023 Real estate CP. Designed & Developed by Themesflat
         </div>

@@ -72,7 +72,7 @@ const SingleProperty = () => {
                   </Carousel>
                 </div>
 
-                <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
                   <div className="flex justify-between items-center w-full gap-4  flex-wrap ">
                     <h1 className="text-black text-[20px] font-bold font-['Poppins']">
                       Villa Belo a large superior luxury villa
@@ -124,7 +124,7 @@ const SingleProperty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[20.81px] font-semibold font-['Poppins']">
                     Overview
                   </h1>{" "}
@@ -209,7 +209,7 @@ const SingleProperty = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
                     Property Description
                   </h1>
@@ -229,12 +229,12 @@ const SingleProperty = () => {
                     Show more
                   </p>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
                     Property Details
                   </h1>
                   <hr />
-                  <div className="w-full grid md:grid-cols-2 ms-3 gap-6 ">
+                  <div className="w-full grid md:grid-cols-2 ms-3 gap-3 ">
                     <div className="flex items-start gap-16 text-start">
                       <h1 className="w-[150px]  text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         ID
@@ -317,7 +317,7 @@ const SingleProperty = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
                     Featured
                   </h1>
@@ -387,12 +387,12 @@ const SingleProperty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
                     Map Location
                   </h1>
                   <hr />
-                  <div className="w-full grid lg:grid-cols-2 ms-3 gap-6  ">
+                  <div className="w-full grid lg:grid-cols-2 ms-3 gap-3  ">
                     <div className="flex items-start gap-16 text-start flex-wrap">
                       <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Address
@@ -447,7 +447,7 @@ const SingleProperty = () => {
                     className="h-[500px] w-full"
                   />
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
                     Property Video
                   </h1>
@@ -459,47 +459,47 @@ const SingleProperty = () => {
                   />
                 </div>
                 <Floors />
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-6 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-6 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
                     What's nearby ?
                   </h1>
                   <hr />
-                  <div className="flex items-center gap-6 flex-wrap">
+                  <div className="flex items-center gap-4 flex-wrap">
                     <img src="/assets/Education.png" className="w-20" />
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 grow">
                       <h1 className="">
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           8/10{" "}
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
                           Massachusetts Institute of Technology (MIT)
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           {" "}
                           1.5 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           6/10
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
                           {" "}
                           Stanford University{" "}
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           2 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           5/10
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
                           {" "}
                           University of Michigan-Ann Arbor{" "}
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           3.5 miles
                         </span>
                       </h1>
@@ -520,36 +520,39 @@ const SingleProperty = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="flex items-center gap-6 flex-wrap">
-                    <img src="/assets/Park.png" className="w-20" />
-                    <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-4 flex-wrap">
+                    <img src="/assets/Education.png" className="w-20" />
+                    <div className="flex flex-col gap-2 grow">
                       <h1 className="">
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           8/10{" "}
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
                           Massachusetts Institute of Technology (MIT)
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
                           {" "}
                           1.5 miles
                         </span>
                       </h1>
-
                       <h1 className="">
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
-                          5/10
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                          6/10
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
                           {" "}
-                          University of Michigan-Ann Arbor{" "}
+                          Stanford University{" "}
                         </span>
-                        <span className="text-neutral-700 text-[20.63px] font-bold font-['Mulish'] leading-[42.95px]">
-                          3.5 miles
+                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                          2 miles
                         </span>
                       </h1>
                     </div>
                     <div className="flex flex-col ">
+                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        {" "}
+                        <img src="/assets/stars.png" /> (7 Reviews)
+                      </p>
                       <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         {" "}
                         <img src="/assets/stars.png" /> (7 Reviews)
@@ -562,7 +565,7 @@ const SingleProperty = () => {
                   </div>
                 </div>
                 <LoanCalculator />
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex  gap-6 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex  gap-6 relative shadow-md rounded-xl p-2 border">
                   <div className="flex justify-between items-center flex-wrap">
                     <div className="flex items-center gap-2">
                       <FaStar color="orange" size={25} />
@@ -645,7 +648,7 @@ const SingleProperty = () => {
             <div className=" max-w-[600px]   flex flex-col gap-4  p-3  ">
               <ContactAgent />
               <TourForm />
-              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 ">
+              <div className=" rounded w-full relative  flex flex-col gap-4 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
@@ -683,7 +686,7 @@ const SingleProperty = () => {
                   </div>
                 </div>
               </div>
-              <div className=" w-[80%]   flex flex-col gap-2 p-3 border">
+              <div className=" rounded   flex flex-col gap-2 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins'] pb-2">
                   Real estate near you
                 </h1>
@@ -718,7 +721,7 @@ const SingleProperty = () => {
                   />{" "}
                 </div>
               </div>
-              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 border">
+              <div className=" rounded w-full relative  flex flex-col gap-4 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Hot Projects
                 </h1>
@@ -780,15 +783,15 @@ const SingleProperty = () => {
           </div>
         </div>
         <div className="w-full min-h-[300px] flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
-          <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+          <h1 className=" text-zinc-900 text-[30.74px] font-semibold font-['Poppins']">
             Similar Properties
           </h1>
           <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-[21px]">
             Check out similar properties
           </p>
-          <div className="flex justify-center items-center  gap-4 flex-wrap mt-6 w-full">
+          <div className="flex justify-center items-center  gap-4 flex-wrap mt-6 w-full mb-10">
             {properties.map((property) => (
-              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl">
+              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
                 <img src={property.img} className="w-full h-1/2" />
                 <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
                   {property.title}

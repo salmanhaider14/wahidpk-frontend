@@ -59,7 +59,7 @@ const PropertyListing = () => {
               </p>
               <div className="flex flex-col justify-start item-start gap-6 ">
                 {properties.map((property) => (
-                  <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
+                  <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
                       className="absolute top-5 left-0"
@@ -114,7 +114,7 @@ const PropertyListing = () => {
             </div>
             <div className="w-full  relative  flex flex-col gap-4  p-3  ">
               <FilterForm />
-              <div className="  w-full relative  flex flex-col gap-4 p-3 ">
+              <div className="  w-full relative  flex flex-col gap-4 p-3 border rounded ">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
@@ -152,7 +152,7 @@ const PropertyListing = () => {
                   </div>
                 </div>
               </div>
-              <div className="   flex flex-col gap-2 p-3 border">
+              <div className="   flex flex-col gap-2 p-3 border rounded">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins'] pb-2">
                   Real estate near you
                 </h1>
@@ -187,7 +187,7 @@ const PropertyListing = () => {
                   />{" "}
                 </div>
               </div>
-              <div className=" md:w-[90%] w-full relative  flex flex-col gap-4 p-3 border">
+              <div className="  w-full relative  flex flex-col gap-4 p-3 border rounded">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Hot Projects
                 </h1>

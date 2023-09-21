@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-import { CiUser } from "react-icons/ci";
+import { CiSun, CiUser } from "react-icons/ci";
 
 import Link from "next/link";
 import { FaSun, FaUser } from "react-icons/fa";
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="p-3 rounded-xl bg-white">
       <div className="flex justify-between items-center gap-4">
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex justify-center items-center gap-12">
           <a
             className=" text-xl font-semibold text-slate-800  flex items-center gap-3"
             href="#"
@@ -78,8 +78,8 @@ const Navbar = () => {
           <button className="bg-[#25C55B] hover:bg-green-700 w-[180px] h-[40px] text-white text-md rounded-lg">
             Sell Property
           </button>
-          <FaUser size={30} className="me-4 text-2xl cursor-pointer " />
-          <FaSun size={30} className="me-4 text-2xl cursor-pointer " />
+          <CiUser size={30} className="cursor-pointer" />
+          <CiSun size={30} className=" cursor-pointer " />
         </div>
       </div>
 
@@ -116,8 +116,8 @@ const Navbar = () => {
           <button className="bg-[#25C55B] hover:bg-green-700 w-[180px] h-[40px] text-white text-md rounded-lg">
             Sell Property
           </button>
-          <FaUser size={30} className="me-4 text-2xl cursor-pointer " />
-          <FaSun size={30} className="me-4 text-2xl cursor-pointer " />
+          <CiUser size={30} className="cursor-pointer" />
+          <CiSun size={30} className=" cursor-pointer " />
         </div>
       </div>
     </nav>

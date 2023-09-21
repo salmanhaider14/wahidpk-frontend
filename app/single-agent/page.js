@@ -51,7 +51,7 @@ const SingleAgent = () => {
             <div className="flex flex-col items-start gap-2  md:col-span-2 relative ">
               {" "}
               <div className="flex flex-col gap-6 ">
-                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2 border">
                   <img src="/assets/propertyimg.png" className="w-[400px]" />
                   <div className="flex flex-col  flex-wrap max-w-[680px] ">
                     <h1 className=" text-zinc-900 text-[27.79px] font-bold font-['Poppins']">
@@ -87,7 +87,7 @@ const SingleAgent = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-1 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
                     About Cameron Williamson
                   </h1>
@@ -103,7 +103,7 @@ const SingleAgent = () => {
                     amet, volutpat nunc.
                   </p>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] max-h-[360px]  flex flex-wrap gap-1 relative shadow-md rounded-xl p-4">
+                <div className="max-w-[1070px] min-h-[300px] max-h-[360px]  flex flex-wrap gap-1 relative  rounded-xl p-4 ">
                   <img
                     src="/assets/videotag.png"
                     className="absolute top-0 left-0"
@@ -113,7 +113,7 @@ const SingleAgent = () => {
                     className="w-full h-full "
                   />
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] max-h-[360px]  flex flex-wrap gap-1 relative shadow-md rounded-xl p-4">
+                <div className="max-w-[1070px] min-h-[300px] max-h-[360px]  flex flex-wrap gap-1 relative  rounded-xl p-4">
                   <img
                     src="/assets/agencytag.png"
                     className="absolute top-8 left-3"
@@ -137,7 +137,7 @@ const SingleAgent = () => {
                 <hr />
                 {properties.map((property) => (
                   <Link href="/single-agent">
-                    <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2">
+                    <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2 border">
                       <img
                         src="/assets/supremetag.png"
                         className="absolute top-5 left-0"

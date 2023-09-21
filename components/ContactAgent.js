@@ -8,7 +8,7 @@ const ContactAgent = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className=" w-full relative   border flex flex-col gap-5 p-3  bg-[#E5E5EA] rounded-lg">
+    <div className=" w-full relative   border flex flex-col gap-5 p-3  bg-white  rounded-lg">
       <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Contact Agent
       </h1>
@@ -54,7 +54,7 @@ const ContactAgent = () => {
         multiline
         maxRows={6}
         minRows={4}
-        className="bg-white"
+        className="bg-white "
       />
       <div className="grid grid-cols-3 gap-3">
         <button className="col-span-2 flex-wrap text-center text-white rounded-md bg-[#25C55B] gap-2 text-base font-bold font-['Poppins'] leading-normal min-h-[56px] flex justify-center items-center">

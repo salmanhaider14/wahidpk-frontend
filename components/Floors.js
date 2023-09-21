@@ -4,7 +4,7 @@ import { Accordion } from "flowbite-react";
 
 const Floors = () => {
   return (
-    <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+    <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
       <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Floor Plans
       </h1>

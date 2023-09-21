@@ -5,7 +5,7 @@ const ReviewForm = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-3">
+    <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-3 border">
       {" "}
       <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Leave a review

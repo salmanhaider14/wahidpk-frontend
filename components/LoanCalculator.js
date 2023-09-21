@@ -11,7 +11,7 @@ const LoanCalculator = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-3">
+    <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-3 border">
       {" "}
       <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
         Loan Calculator
@@ -23,7 +23,7 @@ const LoanCalculator = () => {
         </h1>{" "}
         <input
           type="text"
-          placeholder="56$"
+          placeholder="560 PKR"
           id="default-input"
           class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
@@ -34,7 +34,7 @@ const LoanCalculator = () => {
         </h1>{" "}
         <input
           type="text"
-          placeholder="56$"
+          placeholder="560 PKR"
           id="default-input"
           class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
@@ -88,7 +88,7 @@ const LoanCalculator = () => {
         </h1>
       </div>
       <button className="bg-main flex justify-center items-center text-white h-[60px] font-bold rounded-xl text-lg">
-        Apply For a Loan
+        Calculate Your Loan
       </button>
     </div>
   );

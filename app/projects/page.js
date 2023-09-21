@@ -146,14 +146,14 @@ export default function Projects() {
 
         <section className="min-h-screen bg-[#E6FFE0]  bg-opacity-7 p-3 ">
           <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
-            Latest Properties For Rent
+            Latest Projects
           </h1>
           <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
             Check out the latest properties available for rent in Pakistan
           </p>
-          <div className="flex justify-center items-center gap-4 flex-wrap mt-6">
+          <div className="flex justify-center items-center gap-4 flex-wrap mt-6 mb-[65px]">
             {properties.map((property) => (
-              <div className="w-[330px] h-[440px] bg-white relative cursor-pointer rounded-2xl shadow-lg p-2 flex flex-col gap-3">
+              <div className="w-[330px] h-[440px] bg-white relative cursor-pointer rounded-2xl shadow-lg p-2 flex flex-col gap-3 border">
                 <img
                   src="/assets/featuredtag.png"
                   className="absolute top-5 left-0"
@@ -218,7 +218,7 @@ export default function Projects() {
                     <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                       Request a call back
                     </div>
-                    <div className="self-stretch text-[#25C55B] text-3xl font-extrabold font-['Poppins']">
+                    <div className="self-stretch text-[#25C55B] text-2xl font-extrabold font-['Poppins']">
                       +92 (312) 4823-680
                     </div>
                   </div>
@@ -229,7 +229,7 @@ export default function Projects() {
                     <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                       Email us
                     </div>
-                    <div className="self-stretch text-[#25C55B] text-base font-normal font-['Poppins'] leading-normal">
+                    <div className="self-stretch text-[#25C55B] text-xl font-normal font-['Poppins'] leading-normal">
                       info@wahid.pk
                     </div>
                   </div>

@@ -13,6 +13,7 @@ import {
   BiLogoInstagram,
   BiLogoLinkedin,
   BiLogoTwitter,
+  BiLogoYoutube,
 } from "react-icons/bi";
 import Link from "next/link";
 import { FaSun, FaUser } from "react-icons/fa";
@@ -25,9 +26,9 @@ const SubBar = () => {
   };
 
   return (
-    <nav className="p-3 rounded-xl ">
+    <nav className="p-1 ps-5 py-2 rounded-xl ">
       <div className="flex justify-between items-center gap-4">
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex justify-center items-center gap-6 ms-9">
           <div
             className={`hidden  lg:flex space-x-4 gap-3 text-md font-bold  text-white `}
           >
@@ -66,23 +67,23 @@ const SubBar = () => {
           </svg>
         </button>
         <div className="lg:flex items-center gap-3 hidden mr-3 ">
-          <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+          <div class="w-8 h-8 border border-white rounded-full flex items-center justify-center">
             <Link href={"#"}>
               {" "}
               <BiLogoFacebook color="white" size={20} />
             </Link>
           </div>
-          <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+          <div class="w-8 h-8 border border-white rounded-full flex items-center justify-center">
             <Link href={"#"}>
-              <BiLogoTwitter color="white" size={20} />{" "}
+              <BiLogoYoutube color="white" size={20} />{" "}
             </Link>
           </div>
-          <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+          <div class="w-8 h-8 border border-white rounded-full flex items-center justify-center">
             <Link href={"#"}>
               <BiLogoLinkedin color="white" size={20} />{" "}
             </Link>
           </div>
-          <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+          <div class="w-8 h-8 border border-white rounded-full flex items-center justify-center">
             <Link href={"#"}>
               {" "}
               <BiLogoInstagram color="white" size={20} />{" "}
@@ -99,7 +100,7 @@ const SubBar = () => {
               <input
                 type="search"
                 id="search"
-                class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-transparent focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-transparent focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Search"
                 required
                 style={{ color: "white" }}
