@@ -15,7 +15,7 @@ const Login = () => {
           <p className="text-xl absolute top-0 right-0 pt-8 pr-6 cursor-pointer">
             x
           </p>
-          <div className="ms-6 mt-7">
+          <div className="ms-2 mt-7">
             <label
               for="input-group-1"
               class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -43,7 +43,7 @@ const Login = () => {
               />
             </div>
           </div>
-          <div className="ms-6 mt-7">
+          <div className="ms-2 mt-7">
             <label
               for="input-group-1"
               class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -65,7 +65,7 @@ const Login = () => {
           <Link href={"#"} className="text-right pr-7">
             <p className="pr-3">Forgot Password </p>
           </Link>
-          <button className="bg-green-500 hover:bg-green-600 rounded-xl w-[90%] text-white text-lg font-bold m-auto mt-7 h-[65px]">
+          <button className="bg-green-500 relative hover:bg-green-600 rounded-xl  text-white text-lg font-bold  mt-7 h-[65px]">
             Login
           </button>
           <p className="text-center text-lg pt-4">

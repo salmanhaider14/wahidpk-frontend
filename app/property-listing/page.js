@@ -96,7 +96,7 @@ const PropertyListing = () => {
                         <button className="w-[170px] h-[56px] flex justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-xl font-semibold font-['Poppins'] leading-[30.54px]">
                           Message
                         </button>
-                        <button className="w-[220px] h-[56px] flex justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md text-green-500  text-xl font-semibold font-['Poppins'] leading-[30.54px]">
+                        <button className="w-[220px] h-[56px] flex justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md   text-xl font-semibold font-['Poppins'] leading-[30.54px]">
                           Whatsapp
                         </button>
                       </div>
