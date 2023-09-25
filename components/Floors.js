@@ -28,7 +28,7 @@ const Floors = () => {
                 <img src="/assets/bath.png" /> Baths: 2
               </p>
             </div>
-            <img src="/assets/propertyimg.png" className="h-[500px] w-full" />
+            {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
             <h1 className=" text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
               Description:
             </h1>
@@ -57,7 +57,7 @@ const Floors = () => {
                 <img src="/assets/bath.png" /> Baths: 2
               </p>
             </div>
-            <img src="/assets/propertyimg.png" className="h-[500px] w-full" />
+            {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
             <h1 className=" text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
               Description:
             </h1>
@@ -86,7 +86,7 @@ const Floors = () => {
                 <img src="/assets/bath.png" /> Baths: 2
               </p>
             </div>
-            <img src="/assets/propertyimg.png" className="h-[500px] w-full" />
+            {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
             <h1 className=" text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
               Description:
             </h1>

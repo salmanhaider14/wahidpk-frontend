@@ -5,9 +5,11 @@ import { CiSun, CiUser } from "react-icons/ci";
 
 import Link from "next/link";
 import { FaSun, FaUser } from "react-icons/fa";
+import LoginModal from "./LoginModal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showModal, setShowModal] = React.useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -15,6 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="p-3 rounded-xl bg-white">
+      {showModal ? <LoginModal setShowModal={setShowModal} /> : null}
       <div className="flex justify-between items-center gap-4">
         <div className="flex justify-center items-center gap-12">
           <a
@@ -25,24 +28,24 @@ const Navbar = () => {
           </a>
 
           <div
-            className={`hidden  lg:flex space-x-4 gap-3 text-md font-semibold `}
+            className={`hidden  lg:flex space-x-4 gap-3 text-md font-normal `}
           >
-            <Link className="font-semibold" href="/">
+            <Link className="" href="/">
               Home
             </Link>
-            <Link className="font-semibold" href={"/projects"}>
+            <Link className="" href={"/projects"}>
               Projects
             </Link>
-            <Link className="font-semibold" href={"/agents"}>
+            <Link className="" href={"/agents"}>
               Agents
             </Link>
-            <Link className="font-semibold" href={"/about"}>
+            <Link className="" href={"/about"}>
               About
             </Link>
-            <Link className="font-semibold" href={"/contact"}>
+            <Link className="" href={"/contact"}>
               Contacts
             </Link>
-            <Link className="font-semibold" href={"/#"}>
+            <Link className="" href={"/#"}>
               Tools
             </Link>
           </div>
@@ -68,12 +71,12 @@ const Navbar = () => {
           </svg>
         </button>
         <div className="hideen lg:flex items-center gap-3 hidden mr-3 ">
-          <Link
-            href={"/login"}
+          <div
             className="flex justify-center items-center gap-2 text-md mr-2 cursor-pointer"
+            onClick={() => setShowModal(true)}
           >
             <CiUser size={30} /> Register/Login{" "}
-          </Link>
+          </div>
 
           <button className="bg-[#25C55B] hover:bg-green-700 w-[180px] h-[40px] text-white text-md rounded-lg">
             Sell Property

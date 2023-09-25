@@ -21,9 +21,12 @@ const ContactAgent = () => {
           <p className=" text-neutral-700 text-lg font-normal font-['Poppins'] leading-relaxed">
             Ahmad Asif
           </p>
-          <h1 className=" text-neutral-700 text-lg font-semibold font-['Poppins'] leading-relaxed">
-            (405) 555-0...
-          </h1>
+          <div className="flex items-center gap-2">
+            <h1 className=" text-neutral-700 text-lg font-semibold font-['Poppins'] leading-relaxed">
+              (405) 555-0...
+            </h1>
+            <button className="bg-main text-white p-1 rounded-lg">show</button>
+          </div>
           <p className=" text-neutral-700 text-[12.16px] font-normal font-['Poppins'] leading-snug">
             info@ahmadasif.com
           </p>

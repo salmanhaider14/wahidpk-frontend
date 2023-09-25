@@ -33,16 +33,18 @@ const SubBar = () => {
             className={`hidden  lg:flex space-x-4 gap-3 text-md font-bold  text-white `}
           >
             <Link className="font-semibold flex items-center gap-2" href="#">
-              <BsFillHouseFill color="white" /> Request Home Inspection
+              <BsFillHouseFill color="white" size={25} /> Request Home
+              Inspection
             </Link>
             <Link className="font-semibold flex items-center gap-2" href={"#"}>
-              <BsCameraVideoFill color="white" /> Request Media Service
+              <BsCameraVideoFill color="white" size={25} /> Request Media
+              Service
             </Link>
             <Link
               className="font-semibold flex items-center gap-2"
               href={"/agents"}
             >
-              <BsPersonFill color="white" /> Become An Agent
+              <BsPersonFill color="white" size={25} /> Become An Agent
             </Link>
           </div>
         </div>
@@ -100,8 +102,8 @@ const SubBar = () => {
               <input
                 type="search"
                 id="search"
-                class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-transparent focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Search"
+                class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg bg-transparent focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search with Property ID"
                 required
                 style={{ color: "white" }}
               />
