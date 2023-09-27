@@ -38,14 +38,14 @@ const LoginModal = ({ setShowModal }) => {
               aria-labelledby="exampleModalLabel"
             >
               <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-                <p
+                <span
                   className="text-xl absolute top-0 right-0 pt-8 pr-6 cursor-pointer"
                   onClick={() => {
                     setShowModal(false);
                   }}
                 >
                   x
-                </p>
+                </span>
                 <FormControl fullWidth>
                   <InputLabel variant="standard" htmlFor="uncontrolled-native">
                     City

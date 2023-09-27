@@ -1,25 +1,17 @@
-import Link from "next/link";
+"use client";
 import React from "react";
-import { BiLockAlt } from "react-icons/bi";
+import { BiLockAlt, BiPhone } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
-import { FaCross, FaFacebook } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { CiUser } from "react-icons/ci";
 
-const LoginModal = ({ setShowModal }) => {
+const RegisterModal = ({ setShowRegModal, setShowModal }) => {
   const handleSubmit = () => {};
   return (
     <>
       <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none backdrop-blur-md">
         <div className="relative w-auto min-w-[300px] my-6 mx-auto max-w-3xl">
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-            <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-              <h3 className="text-3xl font-semibold">Login</h3>
-              <button
-                className="p-1 ml-auto border bg-transparent  text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                onClick={() => {
-                  setShowModal(false);
-                }}
-              ></button>
-            </div>
             <div
               className="p-4"
               aria-hidden="true"
@@ -27,21 +19,38 @@ const LoginModal = ({ setShowModal }) => {
               tabIndex="-1"
               aria-labelledby="exampleModalLabel"
             >
-              <form onSubmit={handleSubmit}>
-                <p
+              <form onSubmit={handleSubmit} className="p-3">
+                <div
                   className="text-xl absolute top-0 right-0 pt-8 pr-6 cursor-pointer"
-                  onClick={() => {
-                    setShowModal(false);
-                  }}
+                  onClick={() => setShowRegModal(false)}
                 >
                   x
-                </p>
-                <div className=" mt-7">
+                </div>
+                <div className=" mt-2">
                   <label
                     for="input-group-1"
                     class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
                   >
-                    Email or Phone
+                    Name
+                  </label>
+                  <div class="relative mb-6">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                      <CiUser size={20} />
+                    </div>
+                    <input
+                      type="text"
+                      id="input-group-1"
+                      class="bg-gray-50 border h-[65px] border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Name "
+                    />
+                  </div>
+                </div>
+                <div className=" mt-2">
+                  <label
+                    for="input-group-1"
+                    class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
+                  >
+                    Email
                   </label>
                   <div class="relative mb-6">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
@@ -60,83 +69,102 @@ const LoginModal = ({ setShowModal }) => {
                       type="text"
                       id="input-group-1"
                       class="bg-gray-50 border h-[65px] border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      placeholder="Email or Phone"
+                      placeholder="Email "
                     />
                   </div>
                 </div>
-                <div className=" mt-7">
+                <div className="flex items-center gap-4">
+                  <div className=" mt-2">
+                    <label
+                      for="input-group-1"
+                      class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
+                    >
+                      Password
+                    </label>
+                    <div class="relative mb-6">
+                      <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                        <BiLockAlt size={20} />
+                      </div>
+                      <input
+                        type="password"
+                        id="input-group-1"
+                        class="bg-gray-50 border h-[65px] border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Your password"
+                      />
+                    </div>
+                  </div>
+                  <div className=" mt-2">
+                    <label
+                      for="input-group-1"
+                      class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
+                    >
+                      Confirm Password
+                    </label>
+                    <div class="relative mb-6">
+                      <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                        <BiLockAlt size={20} />
+                      </div>
+                      <input
+                        type="password"
+                        id="input-group-1"
+                        class="bg-gray-50 border h-[65px] border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Confirm Password"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className=" mt-2">
                   <label
                     for="input-group-1"
                     class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
                   >
-                    Password
+                    Phone
                   </label>
                   <div class="relative mb-6">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
-                      <BiLockAlt size={20} />
+                      <BiPhone size={20} />
                     </div>
                     <input
-                      type="password"
+                      type="text"
                       id="input-group-1"
                       class="bg-gray-50 border h-[65px] border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      placeholder="Your password"
+                      placeholder="+92"
                     />
                   </div>
                 </div>
-                <Link href={"#"} className="text-right pr-7">
-                  <p className="pr-3">Forgot Password </p>
-                </Link>
 
-                <div class="relative mb-6">
-                  <button className="bg-main p-2 rounded-lg w-full h-[56px]   text-white font-bold  ">
-                    Login
-                  </button>
-                </div>
-
-                <p className="text-center text-lg ">
-                  Don't you have any account ?{" "}
-                  <Link
-                    href={"/register"}
-                    className="text-green-600"
-                    onClick={() => setShowModal(false)}
+                <button className="bg-main hover:bg-green-600 rounded-xl w-full text-white text-lg font-bold m-auto mt-7 h-[65px]">
+                  Create My Account
+                </button>
+                <div className="text-center text-lg pt-4 flex gap-2 ms-1">
+                  Already have an account ?{" "}
+                  <p
+                    className="text-green-600 cursor-pointer"
+                    onClick={() => {
+                      setShowRegModal(false);
+                      setShowModal(true);
+                    }}
                   >
-                    Register
-                  </Link>
-                </p>
+                    Login
+                  </p>
+                </div>
                 <div class="flex items-center mt-7">
                   <hr class="flex-grow border-t" />
                   <span class="flex-shrink mx-4 text-gray-400 text-md">
-                    or login with
+                    or register with
                   </span>
                   <hr class="flex-grow border-t" />
                 </div>
                 <div className="flex gap-4 justify-center items-center flex-wrap mt-6">
-                  <div className="h-[60px] w-[250px] border-2 rounded font-bold text-lg flex justify-center items-center gap-3 cursor-pointer shadow">
-                    <FcGoogle size={25} /> Google
+                  <div className="h-[60px] w-[200px] border-2 rounded font-bold text-lg flex justify-center items-center gap-3 cursor-pointer shadow">
+                    <FcGoogle size={25} /> <span> Google</span>
                   </div>
-                  <div className="h-[60px] w-[250px] border-2 rounded font-bold text-lg flex justify-center items-center gap-3 cursor-pointer shadow ">
-                    <FaFacebook size={25} color="blue" /> Facebook
+                  <div className="h-[60px] w-[200px] border-2 rounded font-bold text-lg flex justify-center items-center gap-3 cursor-pointer shadow ">
+                    <FaFacebook size={25} color="blue" /> <span> Facebook</span>
                   </div>
                 </div>
               </form>
             </div>
-            {/* <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-              <button
-                className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                type="button"
-                onClick={() => {
-                  setShowModal(false);
-                }}
-              >
-                Close
-              </button>
-              <button
-                className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                type="button"
-              >
-                Login
-              </button>
-            </div> */}
           </div>
         </div>
       </div>
@@ -145,4 +173,4 @@ const LoginModal = ({ setShowModal }) => {
   );
 };
 
-export default LoginModal;
+export default RegisterModal;

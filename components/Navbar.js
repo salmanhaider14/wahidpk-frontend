@@ -11,6 +11,7 @@ import RegisterModal from "./RegisterModal";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [showModal, setShowModal] = React.useState(false);
+  const [showRegModal, setShowRegModal] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -18,7 +19,18 @@ const Navbar = () => {
 
   return (
     <nav className="p-3 rounded-xl bg-white">
-      {showModal ? <LoginModal setShowModal={setShowModal} /> : null}
+      {showModal ? (
+        <LoginModal
+          setShowModal={setShowModal}
+          setShowRegModal={setShowRegModal}
+        />
+      ) : null}
+      {showRegModal ? (
+        <RegisterModal
+          setShowModal={setShowModal}
+          setShowRegModal={setShowRegModal}
+        />
+      ) : null}
       <div className="flex justify-between items-center ">
         <div className="flex justify-center items-center gap-12">
           <a

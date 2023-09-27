@@ -118,17 +118,17 @@ export default function Home() {
                   <div className="flex justify-start items-center gap-3 mt-3">
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bed.png" />{" "}
-                      <p className="hidden md:flex"> Beds:</p>{" "}
+                      <span className="hidden md:flex"> Beds:</span>{" "}
                       <span className="font-bold"> {property.beds} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bath.png" />{" "}
-                      <p className="hidden md:flex"> Baths:</p>{" "}
+                      <span className="hidden md:flex"> Baths:</span>{" "}
                       <span className="font-bold"> {property.baths} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/area.png" />{" "}
-                      <p className="hidden md:flex"> Sqft:</p>{" "}
+                      <span className="hidden md:flex"> Sqft:</span>{" "}
                       <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
@@ -183,17 +183,17 @@ export default function Home() {
                   <div className="flex justify-start items-center gap-3 mt-3">
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bed.png" />{" "}
-                      <p className="hidden md:flex"> Beds:</p>{" "}
+                      <span className="hidden md:flex"> Beds:</span>{" "}
                       <span className="font-bold"> {property.beds} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bath.png" />{" "}
-                      <p className="hidden md:flex"> Baths:</p>{" "}
+                      <span className="hidden md:flex"> Baths:</span>{" "}
                       <span className="font-bold"> {property.baths} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/area.png" />{" "}
-                      <p className="hidden md:flex"> Sqft:</p>{" "}
+                      <span className="hidden md:flex"> Sqft:</span>{" "}
                       <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
@@ -249,17 +249,17 @@ export default function Home() {
                   <div className="flex justify-start items-center gap-3 mt-3">
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bed.png" />{" "}
-                      <p className="hidden md:flex"> Beds:</p>{" "}
+                      <span className="hidden md:flex"> Beds:</span>{" "}
                       <span className="font-bold"> {property.beds} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bath.png" />{" "}
-                      <p className="hidden md:flex"> Baths:</p>{" "}
+                      <span className="hidden md:flex"> Baths:</span>{" "}
                       <span className="font-bold"> {property.baths} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/area.png" />{" "}
-                      <p className="hidden md:flex"> Sqft:</p>{" "}
+                      <span className="hidden md:flex"> Sqft:</span>{" "}
                       <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
