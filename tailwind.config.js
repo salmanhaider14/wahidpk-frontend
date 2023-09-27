@@ -16,6 +16,10 @@ module.exports = {
       colors: {
         main: "#25C55B",
       },
+      cursor: {
+        grab: "grab",
+        grabbing: "grabbing",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

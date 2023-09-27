@@ -8,7 +8,7 @@ const FilterForm = () => {
   const [age, setAge] = useState();
   return (
     <div className="w-full relative  border flex flex-col gap-3 p-3 bg-white rounded-lg">
-      <div className="flex justify-between items-center gap-2 flex-wrap">
+      <div className="flex justify-center  items-center gap-2 md:flex-nowrap flex-wrap">
         <button className="bg-main hover:bg-green-700 flex justify-center items-center text-white font-bold w-[130px] h-[56px] rounded-xl">
           Rent
         </button>

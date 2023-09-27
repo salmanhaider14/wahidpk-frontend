@@ -5,6 +5,7 @@ import {
   BiLogoInstagram,
   BiLogoLinkedin,
   BiLogoTwitter,
+  BiLogoYoutube,
 } from "react-icons/bi";
 import { FaPhone, FaHome } from "react-icons/fa";
 const Footer = () => {
@@ -260,7 +261,7 @@ const Footer = () => {
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
               <Link href={"#"}>
                 {" "}
-                <BiLogoTwitter color="white" size={20} />{" "}
+                <BiLogoYoutube color="white" size={20} />{" "}
               </Link>
             </div>
             <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
@@ -279,7 +280,7 @@ const Footer = () => {
         </div>
         <div class="border-t border-white border-opacity-10 my-4"></div>
         <div class="text-center text-green-50 text-sm font-normal font-'Poppins' leading-5">
-          Copyright © 2023 Real estate CP. Designed & Developed by Themesflat
+          Copyright © 2023 Real estate CP. Designed & Developed by Wahid PK.
         </div>
       </div>
     </footer>

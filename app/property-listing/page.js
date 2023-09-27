@@ -38,17 +38,17 @@ const PropertyListing = () => {
     },
   ];
   const stories = [
-    { img: "/assets/storyimg.png" },
-    { img: "/assets/storyimg.png" },
-    { img: "/assets/storyimg.png" },
-    { img: "/assets/storyimg.png" },
+    { img: "/assets/propertyimg.png" },
+    { img: "/assets/propertyimg.png" },
+    { img: "/assets/propertyimg.png" },
+    { img: "/assets/propertyimg.png" },
   ];
 
   return (
     <div>
       <section className="min-h-screen  ">
         <div className="flex justify-center mt-10">
-          <div className="grid lg:grid-cols-3 gap-8 w-[80%]  p-4 relative">
+          <div className="grid lg:grid-cols-3 gap-8 md:w-[80%]  p-4 relative">
             <div className="flex flex-col items-start gap-2  md:col-span-2 ">
               {" "}
               <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">
@@ -59,56 +59,61 @@ const PropertyListing = () => {
               </p>
               <div className="flex flex-col justify-start item-start gap-6 ">
                 {properties.map((property) => (
-                  <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2 border">
+                  <div className="max-w-[1070px] min-h-[300px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
-                      className="absolute top-5 left-0"
+                      className="absolute top-5 left-0 "
                     />
                     <img
                       src="/assets/saletag2.png"
-                      className="absolute top-12 left-0"
+                      className="absolute top-12 left-0 "
                     />
-                    <img src="/assets/propertyimg.png" className="w-[330px]" />
-                    <div className="flex flex-col gap-3 flex-wrap max-w-[680px] ">
-                      <h1 className=" text-zinc-900 text-[15.87px] font-semibold font-['Poppins']">
+                    <img src="/assets/propertyimg.png" className="w-[33%] " />
+
+                    <div className="flex flex-col gap-3 flex-wrap max-w-[680px] w-[63%]">
+                      <h1 className="text-zinc-900 text-3.5vw font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
-                      <p className=" text-neutral-700 text-xs font-normal font-['Poppins'] leading-[18.87px]">
+                      <p className="text-neutral-700 text-1vw font-normal font-['Poppins'] leading-2.5vw">
                         {property.desc}
                       </p>
-                      <h1 className="text-[#25C55B] text-[20.96px] font-extrabold font-['Mulish']">
+                      <h1 className="text-[#25C55B] text-4vw font-extrabold font-['Mulish']">
                         {property.price}
                       </h1>
-                      <p className="flex items-center gap-2">
-                        <img src="/assets/bed.png" /> Beds: {property.beds}
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <img src="/assets/bath.png" /> Baths: {property.baths}
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <img src="/assets/area.png" /> Sqft: {property.area}
-                      </p>
-                      <div className="flex justify-center gap-2 flex-wrap items-center">
-                        <button className="w-[150px] h-[56px] flex justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white  text-xl font-semibold font-['Poppins'] leading-[30.54px]">
+                      <div className="flex items-start gap-4 md:flex-col">
+                        <p className="flex items-center gap-2">
+                          <img src="/assets/bed.png" /> Beds: {property.beds}
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <img src="/assets/bath.png" /> Baths: {property.baths}
+                        </p>
+                        <p className="flex items-center gap-2">
+                          <img src="/assets/area.png" /> Sqft: {property.area}
+                        </p>
+                      </div>
+                      <div className="flex justify-center gap-2 items-center ">
+                        <button className="w-[30%] h-[56px] flex justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] leading-6.2vw">
                           Call
                         </button>
-
-                        <button className="w-[170px] h-[56px] flex justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-xl font-semibold font-['Poppins'] leading-[30.54px]">
+                        <button className="w-[34%] h-[56px] flex justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] leading-6.2vw">
                           Message
                         </button>
-                        <button className="w-[220px] h-[56px] flex justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md   text-xl font-semibold font-['Poppins'] leading-[30.54px]">
+                        <button className="w-[38%] h-[56px] flex justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md text-3vw font-semibold font-['Poppins'] leading-6.2vw">
                           Whatsapp
                         </button>
                       </div>
                     </div>
                   </div>
                 ))}
-                <div className="flex justify-start items-center gap-2 flex-wrap mt-6">
-                  {stories.map((story) => (
-                    <div className="w-[190] h-[280px] relative cursor-pointer">
-                      <img src={story.img} className="w-full h-full" />
-                    </div>
-                  ))}
+                <div className="justify-center flex">
+                  <div className="flex flex-row items-center  flex-nowrap overflow-x-auto ml-5  gap-2 mt-6 ">
+                    {stories.map((story) => (
+                      <img
+                        src={story.img}
+                        className="w-[190px] h-[280px] cursor-pointer"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

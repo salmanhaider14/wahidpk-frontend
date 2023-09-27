@@ -12,11 +12,11 @@ const Register = () => {
     <div className="min-h-screen bg-[#00000080] flex justify-center items-center p-4">
       <div className="w-[500px] min-h-[700px] bg-white flex flex-col rounded-lg p-3 gap-4 relative">
         <h1 className="text-3xl font-bold pt-8 ps-6">Register</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="p-3">
           <p className="text-xl absolute top-0 right-0 pt-8 pr-6 cursor-pointer">
             x
           </p>
-          <div className="ms-6 mt-7">
+          <div className=" mt-7">
             <label
               for="input-group-1"
               class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -35,7 +35,7 @@ const Register = () => {
               />
             </div>
           </div>
-          <div className="ms-6 mt-7">
+          <div className=" mt-7">
             <label
               for="input-group-1"
               class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -63,7 +63,7 @@ const Register = () => {
               />
             </div>
           </div>
-          <div className="ms-6 mt-7">
+          <div className=" mt-7">
             <label
               for="input-group-1"
               class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -82,7 +82,7 @@ const Register = () => {
               />
             </div>
           </div>
-          <div className="ms-6 mt-7">
+          <div className=" mt-7">
             <label
               for="input-group-1"
               class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -101,7 +101,7 @@ const Register = () => {
               />
             </div>
           </div>
-          <div className="ms-6 mt-7">
+          <div className=" mt-7">
             <label
               for="input-group-1"
               class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -121,7 +121,7 @@ const Register = () => {
             </div>
           </div>
 
-          <button className="bg-green-500 hover:bg-green-600 rounded-xl w-[90%] text-white text-lg font-bold m-auto mt-7 h-[65px]">
+          <button className="bg-main hover:bg-green-600 rounded-xl w-full text-white text-lg font-bold m-auto mt-7 h-[65px]">
             Create My Account
           </button>
           <p className="text-center text-lg pt-4">

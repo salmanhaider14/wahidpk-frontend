@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="p-3 rounded-xl bg-white">
       {showModal ? <LoginModal setShowModal={setShowModal} /> : null}
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex justify-between items-center ">
         <div className="flex justify-center items-center gap-12">
           <a
             className=" text-xl font-semibold text-slate-800  flex items-center gap-3"
@@ -111,9 +111,9 @@ const Navbar = () => {
           <Link className="block py-2" href="/tools">
             Tools
           </Link>
-          <Link className="block py-2" href="/login">
+          <div className="block py-2" onClick={() => setShowModal(true)}>
             Register/Login
-          </Link>
+          </div>
         </div>
         <div className="flex items-center justify-center gap-3  mr-3 mt-3 ">
           <button className="bg-[#25C55B] hover:bg-green-700 w-[180px] h-[40px] text-white text-md rounded-lg">

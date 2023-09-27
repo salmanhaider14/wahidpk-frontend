@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { BiLockAlt } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
-import { FaFacebook } from "react-icons/fa";
+import { FaCross, FaFacebook } from "react-icons/fa";
 
 const LoginModal = ({ setShowModal }) => {
   const handleSubmit = () => {};
@@ -14,15 +14,11 @@ const LoginModal = ({ setShowModal }) => {
             <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
               <h3 className="text-3xl font-semibold">Login</h3>
               <button
-                className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                className="p-1 ml-auto border bg-transparent  text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                 onClick={() => {
                   setShowModal(false);
                 }}
-              >
-                <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                  ×
-                </span>
-              </button>
+              ></button>
             </div>
             <div
               className="p-4"
@@ -32,10 +28,15 @@ const LoginModal = ({ setShowModal }) => {
               aria-labelledby="exampleModalLabel"
             >
               <form onSubmit={handleSubmit}>
-                <p className="text-xl absolute top-0 right-0 pt-8 pr-6 cursor-pointer">
+                <p
+                  className="text-xl absolute top-0 right-0 pt-8 pr-6 cursor-pointer"
+                  onClick={() => {
+                    setShowModal(false);
+                  }}
+                >
                   x
                 </p>
-                <div className="ms-2 mt-7">
+                <div className=" mt-7">
                   <label
                     for="input-group-1"
                     class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -63,7 +64,7 @@ const LoginModal = ({ setShowModal }) => {
                     />
                   </div>
                 </div>
-                <div className="ms-2 mt-7">
+                <div className=" mt-7">
                   <label
                     for="input-group-1"
                     class="block mb-2 text-md font-bold text-gray-900 dark:text-white"
@@ -86,7 +87,13 @@ const LoginModal = ({ setShowModal }) => {
                   <p className="pr-3">Forgot Password </p>
                 </Link>
 
-                <p className="text-center text-lg pt-4">
+                <div class="relative mb-6">
+                  <button className="bg-main p-2 rounded-lg w-full h-[56px]   text-white font-bold  ">
+                    Login
+                  </button>
+                </div>
+
+                <p className="text-center text-lg ">
                   Don't you have any account ?{" "}
                   <Link
                     href={"/register"}
@@ -113,7 +120,7 @@ const LoginModal = ({ setShowModal }) => {
                 </div>
               </form>
             </div>
-            <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+            {/* <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
               <button
                 className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                 type="button"
@@ -129,7 +136,7 @@ const LoginModal = ({ setShowModal }) => {
               >
                 Login
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -49,7 +49,7 @@ const SubBar = () => {
           </div>
         </div>
         <button
-          className="lg:hidden text-white focus:outline-none mr-6"
+          className="lg:hidden text-white focus:outline-none mr-9"
           onClick={toggleMenu}
         >
           {/* Hamburger Icon */}
@@ -133,7 +133,7 @@ const SubBar = () => {
       <div
         className={`lg:hidden mt-4 ${
           menuOpen ? "block" : "hidden"
-        } transition-all duration-300 ease-in-out`}
+        } transition-all duration-300 ease-in-out `}
       >
         <div className="flex flex-col items-center text-white font-bold justify-center gap-3">
           <Link className="font-semibold flex items-start gap-2" href="#">

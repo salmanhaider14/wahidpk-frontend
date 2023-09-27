@@ -73,51 +73,53 @@ export default function Agents() {
           <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
             Featured Agencies
           </h1>
+          <div className="flex justify-center">
+            <div className="flex  items-center gap-8 overflow-x-auto mt-8">
+              {agents.map((agent) => (
+                <Link href="/single-agent">
+                  <div className="w-[350px]  relative cursor-pointer bg-white rounded-2xl shadow-lg p-2 flex items-center gap-4 border">
+                    <img src={agent.img} className="w-[100px]" />
+                    <div className="flex flex-col gap-2">
+                      <h1 className=" text-zinc-900 text-xl font-semibold font-['Poppins'] ">
+                        {agent.name}
+                      </h1>
 
-          <div className="flex justify-center items-center gap-8  flex-wrap mt-8">
-            {agents.map((agent) => (
-              <Link href="/single-agent">
-                <div className="w-[350px]  relative cursor-pointer bg-white rounded-2xl shadow-lg p-2 flex items-center gap-4 border">
-                  <img src={agent.img} className="w-[100px]" />
-                  <div className="flex flex-col gap-2">
-                    <h1 className=" text-zinc-900 text-xl font-semibold font-['Poppins'] ">
-                      {agent.name}
-                    </h1>
-
-                    <p className="text-gray-500 text-md font-normal font-['Poppins']  leading-[18px]">
-                      {agent.desc}
-                    </p>
-                    <p className="text-neutral-700 text-md font-normal font-['Poppins']  leading-[18px] flex items-center gap-2">
-                      <CiLocationOn className="text-main" /> {agent.location}
-                    </p>
+                      <p className="text-gray-500 text-md font-normal font-['Poppins']  leading-[18px]">
+                        {agent.desc}
+                      </p>
+                      <p className="text-neutral-700 text-md font-normal font-['Poppins']  leading-[18px] flex items-center gap-2">
+                        <CiLocationOn className="text-main" /> {agent.location}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
         <section className="min-h-[60vh] bg-white">
           <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
             Browse Agents By Cities
           </h1>
+          <div className="flex justify-center">
+            <div className="flex  items-center gap-8  overflow-x-auto mt-8">
+              {cities.map((agent) => (
+                <div className="w-[350px]  relative cursor-pointer bg-white rounded-lg shadow-lg p-4 flex items-start flex-col gap-4 border">
+                  <div>
+                    <h1 className=" text-zinc-900 text-xl font-semibold font-['Poppins'] ">
+                      {agent.name}
+                    </h1>
 
-          <div className="flex justify-center items-center gap-8  flex-wrap mt-8">
-            {cities.map((agent) => (
-              <div className="w-[350px]  relative cursor-pointer bg-white rounded-lg shadow-lg p-4 flex items-start flex-col gap-4 border">
-                <div>
-                  <h1 className=" text-zinc-900 text-xl font-semibold font-['Poppins'] ">
-                    {agent.name}
-                  </h1>
-
-                  <p className="text-gray-500 text-md font-normal font-['Poppins']  leading-[18px]">
-                    {agent.agencies} Agencies
-                  </p>
+                    <p className="text-gray-500 text-md font-normal font-['Poppins']  leading-[18px]">
+                      {agent.agencies} Agencies
+                    </p>
+                  </div>
+                  <Link href={"#"} className="text-blue-500">
+                    View Trend
+                  </Link>
                 </div>
-                <Link href={"#"} className="text-blue-500">
-                  View Trend
-                </Link>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </section>
         <section className="min-h-[60vh] bg-[#E6FFE0] ">

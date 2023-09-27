@@ -40,14 +40,14 @@ const SingleProperty = () => {
     },
   ];
   return (
-    <div>
+    <div className="">
       <section className="min-h-screen  ">
-        <div className="flex justify-center mt-10 ">
-          <div className="grid lg:grid-cols-3 gap-8 w-[80%]  p-4 relative ">
+        <div className="flex justify-center md:mt-10 ">
+          <div className="grid lg:grid-cols-3 gap-8 md:w-[80%] w-full  md:p-4   relative ">
             <div className="flex flex-col items-start gap-2  md:col-span-2 relative  ">
               {" "}
               <div className="flex flex-col gap-6 ">
-                <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2">
+                <div className="max-w-[1070px] min-h-[200px]   relative shadow-md rounded-xl ">
                   <Carousel className="h-[500px] mb-0">
                     <img
                       alt="..."
@@ -782,48 +782,50 @@ const SingleProperty = () => {
             </div>
           </div>
         </div>
-        <div className="w-full min-h-[300px] flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+        <div className="w-full min-h-[300px]  overflow-x-auto flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
           <h1 className=" text-zinc-900 text-[30.74px] font-semibold font-['Poppins']">
             Similar Properties
           </h1>
           <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-[21px]">
             Check out similar properties
           </p>
-          <div className="flex justify-center items-center  gap-4 flex-wrap mt-6 w-full mb-10">
-            {properties.map((property) => (
-              <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
-                <img src={property.img} className="w-full h-1/2" />
-                <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
-                  {property.title}
-                </h1>
+          <div className="flex justify-center">
+            <div className="flex  items-center  gap-4 mt-6 w-full mb-10">
+              {properties.map((property) => (
+                <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
+                  <img src={property.img} className="w-full h-1/2" />
+                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                    {property.title}
+                  </h1>
 
-                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
-                  {property.desc}
-                </p>
-                <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
-                  ${property.price}
-                </h1>
-                <div className="flex justify-around items-center gap-4 mt-3">
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bed.png" /> {property.beds}
+                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                    {property.desc}
                   </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/bath.png" /> {property.baths}
-                  </p>
-                  <p className="flex justify-center items-center gap-2">
-                    <img src="/assets/area.png" /> {property.sqft}
-                  </p>
+                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                    ${property.price}
+                  </h1>
+                  <div className="flex justify-around items-center gap-4 mt-3">
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bed.png" /> {property.beds}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/bath.png" /> {property.baths}
+                    </p>
+                    <p className="flex justify-center items-center gap-2">
+                      <img src="/assets/area.png" /> {property.sqft}
+                    </p>
+                  </div>
+                  <hr />
+                  <div className="flex justify-between items-center">
+                    <p className="flex items-center gap-2">
+                      <FaPlus className="text-main" /> Compare
+                    </p>
+                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2">3 Years Ago</p>
+                  </div>
                 </div>
-                <hr />
-                <div className="flex justify-between items-center">
-                  <p className="flex items-center gap-2">
-                    <FaPlus className="text-main" /> Compare
-                  </p>
-                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                  <p className="flex items-center gap-2">3 Years Ago</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>

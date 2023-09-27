@@ -47,21 +47,24 @@ const SingleAgent = () => {
     <div>
       <section className="min-h-screen ">
         <div className="flex justify-center mt-10">
-          <div className="grid lg:grid-cols-3 gap-10 w-[80%]  p-4 relative">
+          <div className="grid lg:grid-cols-3 gap-10 md:w-[80%] w-full  md:p-4 relative">
             <div className="flex flex-col items-start gap-2  md:col-span-2 relative ">
               {" "}
               <div className="flex flex-col gap-6 ">
                 <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2 border">
-                  <img src="/assets/propertyimg.png" className="w-[400px]" />
+                  <img
+                    src="/assets/propertyimg.png"
+                    className="md:w-[400px] w-full"
+                  />
                   <div className="flex flex-col  flex-wrap max-w-[680px] ">
-                    <h1 className=" text-zinc-900 text-[27.79px] font-bold font-['Poppins']">
+                    <h1 className=" text-zinc-900 md:text-[27.79px] text-lg font-bold font-['Poppins']">
                       Cameron Williamson
                     </h1>
                     <p className="">
-                      <span className="text-neutral-400 text-lg font-normal font-['Poppins'] leading-relaxed">
+                      <span className="text-neutral-400 md:text-lg text-sm font-normal font-['Poppins'] leading-relaxed">
                         Company Agent at{" "}
                       </span>
-                      <span className="text-zinc-900 text-lg font-bold font-['Mulish'] leading-relaxed">
+                      <span className="text-zinc-900 md:text-lg text-sm font-bold font-['Mulish'] leading-relaxed">
                         Themesflat
                       </span>
                     </p>
@@ -69,11 +72,11 @@ const SingleAgent = () => {
                       <p className="flex items-center gap-2 text-main">
                         <img src="/assets/callinbound.png" /> +7-445-556-8337
                       </p>
-                      <p className="flex items-center gap-2 ">
+                      <p className="flex items-center gap-2 md:text-lg text-sm ">
                         <img src="/assets/envelope.png" />{" "}
                         cameronwilliamson@gmail.com
                       </p>
-                      <p className="flex items-center gap-2 ">
+                      <p className="flex items-center md:gap-2 md:text-lg text-sm break-words flex-wrap ">
                         <CiLocationOn size={22} />
                         1901 Thornridge Cir. Shiloh, Hawaii 81063
                       </p>
@@ -136,30 +139,28 @@ const SingleAgent = () => {
                 </div>
                 <hr />
                 {properties.map((property) => (
-                  <Link href="/single-agent">
-                    <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2 border">
-                      <img
-                        src="/assets/supremetag.png"
-                        className="absolute top-5 left-0"
-                      />
-                      <img
-                        src="/assets/saletag.png"
-                        className="absolute top-12 left-0"
-                      />
-                      <img
-                        src="/assets/propertyimg.png"
-                        className="w-[330px]"
-                      />
-                      <div className="flex flex-col gap-3 flex-wrap max-w-[680px] ">
-                        <h1 className=" text-zinc-900 text-[15.87px] font-semibold font-['Poppins']">
-                          {property.title}
-                        </h1>
-                        <p className=" text-neutral-700 text-xs font-normal font-['Poppins'] leading-[18.87px]">
-                          {property.desc}
-                        </p>
-                        <h1 className="text-[#25C55B] text-[20.96px] font-extrabold font-['Mulish']">
-                          $ {property.price}
-                        </h1>
+                  <div className="max-w-[1070px] min-h-[300px] flex gap-2 relative shadow-md rounded-xl p-2 border">
+                    <img
+                      src="/assets/supremetag.png"
+                      className="absolute top-5 left-0 "
+                    />
+                    <img
+                      src="/assets/saletag2.png"
+                      className="absolute top-12 left-0 "
+                    />
+                    <img src="/assets/propertyimg.png" className="w-[33%] " />
+
+                    <div className="flex flex-col gap-3 flex-wrap max-w-[680px] w-[63%]">
+                      <h1 className="text-zinc-900 text-3.5vw font-semibold font-['Poppins']">
+                        {property.title}
+                      </h1>
+                      <p className="text-neutral-700 text-1vw font-normal font-['Poppins'] leading-2.5vw">
+                        {property.desc}
+                      </p>
+                      <h1 className="text-[#25C55B] text-4vw font-extrabold font-['Mulish']">
+                        ${property.price}
+                      </h1>
+                      <div className="flex items-start gap-4 md:flex-col">
                         <p className="flex items-center gap-2">
                           <img src="/assets/bed.png" /> Beds: {property.beds}
                         </p>
@@ -169,19 +170,19 @@ const SingleAgent = () => {
                         <p className="flex items-center gap-2">
                           <img src="/assets/area.png" /> Sqft: {property.area}
                         </p>
-                        <hr />
-                        <div className="flex  gap-2  items-center">
-                          <img
-                            src="/assets/propertyimg.png"
-                            className="w-[35px] h-[35px] rounded-full"
-                          />
-                          <h1 className="text-neutral-700 text-[13px] font-semibold font-['Poppins'] leading-tight">
-                            Kathryn Murphy
-                          </h1>
-                        </div>
+                      </div>
+                      <hr />
+                      <div className="flex  gap-2  items-center">
+                        <img
+                          src="/assets/propertyimg.png"
+                          className="w-[35px] h-[35px] rounded-full"
+                        />
+                        <h1 className="text-neutral-700 text-[13px] font-semibold font-['Poppins'] leading-tight">
+                          Kathryn Murphy
+                        </h1>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>
