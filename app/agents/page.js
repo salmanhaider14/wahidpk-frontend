@@ -58,10 +58,10 @@ export default function Agents() {
         <section className="min-h-[50vh]  bg-[#E6FFE0] relative p-2 flex justify-center items-center ">
           <div className="flex  flex-col gap-4 items-center">
             {" "}
-            <h1 className="text-black text-5xl font-bold  ">
+            <h1 className="text-black md:text-5xl text-3xl font-bold  ">
               Find Top Real Estate Agents in Pakistan
             </h1>
-            <p className="text-xl text-gray-500 font-bold">
+            <p className="md:text-xl text-md text-gray-500 font-bold">
               {" "}
               Search the real estate agents in Pakistan dealing in properties
               for sale and rent.
@@ -80,14 +80,14 @@ export default function Agents() {
                   <div className="w-[350px]  relative cursor-pointer bg-white rounded-2xl shadow-lg p-2 flex items-center gap-4 border">
                     <img src={agent.img} className="w-[100px]" />
                     <div className="flex flex-col gap-2">
-                      <h1 className=" text-zinc-900 text-xl font-semibold font-['Poppins'] ">
+                      <h1 className=" text-zinc-900 md:text-xl text-lg font-semibold font-['Poppins'] ">
                         {agent.name}
                       </h1>
 
-                      <p className="text-gray-500 text-md font-normal font-['Poppins']  leading-[18px]">
+                      <p className="text-gray-500 md:text-md text-sm font-normal font-['Poppins']  leading-[18px]">
                         {agent.desc}
                       </p>
-                      <p className="text-neutral-700 text-md font-normal font-['Poppins']  leading-[18px] flex items-center gap-2">
+                      <p className="text-neutral-700 md:text-md text-sm font-normal font-['Poppins']  leading-[18px] flex items-center gap-2">
                         <CiLocationOn className="text-main" /> {agent.location}
                       </p>
                     </div>
@@ -97,24 +97,24 @@ export default function Agents() {
             </div>
           </div>
         </section>
-        <section className="min-h-[60vh] bg-white">
+        <section className="min-h-[60vh]  bg-white">
           <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
             Browse Agents By Cities
           </h1>
           <div className="flex justify-center">
             <div className="flex  items-center gap-8  overflow-x-auto mt-8">
-              {cities.map((agent) => (
-                <div className="w-[350px]  relative cursor-pointer bg-white rounded-lg shadow-lg p-4 flex items-start flex-col gap-4 border">
+              {cities.map((city) => (
+                <div className="w-[370px] h-[130px]  relative cursor-pointer bg-white rounded-lg shadow-lg p-4 flex items-start flex-col md:gap-4 gap-2 border">
                   <div>
-                    <h1 className=" text-zinc-900 text-xl font-semibold font-['Poppins'] ">
-                      {agent.name}
+                    <h1 className=" text-zinc-900 md:text-xl text-lg font-semibold font-['Poppins'] ">
+                      {city.name}
                     </h1>
 
-                    <p className="text-gray-500 text-md font-normal font-['Poppins']  leading-[18px]">
-                      {agent.agencies} Agencies
+                    <p className="text-gray-500 md:text-md text-sm font-normal font-['Poppins']  leading-[18px]">
+                      {city.agencies} Agencies
                     </p>
                   </div>
-                  <Link href={"#"} className="text-blue-500">
+                  <Link href={"#"} className="text-blue-500 md:text-md text-sm">
                     View Trend
                   </Link>
                 </div>
@@ -122,8 +122,8 @@ export default function Agents() {
             </div>
           </div>
         </section>
-        <section className="min-h-[60vh] bg-[#E6FFE0] ">
-          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
+        <section className="min-h-[60vh] bg-[#E6FFE0]  ">
+          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full mb-5">
             <div className="flex justify-center items-end mt-[150px]">
               <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
                 <h1 className=" text-zinc-900 text-[45px] font-bold font-['Poppins'] leading-[54px]">

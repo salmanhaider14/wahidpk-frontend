@@ -6,6 +6,7 @@ import { CiSun, CiUser } from "react-icons/ci";
 import Link from "next/link";
 import { FaSun, FaUser } from "react-icons/fa";
 import LoginModal from "./LoginModal";
+import RegisterModal from "./RegisterModal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

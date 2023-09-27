@@ -139,7 +139,7 @@ const SingleAgent = () => {
                 </div>
                 <hr />
                 {properties.map((property) => (
-                  <div className="max-w-[1070px] min-h-[300px] flex gap-2 relative shadow-md rounded-xl p-2 border">
+                  <div className="max-w-[1070px] md:h-[300px] h-[170px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
                       className="absolute top-5 left-0 "
@@ -150,29 +150,35 @@ const SingleAgent = () => {
                     />
                     <img src="/assets/propertyimg.png" className="w-[33%] " />
 
-                    <div className="flex flex-col gap-3 flex-wrap max-w-[680px] w-[63%]">
-                      <h1 className="text-zinc-900 text-3.5vw font-semibold font-['Poppins']">
+                    <div className="flex flex-col md:gap-3 gap-1 flex-wrap max-w-[680px] w-[63%]">
+                      <h1 className="text-zinc-900 md:text-3.5vw text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
-                      <p className="text-neutral-700 text-1vw font-normal font-['Poppins'] leading-2.5vw">
+                      <p className="text-neutral-700 md:text-1vw text-sm font-normal hidden md:flex font-['Poppins'] leading-2.5vw">
                         {property.desc}
                       </p>
-                      <h1 className="text-[#25C55B] text-4vw font-extrabold font-['Mulish']">
+                      <h1 className="text-[#25C55B] md:text-4vw text-sm font-extrabold font-['Mulish']">
                         ${property.price}
                       </h1>
                       <div className="flex items-start gap-4 md:flex-col">
                         <p className="flex items-center gap-2">
-                          <img src="/assets/bed.png" /> Beds: {property.beds}
+                          <img src="/assets/bed.png" />{" "}
+                          <p className="md:flex hidden"> Beds:</p>{" "}
+                          {property.beds}
                         </p>
                         <p className="flex items-center gap-2">
-                          <img src="/assets/bath.png" /> Baths: {property.baths}
+                          <img src="/assets/bath.png" />{" "}
+                          <p className="md:flex hidden"> Baths:</p>{" "}
+                          {property.baths}
                         </p>
                         <p className="flex items-center gap-2">
-                          <img src="/assets/area.png" /> Sqft: {property.area}
+                          <img src="/assets/area.png" />{" "}
+                          <p className="md:flex hidden"> Sqft:</p>{" "}
+                          {property.area}
                         </p>
                       </div>
                       <hr />
-                      <div className="flex  gap-2  items-center">
+                      <div className="flex  gap-2  items-center mt-2">
                         <img
                           src="/assets/propertyimg.png"
                           className="w-[35px] h-[35px] rounded-full"
@@ -195,7 +201,7 @@ const SingleAgent = () => {
         </div>
       </section>
       <section className="min-h-[60vh] bg-[#E6FFE0] ">
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full mb-5">
           <div className="flex justify-center items-end mt-[150px]">
             <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
               <h1 className=" text-zinc-900 text-[45px] font-bold font-['Poppins'] leading-[54px]">

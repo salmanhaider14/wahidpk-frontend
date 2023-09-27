@@ -23,12 +23,15 @@ import {
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import SubBar from "./SubBar";
+import SearchBarModal from "./SearchBarModal.js";
 
 export default function Header() {
   const [age, setAge] = useState();
   const handleChange = () => {};
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="min-h-screen  bg-[#25C55B] relative ">
+      {showModal && <SearchBarModal setShowModal={setShowModal} />}
       <SubBar />
       <hr />
       <h1 className=" text-center drop-shadow-md text-white md:text-[61.84px] text-5xl p-2 leading-[60px] font-bold font-['Poppins'] pt-[150px] ">
@@ -38,8 +41,21 @@ export default function Header() {
         Find a variety of properties that suit you, forget all difficulties in
         finding a residence for you
       </p>
-
-      <div className="max-w-[1100px] min-h-[170px] bg-white m-auto mt-10 rounded-md flex md:flex-row md:justify-center flex-wrap flex-col justify-start p-4 gap-2">
+      <div className="flex md:hidden justify-center items-center gap-4 mt-5">
+        <button
+          className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
+          onClick={() => setShowModal(true)}
+        >
+          Buy
+        </button>{" "}
+        <button
+          className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
+          onClick={() => setShowModal(true)}
+        >
+          Rent
+        </button>{" "}
+      </div>
+      <div className="max-w-[1100px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden md:flex md:flex-row md:justify-center flex-wrap flex-col justify-start p-4 gap-2">
         <FormControl className="md:w-[200px] ">
           <InputLabel id="demo-simple-select-label">City</InputLabel>
           <Select

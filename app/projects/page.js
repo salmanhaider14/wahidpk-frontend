@@ -72,7 +72,7 @@ export default function Projects() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 mb-[60px] ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="w-[330px] h-[440px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[200px] md:h-[440px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3  rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -94,7 +94,7 @@ export default function Projects() {
                   </h1>
 
                   <hr />
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between items-center mt-2">
                     <div className="w-10 h-10 bg-zinc-300 rounded-full" />
                     <p className="flex items-center gap-2">3 Years Ago</p>
                   </div>
@@ -163,7 +163,7 @@ export default function Projects() {
       <section className="min-h-[70vh] bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
           <div className="flex justify-center  items-center flex-col gap-5 mt-8">
-            <h1 className="text-zinc-900 text-5xl font-bold font-['Poppins'] leading-[56.72px]">
+            <h1 className="text-zinc-900 md:text-5xl text-3xl font-bold font-['Poppins'] leading-[56.72px]">
               Join Developers Pool
             </h1>
             <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-snug">

@@ -782,7 +782,7 @@ const SingleProperty = () => {
             </div>
           </div>
         </div>
-        <div className="w-full min-h-[300px]  overflow-x-auto flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2">
+        <div className="w-full min-h-[300px]  overflow-x-auto flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative  rounded-xl p-2">
           <h1 className=" text-zinc-900 text-[30.74px] font-semibold font-['Poppins']">
             Similar Properties
           </h1>
@@ -792,7 +792,15 @@ const SingleProperty = () => {
           <div className="flex justify-center">
             <div className="flex  items-center  gap-4 mt-6 w-full mb-10">
               {properties.map((property) => (
-                <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
+                  <img
+                    src="/assets/featuredtag.png"
+                    className="absolute top-5 left-0"
+                  />
+                  <img
+                    src="/assets/saletag.png"
+                    className="absolute top-12 left-0"
+                  />
                   <img src={property.img} className="w-full h-1/2" />
                   <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
                     {property.title}
@@ -804,24 +812,33 @@ const SingleProperty = () => {
                   <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
-                  <div className="flex justify-around items-center gap-4 mt-3">
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bed.png" /> {property.beds}
+                  <div className="flex justify-start items-center gap-3 mt-3">
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bed.png" />{" "}
+                      <p className="hidden md:flex"> Beds:</p>{" "}
+                      <span className="font-bold"> {property.beds} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bath.png" /> {property.baths}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bath.png" />{" "}
+                      <p className="hidden md:flex"> Baths:</p>{" "}
+                      <span className="font-bold"> {property.baths} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/area.png" /> {property.sqft}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/area.png" />{" "}
+                      <p className="hidden md:flex"> Sqft:</p>{" "}
+                      <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
                   <hr />
-                  <div className="flex justify-between items-center">
-                    <p className="flex items-center gap-2">
-                      <FaPlus className="text-main" /> Compare
+                  <div className="flex justify-between items-center mt-2">
+                    <p className="flex items-center md:gap-2">
+                      <FaPlus color="green" />{" "}
+                      <span className="hidden md:flex">Compare</span>
                     </p>
-                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                    <p className="flex items-center gap-2">3 Years Ago</p>
+                    <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2 text-sm">
+                      3 Years Ago
+                    </p>
                   </div>
                 </div>
               ))}

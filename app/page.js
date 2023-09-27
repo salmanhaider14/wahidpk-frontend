@@ -95,7 +95,7 @@ export default function Home() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -116,26 +116,32 @@ export default function Home() {
                     ${property.price}
                   </h1>
                   <div className="flex justify-start items-center gap-3 mt-3">
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bed.png" /> Beds:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bed.png" />{" "}
+                      <p className="hidden md:flex"> Beds:</p>{" "}
                       <span className="font-bold"> {property.beds} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bath.png" /> Baths:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bath.png" />{" "}
+                      <p className="hidden md:flex"> Baths:</p>{" "}
                       <span className="font-bold"> {property.baths} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/area.png" /> Sqft:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/area.png" />{" "}
+                      <p className="hidden md:flex"> Sqft:</p>{" "}
                       <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
                   <hr />
-                  <div className="flex justify-between items-center">
-                    <p className="flex items-center gap-2">
-                      <FaPlus color="green" /> Compare
+                  <div className="flex justify-between items-center mt-2">
+                    <p className="flex items-center md:gap-2">
+                      <FaPlus color="green" />{" "}
+                      <span className="hidden md:flex">Compare</span>
                     </p>
-                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                    <p className="flex items-center gap-2">3 Years Ago</p>
+                    <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2 text-sm">
+                      3 Years Ago
+                    </p>
                   </div>
                 </div>
               </Link>
@@ -154,7 +160,7 @@ export default function Home() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 mb-[60px] ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="w-[330px] h-[480px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -175,26 +181,32 @@ export default function Home() {
                     ${property.price}
                   </h1>
                   <div className="flex justify-start items-center gap-3 mt-3">
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bed.png" /> Beds:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bed.png" />{" "}
+                      <p className="hidden md:flex"> Beds:</p>{" "}
                       <span className="font-bold"> {property.beds} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bath.png" /> Baths:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bath.png" />{" "}
+                      <p className="hidden md:flex"> Baths:</p>{" "}
                       <span className="font-bold"> {property.baths} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/area.png" /> Sqft:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/area.png" />{" "}
+                      <p className="hidden md:flex"> Sqft:</p>{" "}
                       <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
                   <hr />
-                  <div className="flex justify-between items-center">
-                    <p className="flex items-center gap-2">
-                      <FaPlus color="#25C55B" /> Compare
+                  <div className="flex justify-between items-center mt-2">
+                    <p className="flex items-center md:gap-2">
+                      <FaPlus color="green" />{" "}
+                      <span className="hidden md:flex">Compare</span>
                     </p>
-                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                    <p className="flex items-center gap-2">3 Years Ago</p>
+                    <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2 text-sm">
+                      3 Years Ago
+                    </p>
                   </div>
                 </div>
               </Link>
@@ -202,7 +214,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-screen bg-white">
+      <section className="mb-[60px] bg-white">
         <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
           Properties For Sale
         </h1>
@@ -214,7 +226,7 @@ export default function Home() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="w-[330px] h-[480px] relative cursor-pointer shadow-lg p-2 flex flex-col gap-3 border rounded-xl">
+                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -235,26 +247,32 @@ export default function Home() {
                     ${property.price}
                   </h1>
                   <div className="flex justify-start items-center gap-3 mt-3">
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bed.png" /> Beds:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bed.png" />{" "}
+                      <p className="hidden md:flex"> Beds:</p>{" "}
                       <span className="font-bold"> {property.beds} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/bath.png" /> Baths:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/bath.png" />{" "}
+                      <p className="hidden md:flex"> Baths:</p>{" "}
                       <span className="font-bold"> {property.baths} </span>
                     </p>
-                    <p className="flex justify-center items-center gap-2">
-                      <img src="/assets/area.png" /> Sqft:{" "}
+                    <p className="flex justify-center items-center gap-2 ">
+                      <img src="/assets/area.png" />{" "}
+                      <p className="hidden md:flex"> Sqft:</p>{" "}
                       <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>
                   <hr />
-                  <div className="flex justify-between items-center">
-                    <p className="flex items-center gap-2">
-                      <FaPlus color="green" /> Compare
+                  <div className="flex justify-between items-center mt-2">
+                    <p className="flex items-center md:gap-2">
+                      <FaPlus color="green" />{" "}
+                      <span className="hidden md:flex">Compare</span>
                     </p>
-                    <div className="w-10 h-10 bg-zinc-300 rounded-full" />
-                    <p className="flex items-center gap-2">3 Years Ago</p>
+                    <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                    <p className="flex items-center gap-2 text-sm">
+                      3 Years Ago
+                    </p>
                   </div>
                 </div>
               </Link>
@@ -390,7 +408,7 @@ export default function Home() {
       <section className="min-h-[70vh] bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
           <div className="flex justify-center  items-center flex-col gap-5 ">
-            <h1 className="text-zinc-900 text-5xl font-bold font-['Poppins'] leading-[56.72px]">
+            <h1 className="text-zinc-900 md:text-5xl text-3xl font-bold font-['Poppins'] leading-[56.72px]">
               Become Our Agents
             </h1>
             <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-snug">
