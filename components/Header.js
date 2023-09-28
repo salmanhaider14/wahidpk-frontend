@@ -41,7 +41,7 @@ export default function Header() {
         Find a variety of properties that suit you, forget all difficulties in
         finding a residence for you
       </p>
-      <div className="flex md:hidden justify-center items-center gap-4 mt-5">
+      <div className="flex lg:hidden justify-center items-center gap-4 mt-5">
         <button
           className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
           onClick={() => setShowModal(true)}
@@ -55,7 +55,7 @@ export default function Header() {
           Rent
         </button>{" "}
       </div>
-      <div className="max-w-[1100px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden md:flex md:flex-row md:justify-center flex-wrap flex-col justify-start p-4 gap-2">
+      <div className="max-w-[1100px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden lg:flex md:flex-row md:justify-center flex-wrap flex-col justify-start p-4 gap-2">
         <FormControl className="md:w-[200px] ">
           <InputLabel id="demo-simple-select-label">City</InputLabel>
           <Select
