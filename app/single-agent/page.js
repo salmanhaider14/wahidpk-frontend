@@ -51,32 +51,32 @@ const SingleAgent = () => {
             <div className="flex flex-col items-start gap-2  md:col-span-2 relative ">
               {" "}
               <div className="flex flex-col gap-6 ">
-                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-2 relative shadow-md rounded-xl p-2 border">
+                <div className="max-w-[1070px] md:min-h-[200px] flex-wrap md:flex-nowrap flex gap-2  relative shadow-md rounded-xl p-2 border">
                   <img
                     src="/assets/propertyimg.png"
-                    className="md:w-[400px] w-full"
+                    className="w-full md:w-[40%] "
                   />
-                  <div className="flex flex-col  flex-wrap max-w-[680px] ">
-                    <h1 className=" text-zinc-900 md:text-[27.79px] text-lg font-bold font-['Poppins']">
+                  <div className="flex flex-col ">
+                    <h1 className=" text-zinc-900 md:text-[22.79px] text-lg font-bold font-['Poppins']">
                       Cameron Williamson
                     </h1>
                     <p className="">
-                      <span className="text-neutral-400 md:text-lg text-sm font-normal font-['Poppins'] leading-relaxed">
+                      <span className="text-neutral-400 md:text-md text-sm font-normal font-['Poppins'] leading-relaxed">
                         Company Agent at{" "}
                       </span>
                       <span className="text-zinc-900 md:text-lg text-sm font-bold font-['Mulish'] leading-relaxed">
                         Themesflat
                       </span>
                     </p>
-                    <div className=" flex flex-col gap-2 mt-6 mb-3">
-                      <p className="flex items-center gap-2 text-main">
+                    <div className=" flex flex-col gap-2 mt-4 ">
+                      <p className="flex items-center gap-2 text-main md:text-md text-sm">
                         <img src="/assets/callinbound.png" /> +7-445-556-8337
                       </p>
-                      <p className="flex items-center gap-2 md:text-lg text-sm ">
+                      <p className="flex items-center gap-2 md:text-md text-sm break-words flex-wrap ">
                         <img src="/assets/envelope.png" />{" "}
                         cameronwilliamson@gmail.com
                       </p>
-                      <p className="flex items-center md:gap-2 md:text-lg text-sm break-words flex-wrap ">
+                      <p className="flex items-center md:gap-2 md:text-md text-sm break-words flex-wrap ">
                         <CiLocationOn size={22} />
                         1901 Thornridge Cir. Shiloh, Hawaii 81063
                       </p>
