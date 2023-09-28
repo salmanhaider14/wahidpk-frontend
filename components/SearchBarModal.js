@@ -46,21 +46,12 @@ const LoginModal = ({ setShowModal }) => {
                 >
                   x
                 </span>
-                <FormControl fullWidth>
-                  <InputLabel variant="standard" htmlFor="uncontrolled-native">
-                    City
-                  </InputLabel>
-                  <NativeSelect
-                    defaultValue={30}
-                    inputProps={{
-                      name: "age",
-                      id: "uncontrolled-native",
-                    }}
-                  >
-                    <option value={20}>Lahore</option>
-                    <option value={30}>Sargodha</option>
-                  </NativeSelect>
-                </FormControl>
+                <TextField
+                  required
+                  id="standard-required"
+                  label="City"
+                  variant="standard"
+                />
                 <TextField
                   required
                   id="standard-required"
@@ -170,6 +161,12 @@ const LoginModal = ({ setShowModal }) => {
                     <option value={30}>5</option>
                   </NativeSelect>
                 </FormControl>
+                <TextField
+                  required
+                  id="standard-required"
+                  label="Change Area Unit"
+                  variant="standard"
+                />
                 <button class=" flex items-center justify-center gap-2 h-[56px] text-white text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
                   Search Now <FaSearch />
                 </button>

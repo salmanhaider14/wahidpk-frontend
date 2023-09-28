@@ -13,12 +13,12 @@ const LoanCalculator = () => {
   return (
     <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-3 border">
       {" "}
-      <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+      <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
         Loan Calculator
       </h1>
       <hr />
       <div className="w-full">
-        <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+        <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
           Total price (PKR)
         </h1>{" "}
         <input
@@ -29,7 +29,7 @@ const LoanCalculator = () => {
         />
       </div>
       <div className="w-full">
-        <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+        <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
           Down Payment($)
         </h1>{" "}
         <input
@@ -40,7 +40,7 @@ const LoanCalculator = () => {
         />
       </div>
       <div className="w-full">
-        <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+        <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
           Terms
         </h1>{" "}
         <input
@@ -50,7 +50,7 @@ const LoanCalculator = () => {
           class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
       </div>
-      <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+      <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
         Interest Rate (%)
       </h1>{" "}
       <div className="grid md:grid-cols-2 gap-5 items-center ">
@@ -80,10 +80,10 @@ const LoanCalculator = () => {
         </div>
       </div>
       <div className="flex justify-between flex-wrap items-center">
-        <h1 className=" text-zinc-900 text-[28.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+        <h1 className=" text-zinc-900 md:text-[25.63px] text-[20px] font-semibold font-['Poppins'] leading-[42.95px]">
           Monthly payment
         </h1>
-        <h1 className="text-main text-[36.81px] font-semibold font-['Poppins']">
+        <h1 className="text-main md:text-[30.81px] text-[20px] font-semibold font-['Poppins']">
           PKR 125,0000
         </h1>
       </div>

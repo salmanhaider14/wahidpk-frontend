@@ -67,7 +67,7 @@ export default function Home() {
     <main>
       <Header />
       <section className=" bg-white overflow-x-auto">
-        <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+        <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
           Featured Stories
         </h1>
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mb-[60px] bg-white">
-        <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+        <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
           Featured properties
         </h1>
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -95,7 +95,7 @@ export default function Home() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -105,14 +105,14 @@ export default function Home() {
                     className="absolute top-12 left-0"
                   />
                   <img src={property.img} className="w-full h-1/2" />
-                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
                     {property.title}
                   </h1>
 
                   <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
                     {property.desc}
                   </p>
-                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
                   <div className="flex justify-start items-center gap-3 mt-3">
@@ -150,7 +150,7 @@ export default function Home() {
         </div>
       </section>
       <section className=" bg-[#E6FFE0]  bg-opacity-7  ">
-        <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+        <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-2xl text-center font-bold font-['Poppins'] pt-[50px]">
           Latest Properties For Rent
         </h1>
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -160,7 +160,7 @@ export default function Home() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 mb-[60px] ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -170,14 +170,14 @@ export default function Home() {
                     className="absolute top-12 left-0"
                   />
                   <img src={property.img} className="w-full h-1/2" />
-                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
                     {property.title}
                   </h1>
 
                   <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
                     {property.desc}
                   </p>
-                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
                   <div className="flex justify-start items-center gap-3 mt-3">
@@ -215,7 +215,7 @@ export default function Home() {
         </div>
       </section>
       <section className="mb-[60px] bg-white">
-        <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+        <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
           Properties For Sale
         </h1>
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -226,7 +226,7 @@ export default function Home() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -236,14 +236,14 @@ export default function Home() {
                     className="absolute top-12 left-0"
                   />
                   <img src={property.img} className="w-full h-1/2" />
-                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
                     {property.title}
                   </h1>
 
                   <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
                     {property.desc}
                   </p>
-                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
                   <div className="flex justify-start items-center gap-3 mt-3">
@@ -281,7 +281,7 @@ export default function Home() {
         </div>
       </section>
       <section className=" bg-neutral-100">
-        <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+        <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
           Featured Agencies
         </h1>
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -361,7 +361,7 @@ export default function Home() {
                 <br />
                 real estate.
               </h1>
-              <p className=" text-neutral-400 text-sm font-normal font-['Poppins'] leading-[21px]">
+              <p className=" text-neutral-400 md:text-sm text-xsm font-normal font-['Poppins'] leading-[21px]">
                 Fill in your basic information and one of our representative
                 will be in touch.
               </p>
@@ -450,49 +450,55 @@ export default function Home() {
           <img src="/assets/largeimg.png " className="w-full h-full" />
         </div>
       </section>
-      <section className=" w-full relative ">
+      <section className="  ">
         {" "}
-        <h1 className=" text-center pt-8 text-black text-[45px] font-bold font-['Poppins'] leading-[54px]">
+        <h1 className=" text-center pt-8 text-black md:text-[45px] text-3xl font-bold font-['Poppins'] leading-[54px]">
           From our blog
         </h1>
-        <p className="pt-2 text-center text-neutral-400 text-sm  font-normal font-['Poppins'] leading-[21px]">
+        <p className="pt-2 text-center text-neutral-400 md:text-sm text-xsm  font-normal font-['Poppins'] leading-[21px]">
           Read our recent blogs an stay updated with local & international
           market trends.
         </p>
-        <div className="flex justify-center">
-          <div className="flex ml-5 overflow-x-auto items-center gap-8 mt-12">
-            <div className="w-[320px] h-[430px] p-4   cursor-pointer flex flex-col gap-3  hover:scale-90 transition-all ">
-              <img src="/assets/propertyimg.png" alt="thumbnail of article" />
-              <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins']">
+        <div className="flex justify-center mb-[50px]">
+          <div className="flex items-start gap-4 p-2 overflow-x-auto mt-6">
+            <div className="w-[350px] h-[330px] p-1   relative ">
+              <img src="/assets/propertyimg.png" className="w-full" />
+
+              <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
                 Building gains into housing stocks and how to trade the sector
               </h1>
+
               <Link href={"#"}>
                 {" "}
-                <p className=" text-green-600 flex items-center gap-2">
+                <p className=" text-green-600 flex items-center gap-2 md:text-md text-sm">
                   Read More <FaArrowRight />
                 </p>{" "}
               </Link>
             </div>
-            <div className="w-[320px] h-[430px] p-4   cursor-pointer flex flex-col gap-3  hover:scale-90 transition-all ">
-              <img src="/assets/propertyimg.png" alt="thumbnail of article" />
-              <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins']">
+            <div className="w-[350px] h-[330px] p-1   relative ">
+              <img src="/assets/propertyimg.png" className="w-full" />
+
+              <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
                 Building gains into housing stocks and how to trade the sector
               </h1>
+
               <Link href={"#"}>
                 {" "}
-                <p className=" text-green-600 flex items-center gap-2">
+                <p className=" text-green-600 flex items-center gap-2 md:text-md text-sm">
                   Read More <FaArrowRight />
                 </p>{" "}
               </Link>
             </div>
-            <div className="w-[320px] h-[430px] p-4   cursor-pointer flex flex-col gap-3  hover:scale-90 transition-all ">
-              <img src="/assets/propertyimg.png" alt="thumbnail of article" />
-              <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins']">
+            <div className="w-[350px] h-[330px] p-1   relative ">
+              <img src="/assets/propertyimg.png" className="w-full" />
+
+              <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
                 Building gains into housing stocks and how to trade the sector
               </h1>
+
               <Link href={"#"}>
                 {" "}
-                <p className=" text-green-600 flex items-center gap-2">
+                <p className=" text-green-600 flex items-center gap-2 md:text-md text-sm">
                   Read More <FaArrowRight />
                 </p>{" "}
               </Link>

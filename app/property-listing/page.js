@@ -63,11 +63,11 @@ const PropertyListing = () => {
                   <div className="max-w-[1070px] md:h-[270px] h-[170px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
-                      className="absolute top-5 left-0 "
+                      className="absolute top-5 left-0 md:w-28 w-20 "
                     />
                     <img
                       src="/assets/saletag2.png"
-                      className="absolute top-12 left-0 "
+                      className="absolute top-12 left-0 md:w-20 w-14 "
                     />
                     <img src="/assets/propertyimg.png" className="w-[33%] " />
 
@@ -98,6 +98,7 @@ const PropertyListing = () => {
                           {property.area}
                         </p>
                       </div>
+                      <hr />
                       <div className="flex  justify-start md:gap-2 gap-6 items-center  md:flex-wrap ">
                         <FaPhone className="text-main md:hidden" size={20} />
                         <FaEnvelope className="text-main md:hidden" size={20} />
@@ -136,7 +137,7 @@ const PropertyListing = () => {
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-3 ">
                   <img src="/assets/propertyimg.png" className="w-[100px]" />
                   <div className="flex flex-col gap-3">
                     <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
@@ -147,7 +148,7 @@ const PropertyListing = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-3 ">
                   <img src="/assets/propertyimg.png" className="w-[100px]" />
                   <div className="flex flex-col gap-3">
                     <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
@@ -158,7 +159,7 @@ const PropertyListing = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-3 ">
                   <img src="/assets/propertyimg.png" className="w-[100px]" />
                   <div className="flex flex-col gap-3">
                     <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
@@ -285,7 +286,7 @@ const PropertyListing = () => {
               </button>
             </div>
           </div>
-          <img src="/assets/storyimg.png" className="h-full mt-10" />
+          <img src="/assets/storyimg.png" className="h-full md:mt-10 mt-2" />
         </div>
       </section>
     </div>

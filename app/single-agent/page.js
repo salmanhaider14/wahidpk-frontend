@@ -91,10 +91,10 @@ const SingleAgent = () => {
                   </div>
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     About Cameron Williamson
                   </h1>
-                  <p className=" text-neutral-700 text-lg font-normal font-['Poppins'] leading-relaxed">
+                  <p className=" text-neutral-700 md:text-lg text-sm font-normal font-['Poppins'] leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aliquam risus leo, blandit vitae diam a, vestibulum viverra
                     nisi. Vestibulum ullamcorper velit eget mattis aliquam.
@@ -126,14 +126,14 @@ const SingleAgent = () => {
                     className="w-full h-full "
                   />
                 </div>
-                <div className="flex items-center gap-4">
-                  <h1 className="border-b-4 border-b-main text-[22.74px] font-semibold font-['Poppins'] text-main">
+                <div className="flex items-center gap-4 ml-2">
+                  <h1 className="border-b-4 border-b-main md:text-[22.74px] text-[18px] font-semibold font-['Poppins'] text-main">
                     For Rent
                   </h1>
-                  <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className="text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     For sale
                   </h1>
-                  <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className="text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     Stories
                   </h1>
                 </div>
@@ -150,7 +150,7 @@ const SingleAgent = () => {
                     />
                     <img src="/assets/propertyimg.png" className="w-[33%] " />
 
-                    <div className="flex flex-col md:gap-3 gap-1 flex-wrap max-w-[680px] w-[63%]">
+                    <div className="flex flex-col md:gap-2 gap-1 flex-wrap max-w-[680px] w-[63%]">
                       <h1 className="text-zinc-900 md:text-3.5vw text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
@@ -160,7 +160,7 @@ const SingleAgent = () => {
                       <h1 className="text-[#25C55B] md:text-4vw text-sm font-extrabold font-['Mulish']">
                         ${property.price}
                       </h1>
-                      <div className="flex items-start gap-4 md:flex-col">
+                      <div className="flex items-start gap-2 md:flex-col">
                         <p className="flex items-center gap-2">
                           <img src="/assets/bed.png" />{" "}
                           <p className="md:flex hidden"> Beds:</p>{" "}
@@ -178,7 +178,7 @@ const SingleAgent = () => {
                         </p>
                       </div>
                       <hr />
-                      <div className="flex  gap-2  items-center mt-2">
+                      <div className="flex  gap-2  items-center ">
                         <img
                           src="/assets/propertyimg.png"
                           className="w-[35px] h-[35px] rounded-full"

@@ -46,7 +46,7 @@ export default function Projects() {
     <main>
       <Header />
       <section className="mb-[50px] bg-white overflow-x-auto">
-        <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+        <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
           Featured Developers
         </h1>
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -62,7 +62,7 @@ export default function Projects() {
       </section>
 
       <section className=" bg-[#E6FFE0]  bg-opacity-7  ">
-        <h1 className="text-zinc-900 drop-shadow-lg text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+        <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
           Latest Projects
         </h1>
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
@@ -72,7 +72,7 @@ export default function Projects() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 mb-[60px] ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="md:w-[330px] w-[200px] md:h-[440px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3  rounded-xl border">
+                <div className="md:w-[330px] w-[230px] md:h-[440px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-2  rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -82,14 +82,14 @@ export default function Projects() {
                     className="absolute top-12 left-0"
                   />
                   <img src={property.img} className="w-full h-1/2" />
-                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
                     {property.title}
                   </h1>
 
-                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  <p className="text-neutral-700 text-sm font-normal font-['Poppins']  leading-[18px]">
                     {property.desc}
                   </p>
-                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
                     Starting At
                   </h1>
 

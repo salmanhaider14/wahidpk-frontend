@@ -85,7 +85,7 @@ const SingleProperty = () => {
                     </div>
                   </div>
                   <div className="flex justify-between items-center w-full gap-4  flex-wrap">
-                    <div className="flex items-center gap-2 flex-wrap">
+                    <div className="flex items-center gap-2 flex-wrap my-2">
                       <div className="w-[82.45px] h-[27.09px] px-[10.72px] py-2 bg-yellow-400 rounded justify-center items-center gap-[13.41px] inline-flex">
                         <div className="text-white text-base font-bold font-['Mulish']">
                           For sale
@@ -103,11 +103,11 @@ const SingleProperty = () => {
                         <AiOutlineEye size={25} /> 4,529 Views
                       </p>
                     </div>
-                    <h1 className="text-main text-[36.22px] font-bold font-['Poppins']">
+                    <h1 className="text-main md:text-[36.22px] text-2xl font-bold font-['Poppins']">
                       $7,500
                     </h1>
                   </div>
-                  <div className="flex justify-between items-center w-full gap-4  flex-wrap">
+                  <div className="flex justify-between items-center w-full gap-4 mt-2  flex-wrap">
                     <div className="flex justify-around items-center gap-4 ">
                       <p className="flex justify-center items-center gap-2">
                         <img src="/assets/bed.png" /> Beds: 4
@@ -129,14 +129,14 @@ const SingleProperty = () => {
                     Overview
                   </h1>{" "}
                   <hr />
-                  <div className="grid md:grid-cols-4 items-center mt-2 flex-wrap gap-8">
+                  <div className="grid md:grid-cols-4 grid-cols-2 items-center mt-2 flex-wrap gap-8">
                     <div className="flex items-center gap-2">
                       <img src="/assets/rooms.png" className="w-12" />
                       <div className="flex flex-col ">
-                        <p className=" text-neutral-700 text-[18.63px] font-normal font-['Mulish'] ">
+                        <p className=" text-neutral-700 md:text-[18.63px] text-[14px] font-normal font-['Mulish'] ">
                           Rooms
                         </p>
-                        <p className="text-neutral-700 text-[18.63px] font-bold font-['Mulish'] ">
+                        <p className="text-neutral-700 md:text-[18.63px] text-[14px] font-bold font-['Mulish'] ">
                           8
                         </p>
                       </div>
@@ -144,10 +144,10 @@ const SingleProperty = () => {
                     <div className="flex items-center gap-2">
                       <img src="/assets/baths.png" className="w-12" />
                       <div className="flex flex-col ">
-                        <p className=" text-neutral-700 text-[18.63px] font-normal font-['Mulish'] ">
+                        <p className=" text-neutral-700 md:text-[18.63px] text-[14px] font-normal font-['Mulish'] ">
                           Baths
                         </p>
-                        <p className="text-neutral-700 text-[18.63px] font-bold font-['Mulish'] ">
+                        <p className="text-neutral-700 md:text-[18.63px] text-[14px] font-bold font-['Mulish'] ">
                           4
                         </p>
                       </div>
@@ -155,10 +155,10 @@ const SingleProperty = () => {
                     <div className="flex items-center gap-2">
                       <img src="/assets/beds.png" className="w-12" />
                       <div className="flex flex-col ">
-                        <p className=" text-neutral-700 text-[18.63px] font-normal font-['Mulish'] ">
+                        <p className=" text-neutral-700 md:text-[18.63px] text-[14px] font-normal font-['Mulish'] ">
                           Beds
                         </p>
-                        <p className="text-neutral-700 text-[18.63px] font-bold font-['Mulish'] ">
+                        <p className="text-neutral-700 md:text-[18.63px] text-[14px] font-bold font-['Mulish'] ">
                           4
                         </p>
                       </div>
@@ -166,10 +166,10 @@ const SingleProperty = () => {
                     <div className="flex items-center gap-2">
                       <img src="/assets/areas.png" className="w-12" />
                       <div className="flex flex-col ">
-                        <p className=" text-neutral-700 text-[18.63px] font-normal font-['Mulish'] ">
+                        <p className=" text-neutral-700 md:text-[18.63px] text-[14px] font-normal font-['Mulish'] ">
                           Size
                         </p>
-                        <p className="text-neutral-700 text-[18.63px] font-bold font-['Mulish'] ">
+                        <p className="text-neutral-700 md:text-[18.63px] text-[14px] font-bold font-['Mulish'] ">
                           572 Sq Ft
                         </p>
                       </div>
@@ -177,10 +177,10 @@ const SingleProperty = () => {
                     <div className="flex items-center gap-2">
                       <img src="/assets/calender.png" className="w-12" />
                       <div className="flex flex-col ">
-                        <p className=" text-neutral-700 text-[18.63px] font-normal font-['Mulish'] ">
+                        <p className=" text-neutral-700 md:text-[18.63px] text-[14px] font-normal font-['Mulish'] ">
                           Year Built
                         </p>
-                        <p className="text-neutral-700 text-[18.63px] font-bold font-['Mulish'] ">
+                        <p className="text-neutral-700 md:text-[18.63px] text-[14px] font-bold font-['Mulish'] ">
                           2023
                         </p>
                       </div>
@@ -188,10 +188,10 @@ const SingleProperty = () => {
                     <div className="flex items-center gap-2">
                       <img src="/assets/ptype.png" className="w-12" />
                       <div className="flex flex-col ">
-                        <p className=" text-neutral-700 text-[18.63px] font-normal font-['Mulish'] ">
+                        <p className=" text-neutral-700 md:text-[18.63px] text-[14px] font-normal font-['Mulish'] ">
                           Property Type
                         </p>
-                        <p className="text-neutral-700 text-[18.63px] font-bold font-['Mulish'] ">
+                        <p className="text-neutral-700 md:text-[18.63px] text-[14px] font-bold font-['Mulish'] ">
                           Villa
                         </p>
                       </div>
@@ -199,10 +199,10 @@ const SingleProperty = () => {
                     <div className="flex items-center gap-2">
                       <img src="/assets/garage.png" className="w-12" />
                       <div className="flex flex-col ">
-                        <p className=" text-neutral-700 text-[18.63px] font-normal font-['Mulish'] ">
+                        <p className=" text-neutral-700 md:text-[18.63px] text-[14px] font-normal font-['Mulish'] ">
                           Garage
                         </p>
-                        <p className="text-neutral-700 text-[18.63px] font-bold font-['Mulish'] ">
+                        <p className="text-neutral-700 md:text-[18.63px] text-[14px] font-bold font-['Mulish'] ">
                           1
                         </p>
                       </div>
@@ -210,11 +210,11 @@ const SingleProperty = () => {
                   </div>
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[20px] font-semibold font-['Poppins']">
                     Property Description
                   </h1>
                   <hr />
-                  <p className=" text-neutral-700 text-lg font-normal font-['Poppins'] leading-relaxed">
+                  <p className=" text-neutral-700 md:text-lg text-md font-normal font-['Poppins'] leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aliquam risus leo, blandit vitae diam a, vestibulum viverra
                     nisi. Vestibulum ullamcorper velit eget mattis aliquam.
@@ -225,219 +225,219 @@ const SingleProperty = () => {
                     arcu est. Nam sit amet neque vestibulum, fringilla elit sit
                     amet, volutpat nunc.
                   </p>
-                  <p className=" text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                  <p className=" text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                     Show more
                   </p>
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     Property Details
                   </h1>
                   <hr />
                   <div className="w-full grid md:grid-cols-2 ms-3 gap-3 ">
                     <div className="flex items-start gap-16 text-start">
-                      <h1 className="w-[150px]  text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px]  text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         ID
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px] text-start">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px] text-start">
                         #1234
                       </p>
                     </div>
                     <div className="flex items-start gap-16 text-start">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Beds
                       </h1>
-                      <p className="text-start text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="text-start text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         7.320
                       </p>
                     </div>
                     <div className="flex items-start gap-16">
-                      <h1 className="w-[150px]  text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px]  text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Price
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         7500$
                       </p>
                     </div>
                     <div className="flex items-start gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Year Built
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         2022
                       </p>
                     </div>
                     <div className="flex items-start gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Size
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         150 Sqft
                       </p>
                     </div>
                     <div className="flex items-start gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Type
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         Villa
                       </p>
                     </div>
                     <div className="flex items-center gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Rooms
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         9
                       </p>
                     </div>
                     <div className="flex items-center gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Status
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         For Sale
                       </p>
                     </div>
                     <div className="flex items-center gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Baths
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         3
                       </p>
                     </div>
                     <div className="flex items-center gap-16">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[17px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Garage
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[17px] font-normal font-['Poppins'] leading-[42.95px]">
                         1
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     Featured
                   </h1>
                   <hr />
                   <div className="w-full grid md:grid-cols-4 ms-3 gap-6 ">
-                    <h1 className="text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                       Outdoor features
                     </h1>
-                    <h1 className="text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                       Indoor features
                     </h1>
-                    <h1 className="text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                       Climate & Energy{" "}
                     </h1>
-                    <h1 className="text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                       Plot features
                     </h1>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Swimming
                       Pools
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Swimming
                       Pools
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
-                    <p className="flex items-center gap-2 text-lg">
+                    <p className="flex items-center gap-2 md:text-lg text-md">
                       <FaCheckSquare className="text-main" size={30} /> Ensuite
                     </p>
                   </div>
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     Map Location
                   </h1>
                   <hr />
                   <div className="w-full grid lg:grid-cols-2 ms-3 gap-3  ">
                     <div className="flex items-start gap-16 text-start flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Address
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px] text-start">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px] text-start">
                         Lahore
                       </p>
                     </div>
                     <div className="flex items-start gap-16 text-start flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Postal Code
                       </h1>
-                      <p className="text-start text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="text-start text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
                         7.320
                       </p>
                     </div>
                     <div className="flex items-start gap-16 flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                         City
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
                         Lahore
                       </p>
                     </div>
                     <div className="flex items-start gap-16 flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Area
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
                         7.289
                       </p>
                     </div>
                     <div className="flex items-start gap-16 flex-wrap">
-                      <h1 className="max-w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="max-w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                         State/Country
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="ml-9 md:ml-0 text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
                         Lahore....
                       </p>
                     </div>
                     <div className="flex items-start gap-16 flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Country
                       </h1>
-                      <p className=" text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
                         Pakistan
                       </p>
                     </div>
@@ -460,46 +460,46 @@ const SingleProperty = () => {
                 </div>
                 <Floors />
                 <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-6 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     What's nearby ?
                   </h1>
                   <hr />
                   <div className="flex items-center gap-4 flex-wrap">
-                    <img src="/assets/Education.png" className="w-20" />
+                    <img src="/assets/Education.png" className="md:w-20 w-16" />
                     <div className="flex flex-col gap-2 grow">
                       <h1 className="">
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           8/10{" "}
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                           Massachusetts Institute of Technology (MIT)
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           {" "}
                           1.5 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           6/10
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                           {" "}
                           Stanford University{" "}
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           2 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           5/10
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                           {" "}
                           University of Michigan-Ann Arbor{" "}
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           3.5 miles
                         </span>
                       </h1>
@@ -507,59 +507,77 @@ const SingleProperty = () => {
                     <div className="flex flex-col ">
                       <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         {" "}
-                        <img src="/assets/stars.png" /> (7 Reviews)
+                        <img src="/assets/stars.png" className="w-28" /> (7
+                        Reviews)
                       </p>
                       <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         {" "}
-                        <img src="/assets/stars.png" /> (7 Reviews)
+                        <img src="/assets/stars.png" className="w-28" /> (7
+                        Reviews)
                       </p>
                       <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         {" "}
-                        <img src="/assets/stars.png" /> (7 Reviews)
+                        <img src="/assets/stars.png" className="w-28" /> (7
+                        Reviews)
                       </p>
                     </div>
                   </div>
                   <hr />
                   <div className="flex items-center gap-4 flex-wrap">
-                    <img src="/assets/Education.png" className="w-20" />
+                    <img src="/assets/Education.png" className="md:w-20 w-16" />
                     <div className="flex flex-col gap-2 grow">
                       <h1 className="">
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           8/10{" "}
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                           Massachusetts Institute of Technology (MIT)
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           {" "}
                           1.5 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           6/10
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                           {" "}
                           Stanford University{" "}
                         </span>
-                        <span className="text-neutral-700 text-[17.63px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
                           2 miles
+                        </span>
+                      </h1>
+                      <h1 className="">
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                          5/10
+                        </span>
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                          {" "}
+                          University of Michigan-Ann Arbor{" "}
+                        </span>
+                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                          3.5 miles
                         </span>
                       </h1>
                     </div>
                     <div className="flex flex-col ">
                       <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         {" "}
-                        <img src="/assets/stars.png" /> (7 Reviews)
+                        <img src="/assets/stars.png" className="w-28" /> (7
+                        Reviews)
                       </p>
                       <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         {" "}
-                        <img src="/assets/stars.png" /> (7 Reviews)
+                        <img src="/assets/stars.png" className="w-28" /> (7
+                        Reviews)
                       </p>
                       <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
                         {" "}
-                        <img src="/assets/stars.png" /> (7 Reviews)
+                        <img src="/assets/stars.png" className="w-28" /> (7
+                        Reviews)
                       </p>
                     </div>
                   </div>
@@ -569,7 +587,7 @@ const SingleProperty = () => {
                   <div className="flex justify-between items-center flex-wrap">
                     <div className="flex items-center gap-2">
                       <FaStar color="orange" size={25} />
-                      <h1 className="text-zinc-900 text-[20.81px] font-semibold font-['Poppins']">
+                      <h1 className="text-zinc-900 md:text-[20.81px] text-[16px] font-semibold font-['Poppins']">
                         Review
                       </h1>
                       <p className=" text-neutral-400 text-[15.63px] font-semibold font-['Poppins'] leading-[42.95px]">
@@ -577,26 +595,26 @@ const SingleProperty = () => {
                       </p>
                     </div>
                     <div className="flex items-center gap-2">
-                      <p className="text-neutral-400 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="text-neutral-400 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
                         Sort by
                       </p>
-                      <h1 className="text-neutral-700 text-[20.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <h1 className="text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
                         Newest
                       </h1>
                     </div>
                   </div>
                   <hr />
-                  <div className="flex items-center flex-wrap gap-8  ">
+                  <div className="flex items-center  md:gap-8 gap-3  ">
                     <img
                       src="/assets/propertyimg.png"
-                      className="w-[120px] h-[120px]"
+                      className="md:w-[120px] w-[80px] md:h-[120px] h-[80px]"
                     />
-                    <div className="flex flex-col gap-3  ">
-                      <h1 className=" text-zinc-900 text-[20.72px] font-semibold font-['Poppins'] leading-[49.08px]">
+                    <div className="flex flex-col md:gap-3 gap-1  ">
+                      <h1 className=" text-zinc-900 md:text-[20.72px] text-[15px] font-semibold font-['Poppins'] leading-[49.08px]">
                         Leslie Alexander
                       </h1>
-                      <img src="/assets/stars.png" className="w-[100px]" />
-                      <p className="max-w-[500px] text-neutral-700 text-[15.63px] font-normal font-['Poppins'] ">
+                      <img src="/assets/stars.png" className="md:w-28 w-20" />
+                      <p className="max-w-[500px] text-neutral-700 md:text-[15.63px] text-sm font-normal font-['Poppins'] ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Pellentesque at velit eu libero laoreet mattis ac a
                         ipsum. Vivamus efficitur volutpat ante, sed consequat
@@ -608,23 +626,23 @@ const SingleProperty = () => {
                       </div>
                     </div>
                     <div>
-                      <p className="text-neutral-400 text-md font-normal font-['Poppins'] ">
+                      <p className="text-neutral-400 md:text-md text-sm font-normal font-['Poppins'] ">
                         April 5, 2023
                       </p>
                     </div>
                   </div>
                   <hr />
-                  <div className="flex items-center flex-wrap gap-8  ">
+                  <div className="flex items-center  md:gap-8 gap-3  ">
                     <img
                       src="/assets/propertyimg.png"
-                      className="w-[120px] h-[120px]"
+                      className="md:w-[120px] w-[80px] md:h-[120px] h-[80px]"
                     />
-                    <div className="flex flex-col gap-3  ">
-                      <h1 className=" text-zinc-900 text-[20.72px] font-semibold font-['Poppins'] leading-[49.08px]">
+                    <div className="flex flex-col md:gap-3 gap-1  ">
+                      <h1 className=" text-zinc-900 md:text-[20.72px] text-[15px] font-semibold font-['Poppins'] leading-[49.08px]">
                         Leslie Alexander
                       </h1>
-                      <img src="/assets/stars.png" className="w-[100px]" />
-                      <p className="max-w-[500px] text-neutral-700 text-[15.63px] font-normal font-['Poppins'] ">
+                      <img src="/assets/stars.png" className="md:w-28 w-20" />
+                      <p className="max-w-[500px] text-neutral-700 md:text-[15.63px] text-sm font-normal font-['Poppins'] ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Pellentesque at velit eu libero laoreet mattis ac a
                         ipsum. Vivamus efficitur volutpat ante, sed consequat
@@ -636,7 +654,7 @@ const SingleProperty = () => {
                       </div>
                     </div>
                     <div>
-                      <p className="text-neutral-400 text-md font-normal font-['Poppins'] ">
+                      <p className="text-neutral-400 md:text-md text-sm font-normal font-['Poppins'] ">
                         April 5, 2023
                       </p>
                     </div>
@@ -652,7 +670,7 @@ const SingleProperty = () => {
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-3 ">
                   <img src="/assets/propertyimg.png" className="w-[100px]" />
                   <div className="flex flex-col gap-3">
                     <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
@@ -663,7 +681,7 @@ const SingleProperty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-3 ">
                   <img src="/assets/propertyimg.png" className="w-[100px]" />
                   <div className="flex flex-col gap-3">
                     <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
@@ -674,7 +692,7 @@ const SingleProperty = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-3 ">
                   <img src="/assets/propertyimg.png" className="w-[100px]" />
                   <div className="flex flex-col gap-3">
                     <h1 className=" text-zinc-900 text-base font-normal font-['Poppins'] leading-normal">
@@ -792,7 +810,7 @@ const SingleProperty = () => {
           <div className="flex justify-center">
             <div className="flex  items-center  gap-4 mt-6 w-full mb-10">
               {properties.map((property) => (
-                <div className="md:w-[330px] w-[200px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 rounded-xl border">
+                <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"
@@ -802,30 +820,30 @@ const SingleProperty = () => {
                     className="absolute top-12 left-0"
                   />
                   <img src={property.img} className="w-full h-1/2" />
-                  <h1 className=" text-zinc-900 text-lg font-semibold font-['Poppins'] pt-3">
+                  <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
                     {property.title}
                   </h1>
 
                   <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
                     {property.desc}
                   </p>
-                  <h1 className=" text-[#25C55B] text-lg font-semibold font-['Poppins']">
+                  <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
                     ${property.price}
                   </h1>
                   <div className="flex justify-start items-center gap-3 mt-3">
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bed.png" />{" "}
-                      <p className="hidden md:flex"> Beds:</p>{" "}
+                      <span className="hidden md:flex"> Beds:</span>{" "}
                       <span className="font-bold"> {property.beds} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/bath.png" />{" "}
-                      <p className="hidden md:flex"> Baths:</p>{" "}
+                      <span className="hidden md:flex"> Baths:</span>{" "}
                       <span className="font-bold"> {property.baths} </span>
                     </p>
                     <p className="flex justify-center items-center gap-2 ">
                       <img src="/assets/area.png" />{" "}
-                      <p className="hidden md:flex"> Sqft:</p>{" "}
+                      <span className="hidden md:flex"> Sqft:</span>{" "}
                       <span className="font-bold"> {property.sqft} </span>
                     </p>
                   </div>

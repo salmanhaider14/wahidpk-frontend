@@ -7,15 +7,15 @@ const ReviewForm = () => {
   return (
     <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-3 border">
       {" "}
-      <h1 className=" text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+      <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
         Leave a review
       </h1>
-      <p className=" text-neutral-400 text-md font-normal font-['Poppins'] leading-[36.81px]">
+      <p className=" text-neutral-400 md:text-md text-sm font-normal font-['Poppins'] leading-[36.81px]">
         Your email address will not be published. Required fields are marked *
       </p>
       <hr />
       <div className="w-full">
-        <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+        <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
           Your Name
         </h1>{" "}
         <input
@@ -27,7 +27,7 @@ const ReviewForm = () => {
       </div>{" "}
       <div className="grid md:grid-cols-2 gap-5 items-center ">
         <div>
-          <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+          <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
             Email Address
           </h1>
           <input
@@ -38,7 +38,7 @@ const ReviewForm = () => {
           />
         </div>
         <div>
-          <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+          <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
             Phone Number
           </h1>
           <input
@@ -50,7 +50,7 @@ const ReviewForm = () => {
         </div>
       </div>
       <div>
-        <h1 className=" text-zinc-900 text-[18.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+        <h1 className=" text-zinc-900 md:text-[18.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
           Your review
         </h1>
         <TextField

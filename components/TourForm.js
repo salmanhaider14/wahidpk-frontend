@@ -20,15 +20,15 @@ const TourForm = () => {
   const handleChange = () => {};
   const [age, setAge] = useState();
   return (
-    <div className=" w-full relative  border flex flex-col gap-5 p-3  bg-white rounded-lg">
-      <h1 className="text-zinc-900 text-[22.74px] font-semibold font-['Poppins']">
+    <div className=" w-full relative   border flex flex-col gap-5 p-3  bg-white rounded-lg">
+      <h1 className="text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
         Schedule a Tour
       </h1>
-      <p className=" text-neutral-700 text-[17px] font-normal font-['Poppins'] leading-relaxed">
+      <p className=" text-neutral-700 md:text-[17px] text-[15px] font-normal font-['Poppins'] leading-relaxed">
         Choose the most suitable day
       </p>
-      <div className=" justify-between items-start gap-[12.14px] inline-flex flex-wrap">
-        <div className=" p-[19.43px] rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
+      <div className=" justify-center items-start gap-4 inline-flex ">
+        <div className=" md:p-5 p-4 rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon
           </div>
@@ -39,7 +39,7 @@ const TourForm = () => {
             Apr
           </div>
         </div>
-        <div className=" p-[19.43px] rounded-xl border-2 border-green-500 flex-col justify-center items-center gap-[7.29px] inline-flex">
+        <div className=" md:p-5 p-4 rounded-xl border-2 border-green-500 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon
           </div>
@@ -50,7 +50,7 @@ const TourForm = () => {
             Apr
           </div>
         </div>
-        <div className=" p-[19.43px] rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
+        <div className=" md:p-5 p-4 rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon
           </div>
@@ -61,7 +61,7 @@ const TourForm = () => {
             Apr
           </div>
         </div>
-        <div className=" p-[19.43px] rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
+        <div className=" md:p-5 p-4 rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon
           </div>

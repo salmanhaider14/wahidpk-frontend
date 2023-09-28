@@ -15,24 +15,24 @@ const Floors = () => {
           <Accordion.Title>First floor</Accordion.Title>
           <Accordion.Content>
             <div className="flex justify-start items-center gap-4 mt-3 mb-3">
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/price.png" className="w-5" /> Price : 400$
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/area.png" /> Size : 4
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/bed.png" /> Beds : 2
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/bath.png" /> Baths: 2
               </p>
             </div>
             {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
-            <h1 className=" text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+            <h1 className=" text-zinc-900 md:text-[20.63px] text-[18px] font-semibold font-['Poppins'] leading-[42.95px]">
               Description:
             </h1>
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 text-gray-500 dark:text-gray-400 md:text-md text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed
               tristique metus proin id lorem odio
             </p>
@@ -44,24 +44,24 @@ const Floors = () => {
           <Accordion.Title>Second floor</Accordion.Title>
           <Accordion.Content>
             <div className="flex justify-start items-center gap-4 mt-3 mb-3">
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/price.png" className="w-5" /> Price : 400$
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/area.png" /> Size : 4
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/bed.png" /> Beds : 2
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/bath.png" /> Baths: 2
               </p>
             </div>
             {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
-            <h1 className=" text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+            <h1 className=" text-zinc-900 md:text-[20.63px] text-[18px] font-semibold font-['Poppins'] leading-[42.95px]">
               Description:
             </h1>
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 text-gray-500 dark:text-gray-400 md:text-md text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed
               tristique metus proin id lorem odio
             </p>
@@ -73,24 +73,24 @@ const Floors = () => {
           <Accordion.Title>Third floor</Accordion.Title>
           <Accordion.Content>
             <div className="flex justify-start items-center gap-4 mt-3 mb-3">
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/price.png" className="w-5" /> Price : 400$
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/area.png" /> Size : 4
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/bed.png" /> Beds : 2
               </p>
-              <p className="flex justify-center items-center gap-2">
+              <p className="flex justify-center items-center gap-2 md:text-md text-sm">
                 <img src="/assets/bath.png" /> Baths: 2
               </p>
             </div>
             {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
-            <h1 className=" text-zinc-900 text-[20.63px] font-semibold font-['Poppins'] leading-[42.95px]">
+            <h1 className=" text-zinc-900 md:text-[20.63px] text-[18px] font-semibold font-['Poppins'] leading-[42.95px]">
               Description:
             </h1>
-            <p className="mb-2 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 text-gray-500 dark:text-gray-400 md:text-md text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed
               tristique metus proin id lorem odio
             </p>

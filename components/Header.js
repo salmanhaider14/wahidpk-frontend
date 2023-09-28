@@ -177,6 +177,12 @@ export default function Header() {
             <MenuItem value={30}>3</MenuItem>
           </Select>
         </FormControl>
+        <input
+          type="text"
+          placeholder="Change Area Unit"
+          id="default-input"
+          class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 grow p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        />
       </div>
       <div className="flex justify-center items-center gap-3 mt-8 flex-wrap">
         <p className="flex items-center gap-2 text-white">
