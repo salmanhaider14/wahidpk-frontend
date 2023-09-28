@@ -27,7 +27,7 @@ const TourForm = () => {
       <p className=" text-neutral-700 md:text-[17px] text-[15px] font-normal font-['Poppins'] leading-relaxed">
         Choose the most suitable day
       </p>
-      <div className=" justify-center items-start gap-4 inline-flex ">
+      <div className=" justify-center items-start md:gap-2 gap-2 inline-flex flex-wrap  ">
         <div className=" md:p-5 p-4 rounded-xl border-2 border-gray-400 flex-col justify-center items-center gap-[7.29px] inline-flex">
           <div className="self-stretch text-center text-neutral-400 text-[17px] font-normal font-['Poppins'] leading-relaxed">
             Mon

@@ -460,7 +460,7 @@ export default function Home() {
           market trends.
         </p>
         <div className="flex justify-center mb-[50px]">
-          <div className="flex items-start gap-4 p-2 overflow-x-auto mt-6">
+          <div className="flex items-start gap-4 p-2 overflow-x-auto overflow-y-hidden mt-6">
             <div className="w-[350px] h-[330px] p-1   relative ">
               <img src="/assets/propertyimg.png" className="w-full" />
 

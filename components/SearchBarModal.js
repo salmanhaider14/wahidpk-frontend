@@ -12,7 +12,7 @@ import {
   TextField,
   NativeSelect,
 } from "@mui/material";
-const LoginModal = ({ setShowModal }) => {
+const SearchBarModal = ({ setShowModal }) => {
   const [age, setAge] = useState();
   const handleChange = () => {};
   const handleSubmit = () => {};
@@ -180,4 +180,4 @@ const LoginModal = ({ setShowModal }) => {
   );
 };
 
-export default LoginModal;
+export default SearchBarModal;

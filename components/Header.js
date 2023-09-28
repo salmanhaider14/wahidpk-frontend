@@ -55,128 +55,136 @@ export default function Header() {
           Rent
         </button>{" "}
       </div>
-      <div className="max-w-[1100px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden lg:flex md:flex-row md:justify-center flex-wrap flex-col justify-start p-4 gap-2">
-        <FormControl className="md:w-[200px] ">
-          <InputLabel id="demo-simple-select-label">City</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={age}
-            label="Age"
-            onChange={handleChange}
-          >
-            <MenuItem value={10}>Lahore</MenuItem>
-            <MenuItem value={20}>Sargodha</MenuItem>
-            <MenuItem value={30}>Islamabad</MenuItem>
-          </Select>
-        </FormControl>
-
-        <input
-          type="text"
-          placeholder="Location"
-          id="default-input"
-          class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-[65%] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        />
-
-        <button class=" flex items-center gap-2 h-[56px] text-white text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
-          Search Now <FaSearch />
-        </button>
-        <input
-          type="text"
-          placeholder="Property Type"
-          id="default-input"
-          class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-[200px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        />
-        <div className="w-[330px] h-[60px] ">
-          <div className="flex items-center md:justify-center gap-4">
-            <FormControl sx={{ minWidth: 140 }}>
-              <InputLabel htmlFor="grouped-native-select">Min Price</InputLabel>
-              <Select
-                native
-                defaultValue=""
-                id="grouped-native-select"
-                label="Grouping"
-              >
-                <option aria-label="None" value="" />
-                <optgroup label="Category 1">
-                  <option value={1}>Option 1</option>
-                  <option value={2}>Option 2</option>
-                </optgroup>
-                <optgroup label="Category 2">
-                  <option value={3}>Option 3</option>
-                  <option value={4}>Option 4</option>
-                </optgroup>
-              </Select>
-            </FormControl>
-            <p>To</p>
-            <FormControl sx={{ minWidth: 140 }}>
-              <InputLabel htmlFor="grouped-select">Any</InputLabel>
-              <Select defaultValue="" id="grouped-select" label="Grouping">
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <ListSubheader>Category 1</ListSubheader>
-                <MenuItem value={1}>Option 1</MenuItem>
-                <MenuItem value={2}>Option 2</MenuItem>
-                <ListSubheader>Category 2</ListSubheader>
-                <MenuItem value={3}>Option 3</MenuItem>
-                <MenuItem value={4}>Option 4</MenuItem>
-              </Select>
-            </FormControl>
+      <div className="max-w-[1000px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden lg:flex  md:justify-center flex-col justify-start p-4 gap-2">
+        <div className="flex items-center gap-2">
+          {" "}
+          <FormControl className="md:w-[200px] ">
+            <InputLabel id="demo-simple-select-label">City</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Age"
+              onChange={handleChange}
+            >
+              <MenuItem value={10}>Lahore</MenuItem>
+              <MenuItem value={20}>Sargodha</MenuItem>
+              <MenuItem value={30}>Islamabad</MenuItem>
+            </Select>
+          </FormControl>
+          <input
+            type="text"
+            placeholder="Location"
+            id="default-input"
+            class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block grow p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+          <button class=" flex items-center gap-2 h-[56px] text-white text-sm font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
+            Search Now <FaSearch />
+          </button>
+        </div>{" "}
+        <div className="flex items-center gap-2">
+          {" "}
+          <input
+            type="text"
+            placeholder="Property Type"
+            id="default-input"
+            class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-[200px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          />
+          <div className="w-[300px] h-[60px] ">
+            <div className="flex items-center md:justify-center gap-4">
+              <FormControl sx={{ minWidth: 120 }}>
+                <InputLabel htmlFor="grouped-native-select">
+                  Min Price
+                </InputLabel>
+                <Select
+                  native
+                  defaultValue=""
+                  id="grouped-native-select"
+                  label="Grouping"
+                >
+                  <option aria-label="None" value="" />
+                  <optgroup label="Category 1">
+                    <option value={1}>Option 1</option>
+                    <option value={2}>Option 2</option>
+                  </optgroup>
+                  <optgroup label="Category 2">
+                    <option value={3}>Option 3</option>
+                    <option value={4}>Option 4</option>
+                  </optgroup>
+                </Select>
+              </FormControl>
+              <p>To</p>
+              <FormControl sx={{ minWidth: 120 }}>
+                <InputLabel htmlFor="grouped-select">Any</InputLabel>
+                <Select defaultValue="" id="grouped-select" label="Grouping">
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <ListSubheader>Category 1</ListSubheader>
+                  <MenuItem value={1}>Option 1</MenuItem>
+                  <MenuItem value={2}>Option 2</MenuItem>
+                  <ListSubheader>Category 2</ListSubheader>
+                  <MenuItem value={3}>Option 3</MenuItem>
+                  <MenuItem value={4}>Option 4</MenuItem>
+                </Select>
+              </FormControl>
+            </div>
           </div>
-        </div>
-        <div className="md:w-[330px] h-[60px] md:ms-4 ">
-          <div className="flex items-center md:justify-start gap-4">
-            <FormControl sx={{ minWidth: 140 }}>
-              <InputLabel htmlFor="grouped-native-select">Min Marla</InputLabel>
-              <Select
-                native
-                defaultValue=""
-                id="grouped-native-select"
-                label="Grouping"
-              >
-                <option aria-label="None" value="" />
-                <optgroup label="Category 1">
-                  <option value={1}>Option 1</option>
-                  <option value={2}>Option 2</option>
-                </optgroup>
-                <optgroup label="Category 2">
-                  <option value={3}>Option 3</option>
-                  <option value={4}>Option 4</option>
-                </optgroup>
-              </Select>
-            </FormControl>
-            To
-            <FormControl sx={{ minWidth: 140 }}>
-              <InputLabel htmlFor="grouped-select">Any</InputLabel>
-              <Select defaultValue="" id="grouped-select" label="Grouping">
-                <MenuItem value="">
-                  <em>None</em>
-                </MenuItem>
-                <ListSubheader>Category 1</ListSubheader>
-                <MenuItem value={1}>Option 1</MenuItem>
-                <MenuItem value={2}>Option 2</MenuItem>
-                <ListSubheader>Category 2</ListSubheader>
-                <MenuItem value={3}>Option 3</MenuItem>
-                <MenuItem value={4}>Option 4</MenuItem>
-              </Select>
-            </FormControl>
+          <div className="md:w-[300px] h-[60px] md:ms-4 ">
+            <div className="flex items-center md:justify-start gap-4">
+              <FormControl sx={{ minWidth: 120 }}>
+                <InputLabel htmlFor="grouped-native-select">
+                  Min Marla
+                </InputLabel>
+                <Select
+                  native
+                  defaultValue=""
+                  id="grouped-native-select"
+                  label="Grouping"
+                >
+                  <option aria-label="None" value="" />
+                  <optgroup label="Category 1">
+                    <option value={1}>Option 1</option>
+                    <option value={2}>Option 2</option>
+                  </optgroup>
+                  <optgroup label="Category 2">
+                    <option value={3}>Option 3</option>
+                    <option value={4}>Option 4</option>
+                  </optgroup>
+                </Select>
+              </FormControl>
+              To
+              <FormControl sx={{ minWidth: 120 }}>
+                <InputLabel htmlFor="grouped-select">Any</InputLabel>
+                <Select defaultValue="" id="grouped-select" label="Grouping">
+                  <MenuItem value="">
+                    <em>None</em>
+                  </MenuItem>
+                  <ListSubheader>Category 1</ListSubheader>
+                  <MenuItem value={1}>Option 1</MenuItem>
+                  <MenuItem value={2}>Option 2</MenuItem>
+                  <ListSubheader>Category 2</ListSubheader>
+                  <MenuItem value={3}>Option 3</MenuItem>
+                  <MenuItem value={4}>Option 4</MenuItem>
+                </Select>
+              </FormControl>
+            </div>
           </div>
+          <FormControl className="w-[120px]">
+            <InputLabel id="demo-simple-select-label">Beds</InputLabel>
+            <Select
+              labelId="demo-simple-select-label"
+              id="demo-simple-select"
+              value={age}
+              label="Age"
+              onChange={handleChange}
+            >
+              <MenuItem value={10}>1</MenuItem>
+              <MenuItem value={20}>2</MenuItem>
+              <MenuItem value={30}>3</MenuItem>
+            </Select>
+          </FormControl>
         </div>
-        <FormControl className="md:w-[160px]">
-          <InputLabel id="demo-simple-select-label">Beds</InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={age}
-            label="Age"
-            onChange={handleChange}
-          >
-            <MenuItem value={10}>1</MenuItem>
-            <MenuItem value={20}>2</MenuItem>
-            <MenuItem value={30}>3</MenuItem>
-          </Select>
-        </FormControl>
         <input
           type="text"
           placeholder="Change Area Unit"

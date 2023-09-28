@@ -13,8 +13,8 @@ const AgentSearchBar = () => {
   const [age, setAge] = useState();
   const handleChange = () => {};
   return (
-    <div className="max-w-[1100px]  bg-white m-auto  rounded-xl flex flex-wrap p-6 gap-2 border relative bottom-0">
-      <FormControl className="md:w-[200px] w-full ">
+    <div className="max-w-[1000px] lg:flex hidden bg-white m-auto  rounded-xl  p-6 gap-2 border relative bottom-0">
+      <FormControl className="w-[180px]  ">
         <InputLabel id="demo-simple-select-label">City</InputLabel>
         <Select
           labelId="demo-simple-select-label"

@@ -71,7 +71,7 @@ const PropertyListing = () => {
                     />
                     <img src="/assets/propertyimg.png" className="w-[33%] " />
 
-                    <div className="flex flex-col md:gap-4 gap-1 flex-wrap max-w-[680px] w-[63%]">
+                    <div className="flex flex-col md:gap-3 gap-1 flex-wrap max-w-[680px] w-[63%]">
                       <h1 className="text-zinc-900 md:text-3.5vw text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
@@ -99,7 +99,7 @@ const PropertyListing = () => {
                         </p>
                       </div>
                       <hr />
-                      <div className="flex  justify-start md:gap-2 gap-6 items-center  md:flex-wrap ">
+                      <div className="flex  justify-start md:gap-2 gap-6 items-centerm   md:flex-wrap ">
                         <FaPhone className="text-main md:hidden" size={20} />
                         <FaEnvelope className="text-main md:hidden" size={20} />
                         <BiLogoWhatsapp

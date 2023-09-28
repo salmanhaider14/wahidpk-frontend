@@ -14,9 +14,10 @@ import {
 
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
-
 import AgentSearchBar from "@/components/AgentSearchBar";
 import { CiLocationOn } from "react-icons/ci";
+import AgentSearchModal from "@/components/AgentSearchModal";
+import AgentHeader from "@/components/AgentHeader";
 
 export default function Agents() {
   const agents = [
@@ -55,32 +56,19 @@ export default function Agents() {
   return (
     <>
       <main className="">
-        <section className="min-h-[50vh]  bg-[#E6FFE0] relative p-2 flex justify-center items-center ">
-          <div className="flex  flex-col gap-4 items-center">
-            {" "}
-            <h1 className="text-black md:text-5xl text-3xl font-bold  ">
-              Find Top Real Estate Agents in Pakistan
-            </h1>
-            <p className="md:text-xl text-md text-gray-500 font-bold">
-              {" "}
-              Search the real estate agents in Pakistan dealing in properties
-              for sale and rent.
-            </p>
-            <AgentSearchBar />
-          </div>
-        </section>
+        <AgentHeader />
         <section className=" bg-white">
-          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+          <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
             Featured Agencies
           </h1>
           <div className="flex justify-center">
             <div className="flex  items-center gap-8 overflow-x-auto mt-8">
               {agents.map((agent) => (
                 <Link href="/single-agent">
-                  <div className="w-[350px]  relative cursor-pointer bg-white rounded-2xl shadow-lg p-2 flex items-center gap-4 border">
+                  <div className="w-[300px]   relative cursor-pointer   p-2 flex items-center gap-4 ">
                     <img src={agent.img} className="w-[100px]" />
                     <div className="flex flex-col gap-2">
-                      <h1 className=" text-zinc-900 md:text-xl text-lg font-semibold font-['Poppins'] ">
+                      <h1 className=" text-zinc-900 md:text-md text-sm font-semibold font-['Poppins'] ">
                         {agent.name}
                       </h1>
 
@@ -98,7 +86,7 @@ export default function Agents() {
           </div>
         </section>
         <section className="min-h-[60vh]  bg-white">
-          <h1 className="text-zinc-900 text-[45px] text-center font-bold font-['Poppins'] pt-[50px]">
+          <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
             Browse Agents By Cities
           </h1>
           <div className="flex justify-center">
