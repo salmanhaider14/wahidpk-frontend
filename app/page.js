@@ -459,10 +459,10 @@ export default function Home() {
           Read our recent blogs an stay updated with local & international
           market trends.
         </p>
-        <div className="flex justify-center mb-[50px]">
+        <div className="flex justify-center mb-[50px] overflow-y-hidden">
           <div className="flex items-start gap-4 p-2 overflow-x-auto overflow-y-hidden mt-6">
-            <div className="w-[350px] h-[330px] p-1   relative ">
-              <img src="/assets/propertyimg.png" className="w-full" />
+            <div className="w-[350px] max-w-none min-w-[250px] h-[330px] p-1 relative">
+              <img src="/assets/propertyimg.png" className="w-full " />
 
               <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
                 Building gains into housing stocks and how to trade the sector
@@ -475,8 +475,8 @@ export default function Home() {
                 </p>{" "}
               </Link>
             </div>
-            <div className="w-[350px] h-[330px] p-1   relative ">
-              <img src="/assets/propertyimg.png" className="w-full" />
+            <div className="w-[350px] max-w-none min-w-[250px] h-[330px] p-1 relative">
+              <img src="/assets/propertyimg.png" className="w-full " />
 
               <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
                 Building gains into housing stocks and how to trade the sector
@@ -489,8 +489,8 @@ export default function Home() {
                 </p>{" "}
               </Link>
             </div>
-            <div className="w-[350px] h-[330px] p-1   relative ">
-              <img src="/assets/propertyimg.png" className="w-full" />
+            <div className="w-[350px] max-w-none min-w-[250px] h-[330px] p-1 relative">
+              <img src="/assets/propertyimg.png" className="w-full " />
 
               <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
                 Building gains into housing stocks and how to trade the sector
