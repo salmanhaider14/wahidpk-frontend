@@ -55,7 +55,7 @@ export default function Header() {
           Rent
         </button>{" "}
       </div>
-      <div className="max-w-[1000px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden lg:flex  md:justify-center flex-col justify-start p-4 gap-2">
+      <div className="max-w-[1000px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden md:flex  md:justify-center flex-col justify-start p-4 gap-2">
         <div className="flex items-center gap-2">
           {" "}
           <FormControl className="md:w-[200px] ">
@@ -92,7 +92,7 @@ export default function Header() {
           />
           <div className="w-[300px] h-[60px] ">
             <div className="flex items-center md:justify-center gap-4">
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl>
                 <InputLabel htmlFor="grouped-native-select">
                   Min Price
                 </InputLabel>
@@ -114,7 +114,7 @@ export default function Header() {
                 </Select>
               </FormControl>
               <p>To</p>
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl>
                 <InputLabel htmlFor="grouped-select">Any</InputLabel>
                 <Select defaultValue="" id="grouped-select" label="Grouping">
                   <MenuItem value="">
@@ -132,7 +132,7 @@ export default function Header() {
           </div>
           <div className="md:w-[300px] h-[60px] md:ms-4 ">
             <div className="flex items-center md:justify-start gap-4">
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl>
                 <InputLabel htmlFor="grouped-native-select">
                   Min Marla
                 </InputLabel>
@@ -154,7 +154,7 @@ export default function Header() {
                 </Select>
               </FormControl>
               To
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl>
                 <InputLabel htmlFor="grouped-select">Any</InputLabel>
                 <Select defaultValue="" id="grouped-select" label="Grouping">
                   <MenuItem value="">
@@ -170,7 +170,7 @@ export default function Header() {
               </FormControl>
             </div>
           </div>
-          <FormControl className="w-[120px]">
+          <FormControl>
             <InputLabel id="demo-simple-select-label">Beds</InputLabel>
             <Select
               labelId="demo-simple-select-label"
