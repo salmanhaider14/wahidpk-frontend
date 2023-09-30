@@ -353,9 +353,9 @@ export default function Home() {
         className="overflow-x-hidden w-full "
         style={{ backgroundImage: "/assets/contactbg.png" }}
       >
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
-          <div className="flex md:justify-end md:items-end justify-center items-center  flex-wrap w-full min-h-[500px]">
-            <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ">
+        <div className="grid lg:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
+          <div className="flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
+            <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ms-10 ">
               <h1 className=" text-black md:text-[45px] text-[30px] font-['Poppins']  font-extrabold ">
                 We provide the most <br /> suitable and quality
                 <br />
