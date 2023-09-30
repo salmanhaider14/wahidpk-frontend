@@ -43,8 +43,8 @@ const SingleProperty = () => {
     <div className="">
       <section className="min-h-screen  ">
         <div className="flex justify-center md:mt-10 ">
-          <div className="grid lg:grid-cols-3 gap-8 md:w-[80%] w-full  md:p-4   relative ">
-            <div className="flex flex-col items-start gap-2  md:col-span-2 relative  ">
+          <div className="grid lg:grid-cols-3 gap-8 lg:w-[80%] w-full  md:p-4   relative ">
+            <div className="flex flex-col items-start gap-2  lg:col-span-2 relative  ">
               {" "}
               <div className="flex flex-col gap-6 ">
                 <div className="max-w-[1070px] min-h-[200px]   relative shadow-md rounded-xl ">
@@ -322,7 +322,7 @@ const SingleProperty = () => {
                     Featured
                   </h1>
                   <hr />
-                  <div className="w-full grid md:grid-cols-4 ms-3 gap-6 ">
+                  <div className="w-full grid md:grid-cols-4 grid-cols-2  ms-3 gap-6 ">
                     <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
                       Outdoor features
                     </h1>
@@ -663,7 +663,7 @@ const SingleProperty = () => {
                 <ReviewForm />
               </div>
             </div>
-            <div className=" max-w-[600px]   flex flex-col gap-4  p-3  ">
+            <div className="    flex flex-col gap-4  p-3  ">
               <ContactAgent />
               <TourForm />
               <div className=" rounded w-full relative  flex flex-col gap-4 p-3 border">

@@ -47,8 +47,8 @@ const SingleAgent = () => {
     <div>
       <section className="min-h-screen ">
         <div className="flex justify-center mt-10">
-          <div className="grid lg:grid-cols-3 gap-10 md:w-[80%] w-full  md:p-4 relative">
-            <div className="flex flex-col items-start gap-2  md:col-span-2 relative ">
+          <div className="grid lg:grid-cols-3 gap-10 lg:w-[80%] w-full  md:p-4 relative">
+            <div className="flex flex-col items-start gap-2  lg:col-span-2 relative ">
               {" "}
               <div className="flex flex-col gap-6 ">
                 <div className="max-w-[1070px] md:min-h-[200px] flex-wrap md:flex-nowrap flex gap-2  relative shadow-md rounded-xl p-2 border">

@@ -49,8 +49,8 @@ const PropertyListing = () => {
     <div>
       <section className="min-h-screen  ">
         <div className="flex justify-center mt-10">
-          <div className="grid lg:grid-cols-3 gap-8 md:w-[80%]  p-4 relative">
-            <div className="flex flex-col items-start gap-2  md:col-span-2 ">
+          <div className="grid lg:grid-cols-3 gap-8 lg:w-[80%]  p-4 relative">
+            <div className="flex flex-col items-start gap-2  lg:col-span-2 ">
               {" "}
               <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">
                 Property Listing
@@ -71,7 +71,7 @@ const PropertyListing = () => {
                     />
                     <img src="/assets/propertyimg.png" className="w-[33%] " />
 
-                    <div className="flex flex-col md:gap-3 gap-1 flex-wrap max-w-[680px] w-[63%]">
+                    <div className="flex flex-col md:gap-3 gap-1 xl:gap-4 flex-wrap max-w-[680px] w-[63%]">
                       <h1 className="text-zinc-900 md:text-3.5vw text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
