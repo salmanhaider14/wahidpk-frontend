@@ -41,7 +41,7 @@ export default function Header() {
         Find a variety of properties that suit you, forget all difficulties in
         finding a residence for you
       </p>
-      <div className="flex lg:hidden justify-center items-center gap-4 mt-5">
+      <div className="flex md:hidden justify-center items-center gap-4 mt-5">
         <button
           className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
           onClick={() => setShowModal(true)}
@@ -55,10 +55,10 @@ export default function Header() {
           Rent
         </button>{" "}
       </div>
-      <div className="max-w-[1000px] min-h-[170px] bg-white m-auto mt-10 rounded-md hidden lg:flex  md:justify-center flex-col justify-start p-4 gap-2">
+      <div className="lg:max-w-[1000px] md:max-w-[700px] md:min-h-[100px] lg:min-h-[170px]  bg-white m-auto mt-10 rounded-md hidden md:flex  md:justify-center flex-col justify-start p-4 gap-2">
         <div className="flex items-center gap-2">
           {" "}
-          <FormControl className="md:w-[200px] ">
+          <FormControl className="lg:w-[200px] md:w-[100px] ">
             <InputLabel id="demo-simple-select-label">City</InputLabel>
             <Select
               labelId="demo-simple-select-label"
@@ -88,11 +88,11 @@ export default function Header() {
             type="text"
             placeholder="Property Type"
             id="default-input"
-            class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block md:w-[200px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block lg:w-[200px] md:w-[100px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
-          <div className="w-[300px] h-[60px] ">
+          <div className="lg:w-[300px] h-[60px] ">
             <div className="flex items-center md:justify-center gap-4">
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl className="lg:w-[120px] md:w-[80px]">
                 <InputLabel htmlFor="grouped-native-select">
                   Min Price
                 </InputLabel>
@@ -114,7 +114,7 @@ export default function Header() {
                 </Select>
               </FormControl>
               <p>To</p>
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl className="lg:w-[120px] md:w-[80px]">
                 <InputLabel htmlFor="grouped-select">Any</InputLabel>
                 <Select defaultValue="" id="grouped-select" label="Grouping">
                   <MenuItem value="">
@@ -130,9 +130,9 @@ export default function Header() {
               </FormControl>
             </div>
           </div>
-          <div className="md:w-[300px] h-[60px] md:ms-4 ">
+          <div className="lg:w-[300px] h-[60px] md:ms-4 ">
             <div className="flex items-center md:justify-start gap-4">
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl className="lg:w-[120px] md:w-[80px]">
                 <InputLabel htmlFor="grouped-native-select">
                   Min Marla
                 </InputLabel>
@@ -154,7 +154,7 @@ export default function Header() {
                 </Select>
               </FormControl>
               To
-              <FormControl sx={{ minWidth: 120 }}>
+              <FormControl className="lg:w-[120px] md:w-[80px]">
                 <InputLabel htmlFor="grouped-select">Any</InputLabel>
                 <Select defaultValue="" id="grouped-select" label="Grouping">
                   <MenuItem value="">
