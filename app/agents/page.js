@@ -85,7 +85,7 @@ export default function Agents() {
             </div>
           </div>
         </section>
-        <section className="min-h-[60vh]  bg-white">
+        <section className="  bg-white">
           <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
             Browse Agents By Cities
           </h1>

@@ -56,8 +56,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-6 p-4">
-          <div class="flex-grow lg:flex-grow-0 lg:w-1/4">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
+          <div class="w-full ">
             <div class="text-white text-lg font-semibold font-'Poppins'">
               Office Address
             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
               before your arrival.
             </div>
           </div>
-          <div class="flex-grow lg:flex-grow-0 lg:w-1/4">
+          <div class="w-full">
             <div class="text-white text-lg font-semibold font-'Poppins'">
               Contact Us
             </div>
@@ -122,7 +122,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="flex-grow lg:flex-grow-0 lg:w-1/4">
+          <div class="w-full">
             <div class="text-white text-lg font-semibold font-'Poppins'">
               Quick Links
             </div>
@@ -177,7 +177,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="flex-grow lg:flex-grow-0 lg:w-1/4">
+          <div class="w-full">
             <div class="text-white text-lg font-semibold font-'Poppins'">
               Quick Links
             </div>
@@ -232,7 +232,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="flex-grow lg:flex-grow-0 lg:w-1/4">
+          <div class="w-full">
             <div class="text-white text-lg font-semibold font-'Poppins'">
               Create Free Account, SignUp
             </div>
@@ -245,11 +245,11 @@ const Footer = () => {
                   type="text"
                   placeholder="Email"
                   id="default-input"
-                  class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-56  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  class="h-[56px] bg-gray-50 border w-full border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block   p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 />
 
                 <div class="mt-2">
-                  <button class="w-56 h-12  bg-white bg-opacity-10 rounded-md border text-white font-bold border-white border-opacity-10 flex items-center justify-center gap-2.5">
+                  <button class="w-full h-12  bg-white bg-opacity-10 rounded-md border text-white font-bold border-white border-opacity-10 flex items-center justify-center gap-2.5">
                     Sign Up
                   </button>
                 </div>

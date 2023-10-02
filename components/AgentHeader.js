@@ -20,16 +20,10 @@ const AgentHeader = () => {
         </p>
         <div className="flex lg:hidden justify-center items-center gap-4 mt-5">
           <button
-            className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
+            className="bg-white hover:bg-gray-100 rounded-md w-[150px] shadow-md h-[50px] p-2 font-bold"
             onClick={() => setShowModal(true)}
           >
-            Buy
-          </button>{" "}
-          <button
-            className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
-            onClick={() => setShowModal(true)}
-          >
-            Rent
+            Search Agent
           </button>{" "}
         </div>
         <AgentSearchBar />

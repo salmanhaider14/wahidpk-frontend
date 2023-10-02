@@ -34,10 +34,10 @@ export default function Header() {
       {showModal && <SearchBarModal setShowModal={setShowModal} />}
       <SubBar />
       <hr />
-      <h1 className=" text-center drop-shadow-md text-white md:text-[61.84px] text-5xl p-2 leading-[60px] font-bold font-['Poppins'] pt-[150px] ">
+      <h1 className=" text-center drop-shadow-md text-white md:text-[61.84px] text-3xl p-2 md:leading-[60px] font-bold font-['Poppins'] pt-[150px] ">
         Search Properties For <br /> Sale, Rent or Buy
       </h1>
-      <p className="text-white  text-base text-center pt-4 font-semibold font-['Poppins'] leading-normal">
+      <p className="text-white  md:text-md text-sm text-center pt-4 font-semibold font-['Poppins'] leading-normal">
         Find a variety of properties that suit you, forget all difficulties in
         finding a residence for you
       </p>

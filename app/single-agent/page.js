@@ -2,7 +2,7 @@ import AgentSearch from "@/components/AgentSearch";
 import ContactAgent from "@/components/ContactAgent";
 import TourForm from "@/components/TourForm";
 import React from "react";
-import { FaPhone, FaSearch } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaSearch, FaWhatsapp } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { BiLogoFacebook, BiLogoLinkedin, BiLogoTwitter } from "react-icons/bi";
 import Link from "next/link";
@@ -160,32 +160,44 @@ const SingleAgent = () => {
                       <h1 className="text-[#25C55B] md:text-4vw text-sm font-extrabold font-['Mulish']">
                         ${property.price}
                       </h1>
-                      <div className="flex items-start gap-2 md:flex-col">
+                      <div className="flex items-start gap-1 md:flex-col">
                         <p className="flex items-center gap-2">
                           <img src="/assets/bed.png" />{" "}
-                          <p className="md:flex hidden"> Beds:</p>{" "}
+                          <span className="md:flex hidden"> Beds:</span>{" "}
                           {property.beds}
                         </p>
                         <p className="flex items-center gap-2">
                           <img src="/assets/bath.png" />{" "}
-                          <p className="md:flex hidden"> Baths:</p>{" "}
+                          <span className="md:flex hidden"> Baths:</span>{" "}
                           {property.baths}
                         </p>
                         <p className="flex items-center gap-2">
                           <img src="/assets/area.png" />{" "}
-                          <p className="md:flex hidden"> Sqft:</p>{" "}
+                          <span className="md:flex hidden"> Sqft:</span>{" "}
                           {property.area}
                         </p>
                       </div>
                       <hr />
-                      <div className="flex  gap-2  items-center ">
-                        <img
-                          src="/assets/propertyimg.png"
-                          className="w-[35px] h-[35px] rounded-full"
-                        />
-                        <h1 className="text-neutral-700 text-[13px] font-semibold font-['Poppins'] leading-tight">
-                          Kathryn Murphy
-                        </h1>
+                      <div className="flex  justify-start md:gap-2 gap-6 items-centerm   md:flex-wrap ">
+                        <button className="flex md:hidden  p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          <FaPhone size={20} />
+                        </button>
+                        <button className=" flex md:hidden p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          <FaEnvelope size={20} />
+                        </button>
+                        <button className="flex md:hidden  p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          <FaWhatsapp size={20} />
+                        </button>
+
+                        <button className="w-[25%] h-[56px] p-1 md:flex hidden justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          Call
+                        </button>
+                        <button className="w-[29%] h-[56px] p-1 md:flex hidden justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          Message
+                        </button>
+                        <button className="w-[33%] h-[56px] p-1 md:flex hidden justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md text-3vw font-semibold font-['Poppins'] ">
+                          Whatsapp
+                        </button>
                       </div>
                     </div>
                   </div>

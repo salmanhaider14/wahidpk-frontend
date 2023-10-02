@@ -78,7 +78,7 @@ export default function Home() {
             {stories.map((story) => (
               <img
                 src={story.img}
-                className="w-[190px] h-[280px] cursor-pointer"
+                className="md:w-[190px] md:h-[280px] w-[120px] cursor-pointer"
               />
             ))}
           </div>
@@ -353,7 +353,7 @@ export default function Home() {
         className="overflow-x-hidden w-full "
         style={{ backgroundImage: "/assets/contactbg.png" }}
       >
-        <div className="grid lg:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
           <div className="flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
             <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ms-10 ">
               <h1 className=" text-black md:text-[45px] text-[30px] font-['Poppins']  font-extrabold ">
@@ -361,7 +361,7 @@ export default function Home() {
                 <br />
                 real estate.
               </h1>
-              <p className=" text-neutral-400 md:text-sm text-xsm font-normal font-['Poppins'] leading-[21px]">
+              <p className=" text-neutral-400 md:text-sm text-xsm font-normal font-['Poppins'] leading-[21px] w-[70%]">
                 Fill in your basic information and one of our representative
                 will be in touch.
               </p>
@@ -405,7 +405,7 @@ export default function Home() {
           <ContactForm />
         </div>
       </section>
-      <section className="min-h-[70vh] bg-green-100">
+      <section className=" bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
           <div className="flex justify-center  items-center flex-col gap-5 ">
             <h1 className="text-zinc-900 md:text-5xl text-3xl font-bold font-['Poppins'] leading-[56.72px]">

@@ -1,6 +1,6 @@
 import FilterForm from "@/components/FilterForm";
 import React from "react";
-import { FaPhone, FaSearch, FaEnvelope } from "react-icons/fa";
+import { FaPhone, FaSearch, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { BiLogoWhatsapp } from "react-icons/bi";
 
 const PropertyListing = () => {
@@ -63,11 +63,11 @@ const PropertyListing = () => {
                   <div className="max-w-[1070px] md:h-[270px] h-[170px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
-                      className="absolute top-5 left-0 md:w-28 w-20 "
+                      className="absolute top-5 left-0 md:w-28 w-20"
                     />
                     <img
                       src="/assets/saletag2.png"
-                      className="absolute top-12 left-0 md:w-20 w-14 "
+                      className="absolute top-12 left-0 md:w-20 w-10 "
                     />
                     <img src="/assets/propertyimg.png" className="w-[33%] " />
 
@@ -100,12 +100,16 @@ const PropertyListing = () => {
                       </div>
                       <hr />
                       <div className="flex  justify-start md:gap-2 gap-6 items-centerm   md:flex-wrap ">
-                        <FaPhone className="text-main md:hidden" size={20} />
-                        <FaEnvelope className="text-main md:hidden" size={20} />
-                        <BiLogoWhatsapp
-                          className="text-main md:hidden"
-                          size={25}
-                        />
+                        <button className="flex md:hidden  p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          <FaPhone size={20} />
+                        </button>
+                        <button className=" flex md:hidden p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          <FaEnvelope size={20} />
+                        </button>
+                        <button className="flex md:hidden  p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                          <FaWhatsapp size={20} />
+                        </button>
+
                         <button className="w-[25%] h-[56px] p-1 md:flex hidden justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
                           Call
                         </button>
@@ -124,7 +128,7 @@ const PropertyListing = () => {
                     {stories.map((story) => (
                       <img
                         src={story.img}
-                        className="w-[190px] h-[280px] cursor-pointer"
+                        className="w-[190px] h-[280px]   cursor-pointer"
                       />
                     ))}
                   </div>

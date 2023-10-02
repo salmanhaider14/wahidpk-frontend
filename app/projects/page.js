@@ -55,7 +55,10 @@ export default function Projects() {
         <div className="flex justify-center   ">
           <div className="flex flex-row items-center flex-nowrap  relative   overflow-x-auto overflow-y-hidden ml-5   gap-2 mt-6 ">
             {developers.map((story) => (
-              <img src={story.img} className="h-[150px] w-[210px]" />
+              <img
+                src={story.img}
+                className="md:h-[150px] md:w-[210px] w-[150px]"
+              />
             ))}
           </div>
         </div>
@@ -106,18 +109,18 @@ export default function Projects() {
       </section>
 
       <section
-        className=" "
+        className="overflow-x-hidden w-full "
         style={{ backgroundImage: "/assets/contactbg.png" }}
       >
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
-          <div className="flex md:justify-end md:items-end justify-center items-center  flex-wrap w-full min-h-[500px]">
-            <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ">
-              <h1 className=" text-black md:text-[45px] text-[30px]  font-extrabold font-['Poppins']">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
+          <div className="flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
+            <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ms-10 ">
+              <h1 className=" text-black md:text-[45px] text-[30px] font-['Poppins']  font-extrabold ">
                 We provide the most <br /> suitable and quality
                 <br />
                 real estate.
               </h1>
-              <p className=" text-neutral-400 text-sm font-normal font-['Poppins'] leading-[21px]">
+              <p className=" text-neutral-400 md:text-sm text-xsm font-normal font-['Poppins'] leading-[21px] w-[70%]">
                 Fill in your basic information and one of our representative
                 will be in touch.
               </p>
@@ -157,10 +160,11 @@ export default function Projects() {
               </div>
             </div>
           </div>
+
           <ContactForm />
         </div>
       </section>
-      <section className="min-h-[70vh] bg-green-100">
+      <section className=" bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
           <div className="flex justify-center  items-center flex-col gap-5 mt-8">
             <h1 className="text-zinc-900 md:text-5xl text-3xl font-bold font-['Poppins'] leading-[56.72px]">
