@@ -18,7 +18,7 @@ const AgentHeader = () => {
           Search the real estate agents in Pakistan dealing in properties for
           sale and rent.
         </p>
-        <div className="flex lg:hidden justify-center items-center gap-4 mt-5">
+        <div className="flex md:hidden justify-center items-center gap-4 mt-5">
           <button
             className="bg-white hover:bg-gray-100 rounded-md w-[150px] shadow-md h-[50px] p-2 font-bold"
             onClick={() => setShowModal(true)}

@@ -95,7 +95,7 @@ export default function Home() {
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
-                <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
+                <div className="md:w-[330px] w-[230px] md:min-h-[480px] min-h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
                   <img
                     src="/assets/featuredtag.png"
                     className="absolute top-5 left-0"

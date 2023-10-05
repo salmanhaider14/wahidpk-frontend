@@ -10,33 +10,33 @@ import Link from "next/link";
 const SingleAgent = () => {
   const properties = [
     {
-      title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
+      title: "5 Marla Brand New Luxury House ",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: 7500,
+      price: "PKR 1.3 Crore",
       beds: 4,
       baths: 2,
       area: 1150,
     },
     {
-      title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
+      title: "5 Marla Brand New Luxury House",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: 7500,
+      price: "PKR 1.3 Crore",
       beds: 4,
       baths: 2,
       area: 1150,
     },
     {
-      title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
+      title: "5 Marla Brand New Luxury House",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: 7500,
+      price: "PKR 1.3 Crore",
       beds: 4,
       baths: 2,
       area: 1150,
     },
     {
-      title: "5 Marla Brand New Luxury House For Sale in DHA Phase 7 Lahore",
+      title: "5 Marla Brand New Luxury House",
       desc: "Street 22nd House 200 Sector 9 DHA Phase 7 Lahore",
-      price: 7500,
+      price: "PKR 1.3 Crore",
       beds: 4,
       baths: 2,
       area: 1150,
@@ -139,63 +139,65 @@ const SingleAgent = () => {
                 </div>
                 <hr />
                 {properties.map((property) => (
-                  <div className="max-w-[1070px] md:h-[300px] h-[170px] flex gap-2 relative shadow-md rounded-xl p-2 border">
+                  <div className="max-w-[1070px] md:min-h-[260px] min-h-[170px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
-                      className="absolute top-5 left-0 "
+                      className="absolute top-5 left-0 md:w-28 w-20"
                     />
                     <img
                       src="/assets/saletag2.png"
-                      className="absolute top-12 left-0 "
+                      className="absolute top-12 left-0 md:w-20 w-10 "
                     />
-                    <img src="/assets/propertyimg.png" className="w-[33%] " />
+                    <img src="/assets/propertyimg.png" className="w-[40%] " />
 
-                    <div className="flex flex-col md:gap-2 gap-1 flex-wrap max-w-[680px] w-[63%]">
-                      <h1 className="text-zinc-900 md:text-3.5vw text-sm font-semibold font-['Poppins']">
+                    <div className="flex flex-col md:gap-4 lg:gap-3 xl:gap-4 gap-3  flex-wrap max-w-[680px] w-[63%]">
+                      <h1 className="text-zinc-900 md:text-xl text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
                       <p className="text-neutral-700 md:text-1vw text-sm font-normal hidden md:flex font-['Poppins'] leading-2.5vw">
                         {property.desc}
                       </p>
-                      <h1 className="text-[#25C55B] md:text-4vw text-sm font-extrabold font-['Mulish']">
-                        ${property.price}
+                      <h1 className="text-[#25C55B] text-4vw  font-extrabold font-['Mulish']">
+                        {property.price}
                       </h1>
-                      <div className="flex items-start gap-1 md:flex-col">
+                      <div className="flex items-start gap-3 ">
                         <p className="flex items-center gap-2">
                           <img src="/assets/bed.png" />{" "}
                           <span className="md:flex hidden"> Beds:</span>{" "}
-                          {property.beds}
+                          <span className="font-bold"> {property.beds}</span>
                         </p>
                         <p className="flex items-center gap-2">
                           <img src="/assets/bath.png" />{" "}
                           <span className="md:flex hidden"> Baths:</span>{" "}
-                          {property.baths}
+                          <span className="font-bold"> {property.baths}</span>
                         </p>
                         <p className="flex items-center gap-2">
                           <img src="/assets/area.png" />{" "}
                           <span className="md:flex hidden"> Sqft:</span>{" "}
-                          {property.area}
+                          <span className="font-bold"> {property.area}</span>
                         </p>
                       </div>
                       <hr />
-                      <div className="flex  justify-start md:gap-2 gap-6 items-centerm   md:flex-wrap ">
-                        <button className="flex md:hidden  p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
-                          <FaPhone size={20} />
+                      <div className="flex md:hidden justify-start gap-2  ">
+                        {" "}
+                        <button className="flex  grow justify-center items-center gap-1  p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-sm font-semibold font-['Poppins'] ">
+                          <FaPhone className="text-[15px]" /> SMS
                         </button>
-                        <button className=" flex md:hidden p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
-                          <FaEnvelope size={20} />
+                        <button className=" flex  p-1 grow justify-center  items-center  gap-1   border rounded-md text-white border-[#25C55B] bg-main hover:text-green-600 text-sm font-semibold font-['Poppins'] ">
+                          <FaEnvelope className="text-[15px]" /> CALL
                         </button>
-                        <button className="flex md:hidden  p-1  border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                        <button className="flex grow  justify-center items-center p-1 px-2 border rounded-md text-white border-[#25C55B] bg-main hover:text-green-600  text-sm font-semibold font-['Poppins'] ">
                           <FaWhatsapp size={20} />
                         </button>
-
-                        <button className="w-[25%] h-[56px] p-1 md:flex hidden justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                      </div>
+                      <div className="hidden md:flex justify-start gap-2 xl:mt-1 ">
+                        <button className="w-[25%] h-[56px] p-1  justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
                           Call
                         </button>
-                        <button className="w-[29%] h-[56px] p-1 md:flex hidden justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
+                        <button className="w-[29%] h-[56px] p-1  justify-center items-center border rounded-md text-[#25C55B] border-[#25C55B] hover:bg-[#25C55B] hover:text-white text-3vw font-semibold font-['Poppins'] ">
                           Message
                         </button>
-                        <button className="w-[33%] h-[56px] p-1 md:flex hidden justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md text-3vw font-semibold font-['Poppins'] ">
+                        <button className="w-[33%] h-[56px] p-1  justify-center items-center bg-[#25C55B] hover:bg-green-800 text-white rounded-md text-3vw font-semibold font-['Poppins'] ">
                           Whatsapp
                         </button>
                       </div>

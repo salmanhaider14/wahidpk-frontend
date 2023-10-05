@@ -46,9 +46,9 @@ const SingleProperty = () => {
           <div className="grid lg:grid-cols-3 gap-8 lg:w-[80%] w-full  md:p-4   relative ">
             <div className="flex flex-col items-start gap-2  lg:col-span-2 relative  ">
               {" "}
-              <div className="flex flex-col gap-6 ">
-                <div className="max-w-[1070px] min-h-[200px]   relative shadow-md rounded-xl ">
-                  <Carousel className="h-[500px] mb-0">
+              <div className="flex flex-col  gap-6 ">
+                <div className="overflow-hidden relative shadow-md rounded-xl ">
+                  <Carousel className="h-[500px] overflow-hidden mb-0">
                     <img
                       alt="..."
                       src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
