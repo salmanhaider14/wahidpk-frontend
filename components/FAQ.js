@@ -4,7 +4,7 @@ import { Accordion } from "flowbite-react";
 
 const FAQ = () => {
   return (
-    <section className="min-h-[60vh]">
+    <section className="my-4">
       <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[30px]">
         Frequently asked questions
       </h1>

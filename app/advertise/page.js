@@ -65,18 +65,18 @@ export default function Agents() {
   return (
     <>
       <main className="">
-        <section className="min-h-[50vh]  bg-[#25C55B] relative p-2 flex justify-center items-center flex-wrap gap-7">
-          <button className="w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+        <section className="min-h-[50vh]  bg-[#25C55B] relative p-2 flex justify-center items-center flex-col md:flex-row  gap-7">
+          <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
             <FaArrowRight /> For Individuals
           </button>
-          <button className="w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+          <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
             <FaArrowRight /> For Agency
           </button>
-          <button className="w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+          <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
             <FaArrowRight /> For Developers
           </button>
         </section>
-        <section className="min-h-[100vh] bg-white">
+        <section className="my-6 bg-white">
           <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
             Pricing plans for every budget
           </h1>
@@ -86,7 +86,7 @@ export default function Agents() {
           </p>
           <div className="flex justify-center">
             {" "}
-            <div className="flex justify-start items-center gap-6 overflow-x-auto mt-8">
+            <div className="flex justify-start items-center gap-6 overflow-x-auto mt-8 py-6">
               {Individualpackages.map((pkg) => (
                 <div className="w-[330px] h-[350px] relative cursor-pointer border flex flex-col gap-6 p-4 rounded-xl shadow-md">
                   <h1 className=" text-zinc-900 text-[25.38px] font-bold font-['Poppins']">
@@ -114,7 +114,7 @@ export default function Agents() {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="flex justify-start items-center gap-6 overflow-x-auto mt-12">
+            <div className="flex justify-start items-center gap-6 overflow-x-auto mt-12 py-6">
               {Individualpackages2.map((pkg) => (
                 <div className="w-[280px] h-[300px] relative cursor-pointer border flex flex-col gap-3 p-4 rounded-xl shadow-md">
                   <h1 className=" text-zinc-900 text-[25.38px] font-bold font-['Poppins']">

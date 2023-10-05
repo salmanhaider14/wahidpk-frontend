@@ -53,7 +53,7 @@ export default function Projects() {
           Featured dev
         </p>
         <div className="flex justify-center   ">
-          <div className="flex flex-row items-center flex-nowrap  relative   overflow-x-auto overflow-y-hidden ml-5   gap-2 mt-6 ">
+          <div className="flex flex-row items-center flex-nowrap  relative   overflow-x-auto overflow-y-hidden ml-5   gap-2 mt-6 py-6 ">
             {developers.map((story) => (
               <img
                 src={story.img}
@@ -72,7 +72,7 @@ export default function Projects() {
           Check out the latest properties available for rent in Pakistan
         </p>
         <div className="flex justify-center ">
-          <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 mb-[60px] ">
+          <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 py-6 mb-[60px] ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
                 <div className="md:w-[330px] w-[230px] md:h-[440px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-2  rounded-xl border">

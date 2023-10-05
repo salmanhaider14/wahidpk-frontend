@@ -62,7 +62,7 @@ export default function Agents() {
             Featured Agencies
           </h1>
           <div className="flex justify-center">
-            <div className="flex  items-center gap-8 overflow-x-auto mt-8">
+            <div className="flex  items-center gap-8 overflow-x-auto mt-8 py-6">
               {agents.map((agent) => (
                 <Link href="/single-agent">
                   <div className="w-[300px]   relative cursor-pointer   p-2 flex items-center gap-4 ">
@@ -90,7 +90,7 @@ export default function Agents() {
             Browse Agents By Cities
           </h1>
           <div className="flex justify-center">
-            <div className="flex  items-center gap-8  overflow-x-auto mt-8">
+            <div className="flex  items-center gap-8  overflow-x-auto mt-8 py-6">
               {cities.map((city) => (
                 <div className="w-[370px] h-[130px]  relative cursor-pointer bg-white rounded-lg shadow-lg p-4 flex items-start flex-col md:gap-4 gap-2 border">
                   <div>
