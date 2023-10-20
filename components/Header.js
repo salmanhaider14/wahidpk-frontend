@@ -30,26 +30,27 @@ export default function Header() {
   const handleChange = () => {};
   const [showModal, setShowModal] = useState(false);
   return (
-    <div className="  bg-[#25C55B] relative ">
+    <div className="  bg-[#25C55B] relative p-5 ">
       {showModal && <SearchBarModal setShowModal={setShowModal} />}
       <SubBar />
       <hr className="lg:flex hidden" />
-      <h1 className=" text-center drop-shadow-md text-white md:text-[61.84px] text-3xl p-2 md:leading-[60px] font-bold font-['Poppins'] pt-[150px] ">
-        Search Properties For <br /> Sale, Rent or Buy
+      <h1 className=" text-center drop-shadow-md text-white md:text-[61.84px] text-md p-2 md:leading-[60px] font-bold font-['Poppins'] md:pt-[150px] ">
+        Search Properties For <br className="hidden md:block" /> Sale, Rent or
+        Buy
       </h1>
-      <p className="text-white  md:text-md text-sm text-center pt-4 font-semibold font-['Poppins'] leading-normal">
+      <p className="text-white hidden  md:block md:text-md text-sm text-center pt-4 font-semibold font-['Poppins'] leading-normal">
         Find a variety of properties that suit you, forget all difficulties in
         finding a residence for you
       </p>
-      <div className="flex md:hidden justify-center items-center gap-4 mt-5">
+      <div className="flex md:hidden justify-center items-center gap-4 my-5">
         <button
-          className="bg-white hover:bg-gray-100 rounded-md w-[100px] h-[40px]  font-bold"
+          className="bg-white hover:bg-gray-100 rounded-md w-[120px] h-[50px]  font-bold"
           onClick={() => setShowModal(true)}
         >
           Buy
         </button>{" "}
         <button
-          className="bg-white hover:bg-gray-100 rounded-md w-[100px] h-[40px]  font-bold"
+          className="bg-white hover:bg-gray-100 rounded-md w-[120px] h-[50px]  font-bold"
           onClick={() => setShowModal(true)}
         >
           Rent
@@ -192,7 +193,7 @@ export default function Header() {
           class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 grow p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />
       </div>
-      <div className="flex justify-center items-center gap-3 mt-8 flex-wrap">
+      <div className="hidden md:flex justify-center items-center gap-3 mt-8 flex-wrap">
         <p className="flex items-center gap-2 text-white">
           <img src="/assets/house.png" /> Houses
         </p>
@@ -215,7 +216,7 @@ export default function Header() {
           <img src="/assets/portion.png" /> Mansion
         </p>
       </div>
-      <div className="flex justify-center items-center flex-col gap-3 mt-[150px]">
+      <div className="hidden md:flex justify-center items-center flex-col gap-3 mt-[150px]">
         <h1 className="text-center text-white text-base font-semibold font-['Poppins'] leading-normal">
           Scroll
         </h1>

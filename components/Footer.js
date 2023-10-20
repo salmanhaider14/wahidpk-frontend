@@ -18,7 +18,7 @@ const Footer = () => {
               <div class="flex">
                 <div class="w-[150px] h-[100px] bg-zinc-300 rounded-[10px]"></div>
                 <div class="ml-6">
-                  <h2 class="text-zinc-900 text-3xl font-bold font-poppins">
+                  <h2 class="text-zinc-900 text-xl md:text-3xl font-bold font-poppins">
                     You need a house
                   </h2>
                   <p class="text-zinc-900 text-sm font-normal font-mulish leading-[21px]">
@@ -38,7 +38,7 @@ const Footer = () => {
               <div class="flex">
                 <div class="w-[150px] h-[100px] bg-zinc-300 rounded-[10px]"></div>
                 <div class="ml-6">
-                  <h2 class="text-zinc-900 text-3xl font-bold font-poppins">
+                  <h2 class="text-zinc-900 text-xl md:text-3xl font-bold font-poppins">
                     Sell your house
                   </h2>
                   <p class="text-zinc-900 text-sm font-normal font-mulish leading-[21px]">
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-4">
           <div class="w-full ">
             <div class="text-white text-lg font-semibold font-'Poppins'">
               Office Address
@@ -253,7 +253,7 @@ const Footer = () => {
                     Sign Up
                   </button>
                 </div>
-                <div class="mt-4 flex items-center gap-2.5">
+                <div class="mt-4 flex items-center gap-4">
                   <div class="w-5 h-5 relative">
                     <div class="w-5 h-5 left-0 top-0 absolute bg-white bg-opacity-10 rounded-md border border-white border-opacity-10"></div>
                   </div>

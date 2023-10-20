@@ -112,7 +112,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div
+      {/* <div
         className={`lg:hidden mt-4 ${
           menuOpen ? "block" : "hidden"
         } transition-all duration-300 ease-in-out`}
@@ -194,6 +194,122 @@ const Navbar = () => {
           <CiUser size={30} className="cursor-pointer" />
           <CiSun size={30} className=" cursor-pointer " />
         </div>
+      </div> */}
+      <div className="lg:hidden">
+        <div
+          className={`${
+            menuOpen ? "block" : "hidden"
+          } fixed top-0 left-0 w-64 md:w-96 h-full bg-[#040D12] text-white transition-all duration-300 ease-in-out z-50 overflow-y-auto`}
+        >
+          <div className="flex flex-col items-start p-4 gap-2 md:gap-4 mt-2">
+            <Link href="/" className="block py-2">
+              Home
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="/projects" className="block py-2">
+              Projects
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="/agents" className="block py-2">
+              Agents
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="/about" className="block py-2">
+              About
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="/contact" className="block py-2">
+              Contact
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="/tools" className="block py-2">
+              Tools
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="#" className="block py-2">
+              Request Home Inspection
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="#" className="block py-2">
+              Request Media Service
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <Link href="/agents" className="block py-2">
+              Become An Agent
+            </Link>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <div className="flex items-center gap-2 my-2">
+              <div className="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+                <Link href="#">
+                  <BiLogoFacebook color="white" size={25} />
+                </Link>
+              </div>
+              <div className="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+                <Link href="#">
+                  <BiLogoTwitter color="white" size={25} />
+                </Link>
+              </div>
+              <div className="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+                <Link href="#">
+                  <BiLogoLinkedin color="white" size={25} />
+                </Link>
+              </div>
+              <div className="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+                <Link href="#">
+                  <BiLogoInstagram color="white" size={25} />
+                </Link>
+              </div>
+            </div>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <form>
+              <div className="relative">
+                <input
+                  type="search"
+                  id="search"
+                  className="block w-full p-4 my-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-transparent focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search"
+                  required
+                  style={{ color: "white" }}
+                />
+              </div>
+            </form>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <div className="block py-2" onClick={() => setShowModal(true)}>
+              Register/Login
+            </div>
+            <div className=" w-full h-px bg-white opacity-30"></div>
+            <div className="flex items-start flex-col justify-start gap-3  mt-3 ">
+              <button className="bg-[#25C55B] hover:bg-green-700 w-[180px] h-[40px] text-white text-md rounded-lg">
+                Sell Property
+              </button>
+              <div className="flex items-start justify-start gap-2">
+                <CiUser size={30} className="cursor-pointer" />
+                <CiSun size={30} className="cursor-pointer" />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="fixed top-4 left-4 z-50">
+          <button
+            onClick={toggleMenu}
+            className="focus:outline-none focus:bg-transparent"
+          >
+            <svg
+              className="w-8 h-8 text-gray-800 cursor-pointer"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div> */}
       </div>
     </nav>
   );
