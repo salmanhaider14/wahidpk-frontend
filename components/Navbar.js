@@ -7,6 +7,18 @@ import Link from "next/link";
 import { FaSun, FaUser } from "react-icons/fa";
 import LoginModal from "./LoginModal";
 import RegisterModal from "./RegisterModal";
+import {
+  BsCameraVideoFill,
+  BsFillHouseFill,
+  BsPersonFill,
+} from "react-icons/bs";
+import {
+  BiLogoFacebook,
+  BiLogoInstagram,
+  BiLogoLinkedin,
+  BiLogoTwitch,
+  BiLogoTwitter,
+} from "react-icons/bi";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -124,6 +136,53 @@ const Navbar = () => {
           <Link className="block py-2" href="/tools">
             Tools
           </Link>
+          <Link className=" block  py-2 " href="#">
+            Request Home Inspection
+          </Link>
+          <Link className=" block  py-2 " href={"#"}>
+            Request Media Service
+          </Link>
+          <Link className=" block  py-2 " href={"/agents"}>
+            Become An Agent
+          </Link>
+          <div className="flex items-center gap-2 mt-2">
+            {" "}
+            <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+              <Link href={"#"}>
+                {" "}
+                <BiLogoFacebook color="blue" size={25} />
+              </Link>
+            </div>
+            <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+              <Link href={"#"}>
+                <BiLogoTwitter color="blue" size={25} />{" "}
+              </Link>
+            </div>
+            <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+              <Link href={"#"}>
+                <BiLogoLinkedin color="blue" size={25} />{" "}
+              </Link>
+            </div>
+            <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center">
+              <Link href={"#"}>
+                {" "}
+                <BiLogoInstagram color="red" size={25} />{" "}
+              </Link>
+            </div>
+          </div>
+
+          <form>
+            <div class="relative">
+              <input
+                type="search"
+                id="search"
+                class="block w-full p-4 my-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-transparent focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Search"
+                required
+                style={{ color: "white" }}
+              />
+            </div>
+          </form>
           <div className="block py-2" onClick={() => setShowModal(true)}>
             Register/Login
           </div>

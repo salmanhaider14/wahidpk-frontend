@@ -48,11 +48,11 @@ const SubBar = () => {
             </Link>
           </div>
         </div>
-        <button
+        {/* <button
           className="lg:hidden text-white focus:outline-none mr-9"
           onClick={toggleMenu}
         >
-          {/* Hamburger Icon */}
+          
           <svg
             className="w-6 h-6"
             fill="none"
@@ -67,7 +67,7 @@ const SubBar = () => {
               d="M4 6h16M4 12h16m-7 6h7"
             />
           </svg>
-        </button>
+        </button> */}
         <div className="lg:flex items-center gap-3 hidden mr-3 ">
           <div class="w-8 h-8 border border-white rounded-full flex items-center justify-center">
             <Link href={"#"}>
@@ -130,7 +130,7 @@ const SubBar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div
+      {/* <div
         className={`lg:hidden mt-4 ${
           menuOpen ? "block" : "hidden"
         } transition-all duration-300 ease-in-out `}
@@ -206,7 +206,7 @@ const SubBar = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 };

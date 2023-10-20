@@ -18,6 +18,7 @@ import { Carousel } from "flowbite-react";
 import { AiOutlineDislike, AiOutlineEye, AiOutlineLike } from "react-icons/ai";
 import ReviewForm from "@/components/ReviewForm";
 import Floors from "@/components/Floors";
+import CustomScrollContainer from "@/components/CustomScrollContainer";
 const SingleProperty = () => {
   const properties = [
     {
@@ -800,14 +801,69 @@ const SingleProperty = () => {
             </div>
           </div>
         </div>
-        <div className="w-full min-h-[300px]  overflow-x-auto flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative  rounded-xl p-2">
+        <div className="w-full min-h-[300px]   flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative  rounded-xl p-2">
           <h1 className=" text-zinc-900 text-[30.74px] font-semibold font-['Poppins']">
             Similar Properties
           </h1>
           <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-[21px]">
             Check out similar properties
           </p>
-          <div className="flex justify-center">
+          <CustomScrollContainer
+            containerId="container16"
+            leftButtonId="leftButton16"
+            rightButtonId="rightButton16"
+          >
+            {properties.map((property) => (
+              <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
+                <img
+                  src="/assets/featuredtag.png"
+                  className="absolute top-5 left-0"
+                />
+                <img
+                  src="/assets/saletag.png"
+                  className="absolute top-12 left-0"
+                />
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
+
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-start items-center gap-3 mt-3">
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bed.png" />{" "}
+                    <span className="hidden md:flex"> Beds:</span>{" "}
+                    <span className="font-bold"> {property.beds} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bath.png" />{" "}
+                    <span className="hidden md:flex"> Baths:</span>{" "}
+                    <span className="font-bold"> {property.baths} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/area.png" />{" "}
+                    <span className="hidden md:flex"> Sqft:</span>{" "}
+                    <span className="font-bold"> {property.sqft} </span>
+                  </p>
+                </div>
+                <hr />
+                <div className="flex justify-between items-center mt-2">
+                  <p className="flex items-center md:gap-2">
+                    <FaPlus color="green" />{" "}
+                    <span className="hidden md:flex">Compare</span>
+                  </p>
+                  <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2 text-sm">3 Years Ago</p>
+                </div>
+              </div>
+            ))}
+          </CustomScrollContainer>
+          {/* <div className="flex justify-center">
             <div className="flex  items-center  gap-4 mt-6 w-full mb-10">
               {properties.map((property) => (
                 <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
@@ -861,7 +917,7 @@ const SingleProperty = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="min-h-[60vh] bg-[#E6FFE0] ">

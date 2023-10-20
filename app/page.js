@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/components/Header";
 import {
   FaArrowAltCircleRight,
@@ -13,6 +14,8 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import { useEffect } from "react";
+import CustomScrollContainer from "@/components/CustomScrollContainer";
 
 export default function Home() {
   const stories = [
@@ -63,6 +66,48 @@ export default function Home() {
       sqft: 1150,
     },
   ];
+
+  // const scrollContainer = (scrollOffset) => {
+  //   const container = document.querySelector(".scroll-container");
+  //   container.scrollBy({
+  //     top: 0,
+  //     left: scrollOffset,
+  //     behavior: "smooth",
+  //   });
+  // };
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const container = document.querySelector(".scroll-container");
+  //     const leftButton = document.getElementById("left-button");
+  //     const rightButton = document.getElementById("right-button");
+
+  //     if (container.scrollLeft > 0) {
+  //       leftButton.style.display = "block";
+  //     } else {
+  //       leftButton.style.display = "none";
+  //     }
+
+  //     if (
+  //       container.scrollWidth - container.clientWidth >
+  //       container.scrollLeft
+  //     ) {
+  //       rightButton.style.display = "block";
+  //     } else {
+  //       rightButton.style.display = "none";
+  //     }
+  //   };
+
+  //   document
+  //     .querySelector(".scroll-container")
+  //     .addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     document.querySelector(".scroll-container");
+  //     // .removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <main>
       <Header />
@@ -73,7 +118,7 @@ export default function Home() {
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
           Featured stories, a quick look of any property
         </p>
-        <div className="justify-center flex ">
+        {/* <div className="justify-center flex ">
           <div className="flex flex-row items-center  flex-nowrap  ml-5  overflow-x-auto gap-2 mt-4 py-6 ">
             {stories.map((story) => (
               <img
@@ -82,7 +127,19 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
+        <CustomScrollContainer
+          containerId="container8"
+          leftButtonId="leftButton8"
+          rightButtonId="rightButton8"
+        >
+          {stories.map((story) => (
+            <img
+              src={story.img}
+              className="md:w-[190px] md:h-[280px] w-[120px] cursor-pointer"
+            />
+          ))}
+        </CustomScrollContainer>
       </section>
       <section className="mb-[60px] bg-white">
         <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
@@ -91,63 +148,140 @@ export default function Home() {
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
           Supreme Plus properties available for sale or rent
         </p>
-        <div className="flex justify-center ">
-          <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto  mt-4 py-6 ">
-            {properties.map((property) => (
-              <Link href={"/single-property"}>
-                <div className="md:w-[330px] w-[230px] md:min-h-[480px] min-h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
-                  <img
-                    src="/assets/featuredtag.png"
-                    className="absolute top-5 left-0"
-                  />
-                  <img
-                    src="/assets/saletag.png"
-                    className="absolute top-12 left-0"
-                  />
-                  <img src={property.img} className="w-full h-1/2" />
-                  <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
-                    {property.title}
-                  </h1>
+        <CustomScrollContainer
+          containerId="container1"
+          leftButtonId="leftButton1"
+          rightButtonId="rightButton1"
+        >
+          {properties.map((property) => (
+            <Link href={"/single-property"}>
+              <div className="md:w-[330px] w-[230px] md:min-h-[480px] min-h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
+                <img
+                  src="/assets/featuredtag.png"
+                  className="absolute top-5 left-0"
+                />
+                <img
+                  src="/assets/saletag.png"
+                  className="absolute top-12 left-0"
+                />
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
 
-                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
-                    {property.desc}
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-start items-center gap-3 mt-3">
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bed.png" />{" "}
+                    <span className="hidden md:flex"> Beds:</span>{" "}
+                    <span className="font-bold"> {property.beds} </span>
                   </p>
-                  <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
-                    ${property.price}
-                  </h1>
-                  <div className="flex justify-start items-center gap-3 mt-3">
-                    <p className="flex justify-center items-center gap-2 ">
-                      <img src="/assets/bed.png" />{" "}
-                      <span className="hidden md:flex"> Beds:</span>{" "}
-                      <span className="font-bold"> {property.beds} </span>
-                    </p>
-                    <p className="flex justify-center items-center gap-2 ">
-                      <img src="/assets/bath.png" />{" "}
-                      <span className="hidden md:flex"> Baths:</span>{" "}
-                      <span className="font-bold"> {property.baths} </span>
-                    </p>
-                    <p className="flex justify-center items-center gap-2 ">
-                      <img src="/assets/area.png" />{" "}
-                      <span className="hidden md:flex"> Sqft:</span>{" "}
-                      <span className="font-bold"> {property.sqft} </span>
-                    </p>
-                  </div>
-                  <hr />
-                  <div className="flex justify-between items-center mt-2">
-                    <p className="flex items-center md:gap-2">
-                      <FaPlus color="green" />{" "}
-                      <span className="hidden md:flex">Compare</span>
-                    </p>
-                    <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
-                    <p className="flex items-center gap-2 text-sm">
-                      3 Years Ago
-                    </p>
-                  </div>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bath.png" />{" "}
+                    <span className="hidden md:flex"> Baths:</span>{" "}
+                    <span className="font-bold"> {property.baths} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/area.png" />{" "}
+                    <span className="hidden md:flex"> Sqft:</span>{" "}
+                    <span className="font-bold"> {property.sqft} </span>
+                  </p>
                 </div>
-              </Link>
-            ))}
+                <hr />
+                <div className="flex justify-between items-center mt-2">
+                  <p className="flex items-center md:gap-2">
+                    <FaPlus color="green" />{" "}
+                    <span className="hidden md:flex">Compare</span>
+                  </p>
+                  <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2 text-sm">3 Years Ago</p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </CustomScrollContainer>
+        {/* <div className="flex justify-center relative">
+          <div
+            className="container"
+            style={{ overflowX: "hidden", position: "relative" }}
+          >
+            <div className="scroll-container flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto  mt-4 py-6 container ">
+              {properties.map((property) => (
+                <Link href={"/single-property"}>
+                  <div className="md:w-[330px] w-[230px] md:min-h-[480px] min-h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
+                    <img
+                      src="/assets/featuredtag.png"
+                      className="absolute top-5 left-0"
+                    />
+                    <img
+                      src="/assets/saletag.png"
+                      className="absolute top-12 left-0"
+                    />
+                    <img src={property.img} className="w-full h-1/2" />
+                    <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
+                      {property.title}
+                    </h1>
+
+                    <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                      {property.desc}
+                    </p>
+                    <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
+                      ${property.price}
+                    </h1>
+                    <div className="flex justify-start items-center gap-3 mt-3">
+                      <p className="flex justify-center items-center gap-2 ">
+                        <img src="/assets/bed.png" />{" "}
+                        <span className="hidden md:flex"> Beds:</span>{" "}
+                        <span className="font-bold"> {property.beds} </span>
+                      </p>
+                      <p className="flex justify-center items-center gap-2 ">
+                        <img src="/assets/bath.png" />{" "}
+                        <span className="hidden md:flex"> Baths:</span>{" "}
+                        <span className="font-bold"> {property.baths} </span>
+                      </p>
+                      <p className="flex justify-center items-center gap-2 ">
+                        <img src="/assets/area.png" />{" "}
+                        <span className="hidden md:flex"> Sqft:</span>{" "}
+                        <span className="font-bold"> {property.sqft} </span>
+                      </p>
+                    </div>
+                    <hr />
+                    <div className="flex justify-between items-center mt-2">
+                      <p className="flex items-center md:gap-2">
+                        <FaPlus color="green" />{" "}
+                        <span className="hidden md:flex">Compare</span>
+                      </p>
+                      <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                      <p className="flex items-center gap-2 text-sm">
+                        3 Years Ago
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+          <button
+            id="left-button"
+            onClick={() => scrollContainer(-300)} // Adjust the value based on your needs
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 px-2 py-1 rounded"
+            style={{ display: "none" }}
+          >
+            {"<"}
+          </button>
+          <button
+            id="right-button"
+            onClick={() => scrollContainer(300)} // Adjust the value based on your needs
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 px-2 py-1 rounded"
+          >
+            {">"}
+          </button>
+        </div> */}
       </section>
       <section className=" bg-[#E6FFE0]  bg-opacity-7  ">
         <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-2xl text-center font-bold font-['Poppins'] pt-[50px]">
@@ -156,7 +290,64 @@ export default function Home() {
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
           Check out the latest properties available for rent in Pakistan
         </p>
-        <div className="flex justify-center ">
+        <CustomScrollContainer
+          containerId="container2"
+          leftButtonId="leftButton2"
+          rightButtonId="rightButton2"
+        >
+          {properties.map((property) => (
+            <Link href={"/single-property"}>
+              <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
+                <img
+                  src="/assets/featuredtag.png"
+                  className="absolute top-5 left-0"
+                />
+                <img
+                  src="/assets/saletag.png"
+                  className="absolute top-12 left-0"
+                />
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
+
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-start items-center gap-3 mt-3">
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bed.png" />{" "}
+                    <span className="hidden md:flex"> Beds:</span>{" "}
+                    <span className="font-bold"> {property.beds} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bath.png" />{" "}
+                    <span className="hidden md:flex"> Baths:</span>{" "}
+                    <span className="font-bold"> {property.baths} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/area.png" />{" "}
+                    <span className="hidden md:flex"> Sqft:</span>{" "}
+                    <span className="font-bold"> {property.sqft} </span>
+                  </p>
+                </div>
+                <hr />
+                <div className="flex justify-between items-center mt-2">
+                  <p className="flex items-center md:gap-2">
+                    <FaPlus color="green" />{" "}
+                    <span className="hidden md:flex">Compare</span>
+                  </p>
+                  <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2 text-sm">3 Years Ago</p>
+                </div>
+              </div>
+            </Link>
+          ))}{" "}
+        </CustomScrollContainer>
+        {/* <div className="flex justify-center ">
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 py-6 mb-[60px] ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
@@ -212,7 +403,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
       <section className="mb-[60px] bg-white">
         <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
@@ -222,7 +413,64 @@ export default function Home() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel
           lobortis justo
         </p>
-        <div className="flex justify-center">
+        <CustomScrollContainer
+          containerId="container3"
+          leftButtonId="leftButton3"
+          rightButtonId="rightButton3"
+        >
+          {properties.map((property) => (
+            <Link href={"/single-property"}>
+              <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
+                <img
+                  src="/assets/featuredtag.png"
+                  className="absolute top-5 left-0"
+                />
+                <img
+                  src="/assets/saletag.png"
+                  className="absolute top-12 left-0"
+                />
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
+
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-start items-center gap-3 mt-3">
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bed.png" />{" "}
+                    <span className="hidden md:flex"> Beds:</span>{" "}
+                    <span className="font-bold"> {property.beds} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bath.png" />{" "}
+                    <span className="hidden md:flex"> Baths:</span>{" "}
+                    <span className="font-bold"> {property.baths} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/area.png" />{" "}
+                    <span className="hidden md:flex"> Sqft:</span>{" "}
+                    <span className="font-bold"> {property.sqft} </span>
+                  </p>
+                </div>
+                <hr />
+                <div className="flex justify-between items-center mt-2">
+                  <p className="flex items-center md:gap-2">
+                    <FaPlus color="green" />{" "}
+                    <span className="hidden md:flex">Compare</span>
+                  </p>
+                  <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2 text-sm">3 Years Ago</p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </CustomScrollContainer>
+        {/* <div className="flex justify-center">
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 py-6 ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
@@ -278,7 +526,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
       <section className=" bg-neutral-100">
         <h1 className="text-zinc-900 drop-shadow-lg md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
@@ -287,7 +535,70 @@ export default function Home() {
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
           Our top notch real estate agents
         </p>
-        <div className="justify-center flex">
+        <CustomScrollContainer
+          containerId="container4"
+          leftButtonId="leftButton4"
+          rightButtonId="rightButton4"
+        >
+          <div className="w-[350px] h-[330px] p-1 relative ">
+            <img src="/assets/propertyimg.png" />
+            <div className="flex justify-between items-center mt-4">
+              <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                Wade Warren
+              </h1>
+              <div className="flex items-center gap-2">
+                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                  <FaPhone color="#8E8E93" size={20} />
+                </div>{" "}
+                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                  <FaEnvelope color="#8E8E93" size={20} />
+                </div>{" "}
+              </div>
+            </div>
+            <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+              Salesperson
+            </p>
+          </div>
+          <div className="w-[350px] h-[330px] p-1 relative ">
+            <img src="/assets/propertyimg.png" />
+            <div className="flex justify-between items-center mt-4">
+              <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                Wade Warren
+              </h1>
+              <div className="flex items-center gap-2">
+                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                  <FaPhone color="#8E8E93" size={20} />
+                </div>{" "}
+                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                  <FaEnvelope color="#8E8E93" size={20} />
+                </div>{" "}
+              </div>
+            </div>
+            <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+              Salesperson
+            </p>
+          </div>
+          <div className="w-[350px] h-[330px] p-1 relative ">
+            <img src="/assets/propertyimg.png" />
+            <div className="flex justify-between items-center mt-4">
+              <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                Wade Warren
+              </h1>
+              <div className="flex items-center gap-2">
+                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                  <FaPhone color="#8E8E93" size={20} />
+                </div>{" "}
+                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                  <FaEnvelope color="#8E8E93" size={20} />
+                </div>{" "}
+              </div>
+            </div>
+            <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+              Salesperson
+            </p>
+          </div>
+        </CustomScrollContainer>
+        {/* <div className="justify-center flex">
           <div className="flex items-start gap-4 ml-5 overflow-x-auto mt-6 py-6">
             <div className="w-[350px] h-[330px] p-1 relative ">
               <img src="/assets/propertyimg.png" />
@@ -347,7 +658,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       <section
         className="overflow-x-hidden w-full "
@@ -459,7 +770,55 @@ export default function Home() {
           Read our recent blogs an stay updated with local & international
           market trends.
         </p>
-        <div className="flex justify-center mb-[50px] overflow-y-hidden">
+        <CustomScrollContainer
+          containerId="container5"
+          leftButtonId="leftButton5"
+          rightButtonId="rightButton5"
+        >
+          <div className="w-[350px] max-w-none min-w-[250px] h-[330px] p-1 relative">
+            <img src="/assets/propertyimg.png" className="w-full " />
+
+            <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
+              Building gains into housing stocks and how to trade the sector
+            </h1>
+
+            <Link href={"#"}>
+              {" "}
+              <p className=" text-green-600 flex items-center gap-2 md:text-md text-sm">
+                Read More <FaArrowRight />
+              </p>{" "}
+            </Link>
+          </div>
+          <div className="w-[350px] max-w-none min-w-[250px] h-[330px] p-1 relative">
+            <img src="/assets/propertyimg.png" className="w-full " />
+
+            <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
+              Building gains into housing stocks and how to trade the sector
+            </h1>
+
+            <Link href={"#"}>
+              {" "}
+              <p className=" text-green-600 flex items-center gap-2 md:text-md text-sm">
+                Read More <FaArrowRight />
+              </p>{" "}
+            </Link>
+          </div>
+          <div className="w-[350px] max-w-none min-w-[250px] h-[330px] p-1 relative">
+            <img src="/assets/propertyimg.png" className="w-full " />
+
+            <h1 className="text-zinc-900 md:text-lg text-sm font-semibold py-2 font-['Poppins']">
+              Building gains into housing stocks and how to trade the sector
+            </h1>
+
+            <Link href={"#"}>
+              {" "}
+              <p className=" text-green-600 flex items-center gap-2 md:text-md text-sm">
+                Read More <FaArrowRight />
+              </p>{" "}
+            </Link>
+          </div>
+        </CustomScrollContainer>
+        {/* <div className="flex justify-center mb-[50px] overflow-y-hidden">
           <div className="flex items-start gap-4 p-2 overflow-x-auto overflow-y-hidden mt-6">
             <div className="w-[350px] max-w-none min-w-[250px] h-[330px] p-1 relative">
               <img src="/assets/propertyimg.png" className="w-full " />
@@ -504,7 +863,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );

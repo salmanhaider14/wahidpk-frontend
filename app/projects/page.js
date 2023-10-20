@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import { FaArrowAltCircleRight, FaPhone } from "react-icons/fa";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import CustomScrollContainer from "@/components/CustomScrollContainer";
 
 export default function Projects() {
   const developers = [
@@ -52,7 +53,19 @@ export default function Projects() {
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
           Featured dev
         </p>
-        <div className="flex justify-center   ">
+        <CustomScrollContainer
+          containerId="container7"
+          leftButtonId="leftButton7"
+          rightButtonId="rightButton7"
+        >
+          {developers.map((story) => (
+            <img
+              src={story.img}
+              className="md:h-[150px] md:w-[210px] w-[150px]"
+            />
+          ))}
+        </CustomScrollContainer>
+        {/* <div className="flex justify-center   ">
           <div className="flex flex-row items-center flex-nowrap  relative   overflow-x-auto overflow-y-hidden ml-5   gap-2 mt-6 py-6 ">
             {developers.map((story) => (
               <img
@@ -61,7 +74,7 @@ export default function Projects() {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className=" bg-[#E6FFE0]  bg-opacity-7  ">
@@ -71,7 +84,44 @@ export default function Projects() {
         <p className="text-neutral-400 text-sm text-center font-normal pt-2 font-['Poppins'] leading-[21px]">
           Check out the latest properties available for rent in Pakistan
         </p>
-        <div className="flex justify-center ">
+        <CustomScrollContainer
+          containerId="container6"
+          leftButtonId="leftButton6"
+          rightButtonId="rightButton6"
+        >
+          {properties.map((property) => (
+            <Link href={"/single-property"}>
+              <div className="md:w-[330px] w-[230px] md:h-[440px] h-[370px] bg-white relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-2  rounded-xl border">
+                <img
+                  src="/assets/featuredtag.png"
+                  className="absolute top-5 left-0"
+                />
+                <img
+                  src="/assets/saletag.png"
+                  className="absolute top-12 left-0"
+                />
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
+
+                <p className="text-neutral-700 text-sm font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
+                  Starting At
+                </h1>
+
+                <hr />
+                <div className="flex justify-between items-center mt-2">
+                  <div className="w-10 h-10 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2">3 Years Ago</p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </CustomScrollContainer>
+        {/* <div className="flex justify-center ">
           <div className="flex cursor-grab hover:cursor-grabbing ml-5 items-start gap-4 overflow-x-auto mt-6 py-6 mb-[60px] ">
             {properties.map((property) => (
               <Link href={"/single-property"}>
@@ -105,7 +155,7 @@ export default function Projects() {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section

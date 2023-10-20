@@ -33,7 +33,7 @@ export default function Header() {
     <div className="  bg-[#25C55B] relative ">
       {showModal && <SearchBarModal setShowModal={setShowModal} />}
       <SubBar />
-      <hr />
+      <hr className="lg:flex hidden" />
       <h1 className=" text-center drop-shadow-md text-white md:text-[61.84px] text-3xl p-2 md:leading-[60px] font-bold font-['Poppins'] pt-[150px] ">
         Search Properties For <br /> Sale, Rent or Buy
       </h1>
@@ -43,13 +43,13 @@ export default function Header() {
       </p>
       <div className="flex md:hidden justify-center items-center gap-4 mt-5">
         <button
-          className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
+          className="bg-white hover:bg-gray-100 rounded-md w-[100px] h-[40px]  font-bold"
           onClick={() => setShowModal(true)}
         >
           Buy
         </button>{" "}
         <button
-          className="bg-white hover:bg-gray-100 rounded-md w-[130px] h-[50px] p-2 font-bold"
+          className="bg-white hover:bg-gray-100 rounded-md w-[100px] h-[40px]  font-bold"
           onClick={() => setShowModal(true)}
         >
           Rent

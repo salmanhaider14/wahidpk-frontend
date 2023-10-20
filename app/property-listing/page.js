@@ -2,6 +2,7 @@ import FilterForm from "@/components/FilterForm";
 import React from "react";
 import { FaPhone, FaSearch, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { BiLogoWhatsapp } from "react-icons/bi";
+import CustomScrollContainer from "@/components/CustomScrollContainer";
 
 const PropertyListing = () => {
   const properties = [
@@ -125,7 +126,7 @@ const PropertyListing = () => {
                     </div>
                   </div>
                 ))}
-                <div className="justify-center flex">
+                {/* <div className="justify-center flex">
                   <div className="flex flex-row items-center  flex-nowrap overflow-x-auto ml-5  gap-2 mt-6 ">
                     {stories.map((story) => (
                       <img
@@ -134,7 +135,19 @@ const PropertyListing = () => {
                       />
                     ))}
                   </div>
-                </div>
+                </div> */}
+                <CustomScrollContainer
+                  containerId="container15"
+                  leftButtonId="leftButton15"
+                  rightButtonId="rightButton15"
+                >
+                  {stories.map((story) => (
+                    <img
+                      src={story.img}
+                      className="w-[190px] h-[280px]   cursor-pointer"
+                    />
+                  ))}
+                </CustomScrollContainer>
               </div>
             </div>
             <div className="w-full  relative  flex flex-col gap-4  p-3  ">
