@@ -353,16 +353,16 @@ const SingleProperty = () => {
                   </h1>
                   <hr />
                   <div className="w-full grid md:grid-cols-4 grid-cols-3  ms-3 gap-2 md:gap-6 ">
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
                       Outdoor features
                     </h1>
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
                       Indoor features
                     </h1>
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
                       Climate & Energy{" "}
                     </h1>
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
                       Plot features
                     </h1>
                     <p className="flex items-center gap-2 md:text-lg text-md">
@@ -974,11 +974,11 @@ const SingleProperty = () => {
         </CustomScrollContainer>
       </div>
 
-      <section className="min-h-[60vh] bg-[#E6FFE0] ">
+      <section className=" bg-[#E6FFE0] ">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
-          <div className="flex justify-center items-end mt-[150px]">
+          <div className="flex justify-center items-end md:mt-[150px]">
             <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
-              <h1 className=" text-zinc-900 text-[45px] font-bold font-['Poppins'] leading-[54px]">
+              <h1 className=" text-zinc-900 md:text-[45px] text-[25px] font-bold font-['Poppins'] leading-tight md:leading-[54px]">
                 Find for your dream home
                 <br />
                 and increase your investment opportunities
@@ -987,12 +987,15 @@ const SingleProperty = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 sed tristique metus proin id lorem odio
               </p>
-              <button class="text-white flex items-center gap-3 text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
+              <button class="text-white flex items-center gap-3 text-[15px] font-bold font-poppins leading-snug bg-[#25C55B] my-2  hover:bg-green-700 rounded-[10px] px-[18px] py-4">
                 <FaPhone /> Contact Seller
               </button>
             </div>
           </div>
-          <img src="/assets/storyimg.png" className="h-full mt-10" />
+          <img
+            src="/assets/storyimg.png"
+            className="h-full md:mt-10 mt-2 hidden md:block"
+          />
         </div>
       </section>
     </div>

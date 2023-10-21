@@ -57,7 +57,7 @@ const PropertyListing = () => {
         <div className="flex justify-center md:mt-3 mt-2">
           <div className="grid lg:grid-cols-3 gap-8 lg:w-[80%] p-1 md:p-4 relative">
             <div className="flex flex-col items-start gap-2  lg:col-span-2 ">
-              <div className="flex md:hidden justify-center items-center gap-4 my-5">
+              <div className="flex md:hidden justify-center py-2 items-center gap-4 my-5  bg-main w-full">
                 <button
                   className="bg-white border shadow-md hover:bg-gray-100 rounded-md w-[120px] h-[50px]  font-bold"
                   onClick={() => setShowModal(true)}
@@ -82,11 +82,11 @@ const PropertyListing = () => {
                   <div className="max-w-[1070px] md:min-h-[260px] min-h-[130px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
-                      className="absolute top-5 left-0 md:w-28 w-20"
+                      className="absolute top-5 left-0 md:w-28 w-24"
                     />
                     <img
                       src="/assets/saletag2.png"
-                      className="absolute md:top-12 top-10 left-0 md:w-20 w-10 "
+                      className="absolute md:top-12 top-10 left-0 md:w-20 w-14 "
                     />
                     <img src="/assets/propertyimg.png" className="w-[35%] " />
 
@@ -312,11 +312,11 @@ const PropertyListing = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-[60vh] bg-[#E6FFE0] ">
+      <section className=" bg-[#E6FFE0] ">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
-          <div className="flex justify-center items-end mt-[150px]">
+          <div className="flex justify-center items-end md:mt-[150px]">
             <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
-              <h1 className=" text-zinc-900 md:text-[45px] text-[30px] font-bold font-['Poppins'] md:leading-[54px]">
+              <h1 className=" text-zinc-900 md:text-[45px] text-[25px] font-bold font-['Poppins'] leading-tight md:leading-[54px]">
                 Find for your dream home
                 <br />
                 and increase your investment opportunities
@@ -325,12 +325,15 @@ const PropertyListing = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 sed tristique metus proin id lorem odio
               </p>
-              <button class="text-white flex items-center gap-3 text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
+              <button class="text-white flex items-center gap-3 text-[15px] font-bold font-poppins leading-snug bg-[#25C55B] my-2  hover:bg-green-700 rounded-[10px] px-[18px] py-4">
                 <FaPhone /> Contact Seller
               </button>
             </div>
           </div>
-          <img src="/assets/storyimg.png" className="h-full md:mt-10 mt-2" />
+          <img
+            src="/assets/storyimg.png"
+            className="h-full md:mt-10 mt-2 hidden md:block"
+          />
         </div>
       </section>
     </div>

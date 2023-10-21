@@ -266,7 +266,7 @@ const Footer = () => {
           </div>
         </div>
         <div class="border-t border-white border-opacity-10 my-4"></div>
-        <div class="flex justify-between items-center flex-wrap">
+        <div class="flex md:justify-between justify-center items-center flex-wrap">
           <img src="/assets/footerlogo.png" />
 
           <div class="flex  items-center md:gap-6 gap-4 mt-2 mb-4 grow lg:mb-0">
