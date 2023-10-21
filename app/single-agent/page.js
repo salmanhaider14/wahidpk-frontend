@@ -1,7 +1,8 @@
+"use client";
 import AgentSearch from "@/components/AgentSearch";
 import ContactAgent from "@/components/ContactAgent";
 import TourForm from "@/components/TourForm";
-import React from "react";
+import React, { useState } from "react";
 import { FaEnvelope, FaPhone, FaSearch, FaWhatsapp } from "react-icons/fa";
 import { CiLocationOn } from "react-icons/ci";
 import { BiLogoFacebook, BiLogoLinkedin, BiLogoTwitter } from "react-icons/bi";
@@ -42,7 +43,11 @@ const SingleAgent = () => {
       area: 1150,
     },
   ];
+  const [isExpanded, setIsExpanded] = useState(false);
 
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
   return (
     <div>
       <section className="min-h-screen ">
@@ -104,20 +109,22 @@ const SingleAgent = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap md:gap-1 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
+                <div className="max-w-[1070px]  flex-col flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
+                  <h1 className="text-zinc-900 md:text-[22.74px] text-[20px] font-semibold font-['Poppins']">
                     About Cameron Williamson
                   </h1>
-                  <p className=" text-neutral-700 md:text-lg text-sm font-normal font-['Poppins'] leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam risus leo, blandit vitae diam a, vestibulum viverra
-                    nisi. Vestibulum ullamcorper velit eget mattis aliquam.
-                    Proin dapibus luctus pulvinar. Integer et libero ut purus
-                    bibendum gravida non ac tellus. Proin sed tellus porttitor,
-                    varius mauris vitae, tincidunt augue. Sed consectetur magna
-                    elit, sit amet faucibus tortor sodales vitae. Maecenas quis
-                    arcu est. Nam sit amet neque vestibulum, fringilla elit sit
-                    amet, volutpat nunc.
+                  <hr />
+                  <p className="text-neutral-700 md:text-lg text-sm font-normal font-['Poppins'] leading-tight md:leading-relaxed">
+                    {isExpanded
+                      ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus leo, blandit vitae diam a, vestibulum viverra nisi. Vestibulum ullamcorper velit eget mattis aliquam. Proin dapibus luctus pulvinar. Integer et libero ut purus bibendum gravida non ac tellus. Proin sed tellus porttitor, varius mauris vitae, tincidunt augue. Sed consectetur magna elit, sit amet faucibus tortor sodales vitae. Maecenas quis arcu est. Nam sit amet neque vestibulum, fringilla elit sit amet, volutpat nunc."
+                      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus leo, blandit vitae diam a, vestibulum viverra nisi."}
+                  </p>
+                  <p
+                    className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]"
+                    onClick={toggleExpand}
+                    style={{ cursor: "pointer" }}
+                  >
+                    {isExpanded ? "Show less" : "Show more"}
                   </p>
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] max-h-[360px]  flex flex-wrap gap-1 relative  rounded-xl p-4 ">
