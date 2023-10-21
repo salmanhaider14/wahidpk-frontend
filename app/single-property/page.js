@@ -710,7 +710,7 @@ const SingleProperty = () => {
             <div className="    flex flex-col gap-4  p-3  ">
               <ContactAgent />
               <TourForm />
-              <div className=" rounded w-full relative  flex flex-col gap-4 p-3 border">
+              <div className=" rounded w-full relative  hidden md:flex flex-col gap-4 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
@@ -748,7 +748,7 @@ const SingleProperty = () => {
                   </div>
                 </div>
               </div>
-              <div className=" rounded   flex flex-col gap-2 p-3 border">
+              <div className=" rounded   hidden md:flex flex-col gap-2 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins'] pb-2">
                   Real estate near you
                 </h1>
@@ -783,7 +783,7 @@ const SingleProperty = () => {
                   />{" "}
                 </div>
               </div>
-              <div className=" rounded w-full relative  flex flex-col gap-4 p-3 border">
+              <div className=" rounded w-full relative hidden md:flex flex-col gap-4 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Hot Projects
                 </h1>

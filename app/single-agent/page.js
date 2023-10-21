@@ -167,7 +167,7 @@ const SingleAgent = () => {
                     />
                     <img
                       src="/assets/saletag2.png"
-                      className="absolute top-12 left-0 md:w-20 w-10 "
+                      className="absolute md:top-12 top-10 left-0 md:w-20 w-10 "
                     />
                     <img src="/assets/propertyimg.png" className="w-[35%] " />
 

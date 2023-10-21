@@ -92,14 +92,14 @@ export default function Agents() {
           >
             {agents.map((agent) => (
               <Link href="/single-agent">
-                <div className="w-[300px]   relative cursor-pointer   p-2 flex items-center gap-4 ">
-                  <img src={agent.img} className="w-[100px]" />
+                <div className="md:w-[300px] w-[180px]   relative cursor-pointer   p-2 flex items-center gap-4 ">
+                  <img src={agent.img} className="w-[70px] md:w-[100px]" />
                   <div className="flex flex-col gap-2">
                     <h1 className=" text-zinc-900 md:text-md text-sm font-semibold font-['Poppins'] ">
                       {agent.name}
                     </h1>
 
-                    <p className="text-gray-500 md:text-md text-sm font-normal font-['Poppins']  leading-[18px]">
+                    <p className="text-gray-500 md:text-md hidden md:block text-sm font-normal font-['Poppins']  leading-[18px]">
                       {agent.desc}
                     </p>
                     <p className="text-neutral-700 md:text-md text-sm font-normal font-['Poppins']  leading-[18px] flex items-center gap-2">

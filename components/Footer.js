@@ -232,7 +232,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div class="w-full">
+          <div class="w-full hidden md:block">
             <div class="text-white text-lg font-semibold font-'Poppins'">
               Create Free Account, SignUp
             </div>
@@ -240,7 +240,7 @@ const Footer = () => {
               <div class="text-green-50 text-sm font-normal font-'Mulish' leading-5">
                 Enter your email, create a free account.
               </div>
-              <div class="mt-4">
+              <div class="mt-4 hidden md:block">
                 <input
                   type="text"
                   placeholder="Email"

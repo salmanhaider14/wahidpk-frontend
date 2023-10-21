@@ -1,9 +1,11 @@
+"use client";
 import FilterForm from "@/components/FilterForm";
-import React from "react";
+import React, { useState } from "react";
 import { FaPhone, FaSearch, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import CustomScrollContainer from "@/components/CustomScrollContainer";
 import Link from "next/link";
+import SearchBarModal from "@/components/SearchBarModal";
 
 const PropertyListing = () => {
   const properties = [
@@ -46,18 +48,29 @@ const PropertyListing = () => {
     { img: "/assets/propertyimg.png" },
     { img: "/assets/propertyimg.png" },
   ];
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div>
+      {showModal && <SearchBarModal setShowModal={setShowModal} />}
       <section className="min-h-screen  ">
         <div className="flex justify-center md:mt-3 mt-2">
-          <div className="grid lg:grid-cols-3 gap-8 lg:w-[80%]  p-4 relative">
+          <div className="grid lg:grid-cols-3 gap-8 lg:w-[80%] p-1 md:p-4 relative">
             <div className="flex flex-col items-start gap-2  lg:col-span-2 ">
-              <Link href={"#search-filter"} className="md:hidden block">
-                <button className="text-center  w-[200px] text-white rounded-md bg-[#25C55B] text-lg font-bold font-['Poppins'] leading-normal h-[56px] ">
-                  Search More
-                </button>
-              </Link>
+              <div className="flex md:hidden justify-center items-center gap-4 my-5">
+                <button
+                  className="bg-white border shadow-md hover:bg-gray-100 rounded-md w-[120px] h-[50px]  font-bold"
+                  onClick={() => setShowModal(true)}
+                >
+                  Buy
+                </button>{" "}
+                <button
+                  className="bg-white border shadow-md hover:bg-gray-100 rounded-md w-[120px] h-[50px]  font-bold"
+                  onClick={() => setShowModal(true)}
+                >
+                  Rent
+                </button>{" "}
+              </div>
               <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">
                 Property Listing
               </h1>
@@ -73,11 +86,11 @@ const PropertyListing = () => {
                     />
                     <img
                       src="/assets/saletag2.png"
-                      className="absolute top-12 left-0 md:w-20 w-10 "
+                      className="absolute md:top-12 top-10 left-0 md:w-20 w-10 "
                     />
                     <img src="/assets/propertyimg.png" className="w-[35%] " />
 
-                    <div className="flex flex-col md:gap-4 lg:gap-3 xl:gap-4 gap-1  flex-wrap max-w-[680px] w-[63%]">
+                    <div className="flex flex-col md:gap-4 lg:gap-3 xl:gap-4 gap-2  flex-wrap max-w-[680px] w-[63%]">
                       <h1 className="text-zinc-900 md:text-xl text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
@@ -141,26 +154,30 @@ const PropertyListing = () => {
                     ))}
                   </div>
                 </div> */}
-                <CustomScrollContainer
-                  containerId="container15"
-                  leftButtonId="leftButton15"
-                  rightButtonId="rightButton15"
-                >
-                  {stories.map((story) => (
-                    <img
-                      src={story.img}
-                      className="w-[190px] h-[280px]   cursor-pointer"
-                    />
-                  ))}
-                </CustomScrollContainer>
+                <div className="hidden md:block">
+                  <CustomScrollContainer
+                    containerId="container15"
+                    leftButtonId="leftButton15"
+                    rightButtonId="rightButton15"
+                  >
+                    {stories.map((story) => (
+                      <img
+                        src={story.img}
+                        className="w-[190px] h-[280px]   cursor-pointer"
+                      />
+                    ))}
+                  </CustomScrollContainer>
+                </div>
               </div>
             </div>
             <div
               className="w-full  relative  flex flex-col gap-4  p-3   "
               id="search-filter"
             >
-              <FilterForm />
-              <div className="  w-full relative  flex flex-col gap-4 p-3 border rounded ">
+              <div className="hidden md:block">
+                <FilterForm />
+              </div>
+              <div className="  w-full relative  hidden md:flex flex-col gap-4 p-3 border rounded ">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
                 </h1>
@@ -198,7 +215,7 @@ const PropertyListing = () => {
                   </div>
                 </div>
               </div>
-              <div className="   flex flex-col gap-2 p-3 border rounded">
+              <div className="   hidden md:flex flex-col gap-2 p-3 border rounded">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins'] pb-2">
                   Real estate near you
                 </h1>
@@ -233,7 +250,7 @@ const PropertyListing = () => {
                   />{" "}
                 </div>
               </div>
-              <div className="  w-full relative  flex flex-col gap-4 p-3 border rounded">
+              <div className="  w-full relative  hidden md:flex flex-col gap-4 p-3 border rounded">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Hot Projects
                 </h1>
