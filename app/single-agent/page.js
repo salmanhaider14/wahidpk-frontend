@@ -93,6 +93,20 @@ const SingleAgent = () => {
                       <BiLogoTwitter size={35} color="#8E8E93" />
                       <BiLogoLinkedin size={35} color="#8E8E93" />
                     </div>
+                    <div className="flex items-center gap-2 md:hidden my-3">
+                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                        Email
+                      </button>
+                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                        SMS
+                      </button>
+                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
+                        Call
+                      </button>
+                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                        Whatsapp
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div className="max-w-[1070px]  flex-col flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">

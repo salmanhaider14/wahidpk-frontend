@@ -95,20 +95,10 @@ const SingleProperty = () => {
                     <h1 className="text-main text-[36px] font-bold font-['Poppins']">
                       $7,500
                     </h1>
-                    <div className="flex items-center gap-2 md:hidden ">
-                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
-                        Email
-                      </button>
-                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
-                        SMS
-                      </button>
-                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
-                        Call
-                      </button>
-                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
-                        Whatsapp
-                      </button>
-                    </div>
+                    <h1 className="text-black md:text-[20px] py-2 text-lg font-bold font-['Poppins']">
+                      Villa Belo a large superior luxury villa
+                    </h1>
+
                     <div className="hidden md:flex items-center gap-3">
                       <img src="/assets/01.png" />
                       <img src="/assets/02.png" />
@@ -135,9 +125,6 @@ const SingleProperty = () => {
                         <AiOutlineEye size={25} /> 4,529 Views
                       </p>
                     </div>
-                    <h1 className="text-black md:text-[20px] py-2 text-lg font-bold font-['Poppins']">
-                      Villa Belo a large superior luxury villa
-                    </h1>
                   </div>
                   <div className="flex justify-between items-center w-full gap-4 mt-2  flex-wrap">
                     <div className="flex justify-around items-center gap-4 ">
@@ -154,6 +141,20 @@ const SingleProperty = () => {
                     <p className="text-neutral-700 text-base font-normal font-['Poppins'] leading-normal">
                       1964 Sq Ft
                     </p>
+                  </div>
+                  <div className="flex items-center gap-2 md:hidden my-2">
+                    <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                      Email
+                    </button>
+                    <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                      SMS
+                    </button>
+                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
+                      Call
+                    </button>
+                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                      Whatsapp
+                    </button>
                   </div>
                 </div>
                 <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
