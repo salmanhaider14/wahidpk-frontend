@@ -164,46 +164,46 @@ export default function Projects() {
       >
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
           <div className="flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
-            <div className="flex flex-col gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ms-10 ">
-              <h1 className=" text-black md:text-[45px] text-[30px] font-['Poppins']  font-extrabold ">
+            <div className="flex flex-col gap-1 md:gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ms-10 ">
+              <h1 className=" text-black md:text-[45px] text-lg font-['Poppins']  font-extrabold leading-normal ">
                 We provide the most <br /> suitable and quality
                 <br />
                 real estate.
               </h1>
-              <p className=" text-neutral-400 md:text-sm text-xsm font-normal font-['Poppins'] leading-[21px] w-[70%]">
+              <p className=" text-neutral-400 md:text-sm text-sm pt-2 font-normal font-['Poppins'] leading-[21px] w-[70%]">
                 Fill in your basic information and one of our representative
                 will be in touch.
               </p>
-              <div className="flex items-center md:flex-row flex-col gap-8 mt-7 flex-wrap">
-                <img src="/assets/locationico.png" />
+              <div className="flex items-center md:flex-row flex-col gap-2 md:gap-8 md:mt-7 flex-wrap">
+                <img src="/assets/locationico.png" className="w-10 md:w-14" />
                 <div className="w-[429px] h-[71px] flex-col justify-start items-start gap-0.5 inline-flex">
                   <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                     Office address
                   </div>
-                  <div className="self-stretch text-neutral-700 text-base font-normal font-['Poppins'] leading-normal">
+                  <div className="self-stretch text-neutral-700 text-sm md:text-base font-normal font-['Poppins'] leading-normal">
                     Office 6, Street 22nd, Block J<br />
                     Al-Rehman Garden Phase 2 Lahore
                   </div>
                 </div>
               </div>
-              <div className="flex items-center md:flex-row flex-col gap-8 mt-7 flex-wrap">
-                <img src="/assets/callico.png" />
+              <div className="flex items-center md:flex-row flex-col gap-2 md:gap-8 md:mt-7 flex-wrap">
+                <img src="/assets/callico.png" className="w-10 md:w-14" />
                 <div className="w-[429px] h-[61px] flex-col justify-start items-start gap-0.5 inline-flex">
                   <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                     Request a call back
                   </div>
-                  <div className="self-stretch text-[#25C55B] text-2xl font-extrabold font-['Poppins']">
+                  <div className="self-stretch text-[#25C55B] text-md md:text-2xl font-extrabold font-['Poppins']">
                     +92 (312) 4823-680
                   </div>
                 </div>
               </div>
-              <div className="flex items-center md:flex-row flex-col gap-8 mt-7 flex-wrap">
-                <img src="/assets/mailico.png" />
+              <div className="flex items-center md:flex-row flex-col gap-2 md:gap-8 md:mt-7 flex-wrap">
+                <img src="/assets/mailico.png" className="w-10 md:w-14" />
                 <div className="w-[429px] h-[47px] flex-col justify-start items-start gap-0.5 inline-flex">
                   <div className="self-stretch text-neutral-400 text-sm font-semibold font-['Poppins'] leading-[21px]">
                     Email us
                   </div>
-                  <div className="self-stretch text-[#25C55B] text-xl font-normal font-['Poppins'] leading-normal">
+                  <div className="self-stretch text-[#25C55B] text-sm md:text-xl font-normal font-['Poppins'] leading-normal">
                     info@wahid.pk
                   </div>
                 </div>
@@ -216,15 +216,15 @@ export default function Projects() {
       </section>
       <section className=" bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
-          <div className="flex justify-center  items-center flex-col gap-5 mt-8">
-            <h1 className="text-zinc-900 md:text-5xl text-3xl font-bold font-['Poppins'] leading-[56.72px]">
-              Join Developers Pool
+          <div className="flex justify-center  items-center flex-col gap-2 md:gap-5 ">
+            <h1 className="text-zinc-900 md:text-5xl text-xl font-bold font-['Poppins'] leading-[56.72px]">
+              Join Developer's Pool
             </h1>
             <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-snug">
               Become an agent and get the commission you deserve
             </p>
-            <img src="/assets/quoteico.png" />
-            <p className=" text-center text-neutral-700 text-[16.81px] font-medium font-['Poppins'] leading-relaxed">
+            <img src="/assets/quoteico.png" className="w-10 md:w-14" />
+            <p className=" w-2/3 text-center text-neutral-700 text-sm md:text-md font-medium font-['Poppins'] leading-relaxed">
               With a great working history, we have built strong relationships
               with more than 1000+ real estate business partners, providing
               profitable opportunities for investors in all cities of Pakistan.
@@ -236,7 +236,7 @@ export default function Projects() {
               <div className="self-stretch text-center text-zinc-900 text-[16.81px] font-semibold font-['Poppins'] leading-relaxed">
                 MA Sheikh
               </div>
-              <div className="self-stretch text-center text-neutral-400 text-sm font-normal font-['Poppins'] leading-snug">
+              <div className="self-stretch text-center text-neutral-400 text-sm font-normal py-1 font-['Poppins'] leading-snug">
                 CEO and founder at Wahid Properties (PVT) Limited
               </div>
             </div>
