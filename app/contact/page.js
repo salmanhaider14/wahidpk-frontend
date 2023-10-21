@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <>
       <section className=" relative">
-        <div className="bg-[#D9D9D9] p-4 md:w-[80%] w-full min-h-[550px] pt-[150px] relative m-auto mt-[120px]">
+        <div className="bg-[#D9D9D9] p-4 md:w-[80%] w-full min-h-[550px] pt-[150px] relative m-auto md:mt-[120px]">
           <h1 className="text-neutral-800 md:text-5xl text-3xl text-center pb-16 font-semibold font-['Golos Text'] ">
             We are eager to hear from you.
           </h1>

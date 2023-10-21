@@ -3,7 +3,7 @@ import AgentSearch from "@/components/AgentSearch";
 import ContactAgent from "@/components/ContactAgent";
 import TourForm from "@/components/TourForm";
 import LoanCalculator from "@/components/LoanCalculator";
-import React from "react";
+import React, { useState } from "react";
 import {
   FaEye,
   FaPhone,
@@ -19,6 +19,7 @@ import { AiOutlineDislike, AiOutlineEye, AiOutlineLike } from "react-icons/ai";
 import ReviewForm from "@/components/ReviewForm";
 import Floors from "@/components/Floors";
 import CustomScrollContainer from "@/components/CustomScrollContainer";
+import Link from "next/link";
 const SingleProperty = () => {
   const properties = [
     {
@@ -40,6 +41,11 @@ const SingleProperty = () => {
       sqft: 1150,
     },
   ];
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
   return (
     <div className="">
       <section className="min-h-screen  ">
@@ -49,18 +55,18 @@ const SingleProperty = () => {
               {" "}
               <div className="flex flex-col  gap-6 ">
                 <div className="overflow-hidden relative shadow-md rounded-xl ">
-                  <div className="flex md:hidden items-center gap-3 absolute top-16 right-0 z-50">
+                  <div className="flex md:hidden items-center gap-3 absolute top-16 right-3 z-40">
                     <img src="/assets/01.png" className="w-7" />
                     <img src="/assets/02.png" className="w-7" />
                     <img src="/assets/03.png" className="w-7" />
                     <img src="/assets/04.png" className="w-7" />
                   </div>
-                  <div className="absolute top-16 left-0 z-50 w-[75.45px] h-[20.09px] px-[10.72px] py-2 bg-yellow-400 rounded justify-center items-center gap-[13.41px] inline-flex md:hidden">
+                  <div className="absolute top-16 left-0 z-40 w-[75.45px] h-[20.09px] px-[10.72px] py-2 bg-yellow-400 rounded justify-center items-center gap-[13.41px] inline-flex md:hidden">
                     <div className="text-white text-sm font-bold font-['Mulish']">
                       For sale
                     </div>
                   </div>
-                  <Carousel className="h-[500px] overflow-hidden mb-0">
+                  <Carousel className="min-h-[500px] overflow-hidden mb-0">
                     <img
                       alt="..."
                       src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
@@ -235,24 +241,22 @@ const SingleProperty = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
-                  <h1 className=" text-zinc-900 md:text-[22.74px] text-[20px] font-semibold font-['Poppins']">
+                <div className="max-w-[1070px]  flex-col flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
+                  <h1 className="text-zinc-900 md:text-[22.74px] text-[20px] font-semibold font-['Poppins']">
                     Property Description
                   </h1>
                   <hr />
-                  <p className=" text-neutral-700 md:text-lg text-sm font-normal font-['Poppins'] leading-tight md:leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam risus leo, blandit vitae diam a, vestibulum viverra
-                    nisi. Vestibulum ullamcorper velit eget mattis aliquam.
-                    Proin dapibus luctus pulvinar. Integer et libero ut purus
-                    bibendum gravida non ac tellus. Proin sed tellus porttitor,
-                    varius mauris vitae, tincidunt augue. Sed consectetur magna
-                    elit, sit amet faucibus tortor sodales vitae. Maecenas quis
-                    arcu est. Nam sit amet neque vestibulum, fringilla elit sit
-                    amet, volutpat nunc.
+                  <p className="text-neutral-700 md:text-lg text-sm font-normal font-['Poppins'] leading-tight md:leading-relaxed">
+                    {isExpanded
+                      ? "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus leo, blandit vitae diam a, vestibulum viverra nisi. Vestibulum ullamcorper velit eget mattis aliquam. Proin dapibus luctus pulvinar. Integer et libero ut purus bibendum gravida non ac tellus. Proin sed tellus porttitor, varius mauris vitae, tincidunt augue. Sed consectetur magna elit, sit amet faucibus tortor sodales vitae. Maecenas quis arcu est. Nam sit amet neque vestibulum, fringilla elit sit amet, volutpat nunc."
+                      : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus leo, blandit vitae diam a, vestibulum viverra nisi."}
                   </p>
-                  <p className=" text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
-                    Show more
+                  <p
+                    className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]"
+                    onClick={toggleExpand}
+                    style={{ cursor: "pointer" }}
+                  >
+                    {isExpanded ? "Show less" : "Show more"}
                   </p>
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
@@ -484,7 +488,7 @@ const SingleProperty = () => {
                   </div>
                   <img
                     src="/assets/propertyimg.png"
-                    className="h-[500px] w-full"
+                    className="h-[250px] md:h-[500px] w-full"
                   />
                 </div>
                 <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
@@ -495,7 +499,7 @@ const SingleProperty = () => {
 
                   <img
                     src="/assets/propertyimg.png"
-                    className="h-[500px] w-full"
+                    className="h-[250px] md:h-[500px] w-full"
                   />
                 </div>
                 <Floors />
@@ -504,58 +508,58 @@ const SingleProperty = () => {
                     What's nearby ?
                   </h1>
                   <hr />
-                  <div className="flex items-center gap-4 flex-wrap">
-                    <img src="/assets/Education.png" className="md:w-20 w-16" />
+                  <div className="flex items-center gap-4 ">
+                    <img src="/assets/Education.png" className="md:w-20 w-14" />
                     <div className="flex flex-col gap-2 grow">
                       <h1 className="">
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           8/10{" "}
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                           Massachusetts Institute of Technology (MIT)
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           {" "}
                           1.5 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           6/10
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                           {" "}
                           Stanford University{" "}
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           2 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           5/10
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                           {" "}
                           University of Michigan-Ann Arbor{" "}
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           3.5 miles
                         </span>
                       </h1>
                     </div>
-                    <div className="flex flex-col ">
-                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                    <div className="hidden flex-col md:flex ">
+                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                         {" "}
                         <img src="/assets/stars.png" className="w-28" /> (7
                         Reviews)
                       </p>
-                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                         {" "}
                         <img src="/assets/stars.png" className="w-28" /> (7
                         Reviews)
                       </p>
-                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                         {" "}
                         <img src="/assets/stars.png" className="w-28" /> (7
                         Reviews)
@@ -563,58 +567,58 @@ const SingleProperty = () => {
                     </div>
                   </div>
                   <hr />
-                  <div className="flex items-center gap-4 flex-wrap">
-                    <img src="/assets/Education.png" className="md:w-20 w-16" />
+                  <div className="flex items-center gap-4 ">
+                    <img src="/assets/Education.png" className="md:w-20 w-14" />
                     <div className="flex flex-col gap-2 grow">
                       <h1 className="">
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           8/10{" "}
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                           Massachusetts Institute of Technology (MIT)
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           {" "}
                           1.5 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           6/10
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                           {" "}
                           Stanford University{" "}
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           2 miles
                         </span>
                       </h1>
                       <h1 className="">
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           5/10
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                           {" "}
                           University of Michigan-Ann Arbor{" "}
                         </span>
-                        <span className="text-neutral-700 md:text-[17.63px] text-[15px] font-bold font-['Mulish'] leading-[42.95px]">
+                        <span className="text-neutral-700 md:text-[17.63px] text-sm font-bold font-['Mulish'] leading-tight md:leading-[42.95px]">
                           3.5 miles
                         </span>
                       </h1>
                     </div>
-                    <div className="flex flex-col ">
-                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                    <div className="hidden flex-col md:flex ">
+                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                         {" "}
                         <img src="/assets/stars.png" className="w-28" /> (7
                         Reviews)
                       </p>
-                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                         {" "}
                         <img src="/assets/stars.png" className="w-28" /> (7
                         Reviews)
                       </p>
-                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="flex items-center gap-2 text-neutral-400 text-[15.63px] font-normal font-['Poppins'] leading-tight md:leading-[42.95px]">
                         {" "}
                         <img src="/assets/stars.png" className="w-28" /> (7
                         Reviews)
@@ -665,7 +669,7 @@ const SingleProperty = () => {
                         <AiOutlineDislike size={20} />
                       </div>
                     </div>
-                    <div>
+                    <div className="hidden md:block">
                       <p className="text-neutral-400 md:text-md text-sm font-normal font-['Poppins'] ">
                         April 5, 2023
                       </p>
@@ -693,7 +697,7 @@ const SingleProperty = () => {
                         <AiOutlineDislike size={20} />
                       </div>
                     </div>
-                    <div>
+                    <div className="hidden md:block">
                       <p className="text-neutral-400 md:text-md text-sm font-normal font-['Poppins'] ">
                         April 5, 2023
                       </p>
@@ -840,7 +844,7 @@ const SingleProperty = () => {
             </div>
           </div>
         </div>
-        <div className="w-full min-h-[300px]   flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative  rounded-xl p-2">
+        {/* <div className="w-full min-h-[300px]   flex-col justify-center items-center mt-4  flex flex-wrap gap-4 relative  rounded-xl p-2">
           <h1 className=" text-zinc-900 text-[30.74px] font-semibold font-['Poppins']">
             Similar Properties
           </h1>
@@ -902,63 +906,74 @@ const SingleProperty = () => {
               </div>
             ))}
           </CustomScrollContainer>
-          {/* <div className="flex justify-center">
-            <div className="flex  items-center  gap-4 mt-6 w-full mb-10">
-              {properties.map((property) => (
-                <div className="md:w-[330px] w-[230px] md:h-[480px] h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
-                  <img
-                    src="/assets/featuredtag.png"
-                    className="absolute top-5 left-0"
-                  />
-                  <img
-                    src="/assets/saletag.png"
-                    className="absolute top-12 left-0"
-                  />
-                  <img src={property.img} className="w-full h-1/2" />
-                  <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
-                    {property.title}
-                  </h1>
-
-                  <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
-                    {property.desc}
-                  </p>
-                  <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
-                    ${property.price}
-                  </h1>
-                  <div className="flex justify-start items-center gap-3 mt-3">
-                    <p className="flex justify-center items-center gap-2 ">
-                      <img src="/assets/bed.png" />{" "}
-                      <span className="hidden md:flex"> Beds:</span>{" "}
-                      <span className="font-bold"> {property.beds} </span>
-                    </p>
-                    <p className="flex justify-center items-center gap-2 ">
-                      <img src="/assets/bath.png" />{" "}
-                      <span className="hidden md:flex"> Baths:</span>{" "}
-                      <span className="font-bold"> {property.baths} </span>
-                    </p>
-                    <p className="flex justify-center items-center gap-2 ">
-                      <img src="/assets/area.png" />{" "}
-                      <span className="hidden md:flex"> Sqft:</span>{" "}
-                      <span className="font-bold"> {property.sqft} </span>
-                    </p>
-                  </div>
-                  <hr />
-                  <div className="flex justify-between items-center mt-2">
-                    <p className="flex items-center md:gap-2">
-                      <FaPlus color="green" />{" "}
-                      <span className="hidden md:flex">Compare</span>
-                    </p>
-                    <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
-                    <p className="flex items-center gap-2 text-sm">
-                      3 Years Ago
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div> */}
-        </div>
+        </div> */}
       </section>
+      <div>
+        <h1 className=" text-zinc-900 text-[30.74px] text-center font-semibold font-['Poppins']">
+          Similar Properties
+        </h1>
+        <p className="text-neutral-400 text-sm font-normal text-center font-['Poppins'] leading-[21px]">
+          Check out similar properties
+        </p>
+        <CustomScrollContainer
+          containerId="container1"
+          leftButtonId="leftButton1"
+          rightButtonId="rightButton1"
+        >
+          {properties.map((property) => (
+            <Link href={"/single-property"}>
+              <div className="md:w-[330px] w-[230px] md:min-h-[480px] min-h-[370px] relative cursor-pointer shadow-lg p-2 flex flex-col md:gap-3 gap-1 rounded-xl border">
+                <img
+                  src="/assets/featuredtag.png"
+                  className="absolute top-5 left-0"
+                />
+                <img
+                  src="/assets/saletag.png"
+                  className="absolute top-12 left-0"
+                />
+                <img src={property.img} className="w-full h-1/2" />
+                <h1 className=" text-zinc-900 md:text-lg text-sm font-semibold font-['Poppins'] pt-3">
+                  {property.title}
+                </h1>
+
+                <p className="text-neutral-700 text-xs font-normal font-['Poppins']  leading-[18px]">
+                  {property.desc}
+                </p>
+                <h1 className=" text-[#25C55B] md:text-lg text-sm font-semibold font-['Poppins']">
+                  ${property.price}
+                </h1>
+                <div className="flex justify-start items-center gap-3 mt-3">
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bed.png" />{" "}
+                    <span className="hidden md:flex"> Beds:</span>{" "}
+                    <span className="font-bold"> {property.beds} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/bath.png" />{" "}
+                    <span className="hidden md:flex"> Baths:</span>{" "}
+                    <span className="font-bold"> {property.baths} </span>
+                  </p>
+                  <p className="flex justify-center items-center gap-2 ">
+                    <img src="/assets/area.png" />{" "}
+                    <span className="hidden md:flex"> Sqft:</span>{" "}
+                    <span className="font-bold"> {property.sqft} </span>
+                  </p>
+                </div>
+                <hr />
+                <div className="flex justify-between items-center mt-2">
+                  <p className="flex items-center md:gap-2">
+                    <FaPlus color="green" />{" "}
+                    <span className="hidden md:flex">Compare</span>
+                  </p>
+                  <div className="md:w-10 md:h-10 w-7 h-7 bg-zinc-300 rounded-full" />
+                  <p className="flex items-center gap-2 text-sm">3 Years Ago</p>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </CustomScrollContainer>
+      </div>
+
       <section className="min-h-[60vh] bg-[#E6FFE0] ">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
           <div className="flex justify-center items-end mt-[150px]">

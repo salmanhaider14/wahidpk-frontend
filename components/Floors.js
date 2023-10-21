@@ -14,18 +14,26 @@ const Floors = () => {
         <Accordion.Panel>
           <Accordion.Title>First floor</Accordion.Title>
           <Accordion.Content>
-            <div className="flex justify-start items-center gap-4 mt-3 mb-3">
+            <div className="flex justify-start items-center gap-6 md:gap-4 mt-3 mb-3">
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/price.png" className="w-5" /> Price : 400$
+                <img src="/assets/price.png" className="w-5" />{" "}
+                <span className="hidden md:block"> Price :</span>{" "}
+                <span className="font-bold"> 400$</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/area.png" /> Size : 4
+                <img src="/assets/area.png" />{" "}
+                <span className="hidden md:block"> Size: :</span>{" "}
+                <span className="font-bold"> 4</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/bed.png" /> Beds : 2
+                <img src="/assets/bed.png" />{" "}
+                <span className="hidden md:block"> Beds :</span>{" "}
+                <span className="font-bold"> 2</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/bath.png" /> Baths: 2
+                <img src="/assets/bath.png" />{" "}
+                <span className="hidden md:block"> Baths :</span>{" "}
+                <span className="font-bold"> 2</span>
               </p>
             </div>
             {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
@@ -43,18 +51,26 @@ const Floors = () => {
         <Accordion.Panel>
           <Accordion.Title>Second floor</Accordion.Title>
           <Accordion.Content>
-            <div className="flex justify-start items-center gap-4 mt-3 mb-3">
+            <div className="flex justify-start items-center gap-6 md:gap-4 mt-3 mb-3">
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/price.png" className="w-5" /> Price : 400$
+                <img src="/assets/price.png" className="w-5" />{" "}
+                <span className="hidden md:block"> Price :</span>{" "}
+                <span className="font-bold"> 400$</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/area.png" /> Size : 4
+                <img src="/assets/area.png" />{" "}
+                <span className="hidden md:block"> Size: :</span>{" "}
+                <span className="font-bold"> 4</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/bed.png" /> Beds : 2
+                <img src="/assets/bed.png" />{" "}
+                <span className="hidden md:block"> Beds :</span>{" "}
+                <span className="font-bold"> 2</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/bath.png" /> Baths: 2
+                <img src="/assets/bath.png" />{" "}
+                <span className="hidden md:block"> Baths :</span>{" "}
+                <span className="font-bold"> 2</span>
               </p>
             </div>
             {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}
@@ -72,18 +88,26 @@ const Floors = () => {
         <Accordion.Panel>
           <Accordion.Title>Third floor</Accordion.Title>
           <Accordion.Content>
-            <div className="flex justify-start items-center gap-4 mt-3 mb-3">
+            <div className="flex justify-start items-center gap-6 md:gap-4 mt-3 mb-3">
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/price.png" className="w-5" /> Price : 400$
+                <img src="/assets/price.png" className="w-5" />{" "}
+                <span className="hidden md:block"> Price :</span>{" "}
+                <span className="font-bold"> 400$</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/area.png" /> Size : 4
+                <img src="/assets/area.png" />{" "}
+                <span className="hidden md:block"> Size: :</span>{" "}
+                <span className="font-bold"> 4</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/bed.png" /> Beds : 2
+                <img src="/assets/bed.png" />{" "}
+                <span className="hidden md:block"> Beds :</span>{" "}
+                <span className="font-bold"> 2</span>
               </p>
               <p className="flex justify-center items-center gap-2 md:text-md text-sm">
-                <img src="/assets/bath.png" /> Baths: 2
+                <img src="/assets/bath.png" />{" "}
+                <span className="hidden md:block"> Baths :</span>{" "}
+                <span className="font-bold"> 2</span>
               </p>
             </div>
             {/* <img src="/assets/propertyimg.png" className="h-[500px] w-full" /> */}

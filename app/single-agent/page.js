@@ -88,9 +88,23 @@ const SingleAgent = () => {
                       <BiLogoTwitter size={35} color="#8E8E93" />
                       <BiLogoLinkedin size={35} color="#8E8E93" />
                     </div>
+                    <div className="flex items-center gap-3 md:hidden my-3">
+                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                        Email
+                      </button>
+                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                        SMS
+                      </button>
+                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
+                        Call
+                      </button>
+                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                        Whatsapp
+                      </button>
+                    </div>
                   </div>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
+                <div className="max-w-[1070px] min-h-[300px] flex flex-wrap md:gap-1 relative shadow-md rounded-xl p-2 border">
                   <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     About Cameron Williamson
                   </h1>
@@ -139,7 +153,7 @@ const SingleAgent = () => {
                 </div>
                 <hr />
                 {properties.map((property) => (
-                  <div className="max-w-[1070px] md:min-h-[260px] min-h-[170px] flex gap-2 relative shadow-md rounded-xl p-2 border">
+                  <div className="max-w-[1070px] md:min-h-[260px] min-h-[130px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
                       className="absolute top-5 left-0 md:w-28 w-20"
@@ -148,9 +162,9 @@ const SingleAgent = () => {
                       src="/assets/saletag2.png"
                       className="absolute top-12 left-0 md:w-20 w-10 "
                     />
-                    <img src="/assets/propertyimg.png" className="w-[40%] " />
+                    <img src="/assets/propertyimg.png" className="w-[35%] " />
 
-                    <div className="flex flex-col md:gap-4 lg:gap-3 xl:gap-4 gap-3  flex-wrap max-w-[680px] w-[63%]">
+                    <div className="flex flex-col md:gap-4 lg:gap-3 xl:gap-4 gap-1  flex-wrap max-w-[680px] w-[63%]">
                       <h1 className="text-zinc-900 md:text-xl text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>

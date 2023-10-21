@@ -92,21 +92,21 @@ export default function Agents() {
           >
             {" "}
             {Individualpackages.map((pkg) => (
-              <div className="w-[330px] h-[350px] relative cursor-pointer border flex flex-col gap-6 p-4 rounded-xl shadow-md">
-                <h1 className=" text-zinc-900 text-[25.38px] font-bold font-['Poppins']">
+              <div className="md:w-[330px] w-[230px] md:h-[350px] h-[280px] relative cursor-pointer border flex flex-col gap-2 md:gap-6 p-4 rounded-xl shadow-md">
+                <h1 className=" text-zinc-900 md:text-[25.38px] text-md font-bold font-['Poppins']">
                   {pkg.title}
                 </h1>
                 <h2 className=" text-neutral-700 text-sm font-semibold font-['Poppins'] leading-tight">
                   {pkg.subtitle}
                 </h2>
 
-                <h1 className="text-zinc-900 text-[42.57px] font-bold font-['Poppins'] leading-[51.08px]">
+                <h1 className="text-zinc-900 md:text-[42.57px] text-2xl font-bold font-['Poppins'] leading-[51.08px]">
                   Rs. {pkg.price}{" "}
-                  <span className="text-neutral-400 text-[28.38px] font-bold font-['Poppins']">
+                  <span className="text-neutral-400 md:text-[28.38px] text-lg font-bold font-['Poppins']">
                     / mo
                   </span>
                 </h1>
-                <p className="w-[282.83px] text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">
+                <p className="md:w-[282.83px] w-[150px] text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">
                   {pkg.desc}
                 </p>
                 <hr />
@@ -151,21 +151,21 @@ export default function Agents() {
             rightButtonId="rightButton12"
           >
             {Individualpackages2.map((pkg) => (
-              <div className="w-[280px] h-[300px] relative cursor-pointer border flex flex-col gap-3 p-4 rounded-xl shadow-md">
-                <h1 className=" text-zinc-900 text-[25.38px] font-bold font-['Poppins']">
+              <div className="md:w-[280px] w-[180px] h-[300px] relative cursor-pointer border flex flex-col gap-3 p-4 rounded-xl shadow-md">
+                <h1 className=" text-zinc-900 text-md md:text-[25.38px] font-bold font-['Poppins']">
                   {pkg.title}
                 </h1>
                 <h2 className=" text-neutral-700 text-sm font-semibold font-['Poppins'] leading-tight">
                   {pkg.subtitle}
                 </h2>
 
-                <h1 className="text-zinc-900 text-[42.57px] font-bold font-['Poppins'] leading-[51.08px]">
+                <h1 className="text-zinc-900 md:text-[42.57px] text-2xl font-bold font-['Poppins'] leading-[51.08px]">
                   Rs. {pkg.price}{" "}
-                  <span className="text-neutral-400 text-[28.38px] font-bold font-['Poppins']">
+                  <span className="text-neutral-400 md:text-[28.38px] text-lg font-bold font-['Poppins']">
                     / mo
                   </span>
                 </h1>
-                <p className="w-[282.83px] text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">
+                <p className="md:w-[282.83px] w-[150px] text-neutral-400 text-sm font-normal font-['Poppins'] leading-tight">
                   {pkg.desc}
                 </p>
                 <hr />

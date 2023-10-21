@@ -3,6 +3,7 @@ import React from "react";
 import { FaPhone, FaSearch, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import CustomScrollContainer from "@/components/CustomScrollContainer";
+import Link from "next/link";
 
 const PropertyListing = () => {
   const properties = [
@@ -49,19 +50,23 @@ const PropertyListing = () => {
   return (
     <div>
       <section className="min-h-screen  ">
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center md:mt-3 mt-2">
           <div className="grid lg:grid-cols-3 gap-8 lg:w-[80%]  p-4 relative">
             <div className="flex flex-col items-start gap-2  lg:col-span-2 ">
-              {" "}
+              <Link href={"#search-filter"} className="md:hidden block">
+                <button className="text-center  w-[200px] text-white rounded-md bg-[#25C55B] text-lg font-bold font-['Poppins'] leading-normal h-[56px] ">
+                  Search More
+                </button>
+              </Link>
               <h1 className=" text-black text-[31.44px] font-bold font-['Poppins']">
                 Property Listing
               </h1>
               <p className=" text-neutral-700 text-sm font-normal font-['Poppins'] leading-snug">
                 There are currently 164,814 properties.
               </p>
-              <div className="flex flex-col justify-start item-start gap-6 ">
+              <div className="flex flex-col justify-start item-start gap-2 md:gap-6 ">
                 {properties.map((property) => (
-                  <div className="max-w-[1070px] md:min-h-[260px] min-h-[170px] flex gap-2 relative shadow-md rounded-xl p-2 border">
+                  <div className="max-w-[1070px] md:min-h-[260px] min-h-[130px] flex gap-2 relative shadow-md rounded-xl p-2 border">
                     <img
                       src="/assets/supremetag.png"
                       className="absolute top-5 left-0 md:w-28 w-20"
@@ -70,9 +75,9 @@ const PropertyListing = () => {
                       src="/assets/saletag2.png"
                       className="absolute top-12 left-0 md:w-20 w-10 "
                     />
-                    <img src="/assets/propertyimg.png" className="w-[40%] " />
+                    <img src="/assets/propertyimg.png" className="w-[35%] " />
 
-                    <div className="flex flex-col md:gap-4 lg:gap-3 xl:gap-4 gap-3  flex-wrap max-w-[680px] w-[63%]">
+                    <div className="flex flex-col md:gap-4 lg:gap-3 xl:gap-4 gap-1  flex-wrap max-w-[680px] w-[63%]">
                       <h1 className="text-zinc-900 md:text-xl text-sm font-semibold font-['Poppins']">
                         {property.title}
                       </h1>
@@ -150,7 +155,10 @@ const PropertyListing = () => {
                 </CustomScrollContainer>
               </div>
             </div>
-            <div className="w-full  relative  flex flex-col gap-4  p-3  ">
+            <div
+              className="w-full  relative  flex flex-col gap-4  p-3   "
+              id="search-filter"
+            >
               <FilterForm />
               <div className="  w-full relative  flex flex-col gap-4 p-3 border rounded ">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
