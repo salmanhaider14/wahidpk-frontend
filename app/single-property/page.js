@@ -95,6 +95,20 @@ const SingleProperty = () => {
                     <h1 className="text-main text-[36px] font-bold font-['Poppins']">
                       $7,500
                     </h1>
+                    <div className="flex items-center gap-2 md:hidden ">
+                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                        Email
+                      </button>
+                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                        SMS
+                      </button>
+                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
+                        Call
+                      </button>
+                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                        Whatsapp
+                      </button>
+                    </div>
                     <div className="hidden md:flex items-center gap-3">
                       <img src="/assets/01.png" />
                       <img src="/assets/02.png" />
@@ -140,20 +154,6 @@ const SingleProperty = () => {
                     <p className="text-neutral-700 text-base font-normal font-['Poppins'] leading-normal">
                       1964 Sq Ft
                     </p>
-                  </div>
-                  <div className="flex items-center gap-2 md:hidden my-2">
-                    <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
-                      Email
-                    </button>
-                    <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
-                      SMS
-                    </button>
-                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
-                      Call
-                    </button>
-                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
-                      Whatsapp
-                    </button>
                   </div>
                 </div>
                 <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
