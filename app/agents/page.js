@@ -121,16 +121,15 @@ export default function Agents() {
             rightButtonId="rightButton10"
           >
             {cities.map((city) => (
-              <div className="w-[370px] h-[130px]  relative cursor-pointer bg-white rounded-lg shadow-lg p-4 flex items-start flex-col md:gap-4 gap-2 border">
-                <div>
-                  <h1 className=" text-zinc-900 md:text-xl text-lg font-semibold font-['Poppins'] ">
-                    {city.name}
-                  </h1>
+              <div className="min-w-[150px] md:w-[370px] h-[130px]  cursor-pointer bg-white rounded-lg shadow-lg p-4 flex md:items-start flex-col md:gap-4 gap-2 border">
+                <h1 className=" text-zinc-900 md:text-xl text-lg font-semibold font-['Poppins'] ">
+                  {city.name}
+                </h1>
 
-                  <p className="text-gray-500 md:text-md text-sm font-normal font-['Poppins']  leading-[18px]">
-                    {city.agencies} Agencies
-                  </p>
-                </div>
+                <p className="text-gray-500 md:text-md  text-sm font-normal font-['Poppins']  leading-[18px]">
+                  {city.agencies} Agencies
+                </p>
+
                 <Link href={"#"} className="text-blue-500 md:text-md text-sm">
                   View Trend
                 </Link>
@@ -158,8 +157,8 @@ export default function Agents() {
             </div>
           </div> */}
         </section>
-        <section className=" bg-[#E6FFE0] ">
-          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
+        <section className=" bg-[#E6FFE0] p-6 md:p-0">
+          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center md:mt-16 w-full h-full">
             <div className="flex justify-center items-end md:mt-[150px]">
               <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
                 <h1 className=" text-zinc-900 md:text-[45px] text-[25px] font-bold font-['Poppins'] leading-tight md:leading-[54px]">

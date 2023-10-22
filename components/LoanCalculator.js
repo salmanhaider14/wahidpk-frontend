@@ -14,7 +14,7 @@ const LoanCalculator = () => {
     <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-3 border">
       {" "}
       <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
-        Loan Calculator
+        Mortgage Calculator
       </h1>
       <hr />
       <div className="w-full">
@@ -61,22 +61,6 @@ const LoanCalculator = () => {
             id="default-input"
             class="h-[56px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           />
-        </div>
-        <div className="w-full">
-          <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">City</InputLabel>
-            <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={age}
-              label="Age"
-              onChange={handleChange}
-            >
-              <MenuItem value={10}>Lahore</MenuItem>
-              <MenuItem value={20}>Sargodha</MenuItem>
-              <MenuItem value={30}>Islamabad</MenuItem>
-            </Select>
-          </FormControl>
         </div>
       </div>
       <div className="flex justify-between flex-wrap items-center">

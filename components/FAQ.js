@@ -4,7 +4,7 @@ import { Accordion } from "flowbite-react";
 
 const FAQ = () => {
   return (
-    <section className="my-4">
+    <section className="my-4 ">
       <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[30px]">
         Frequently asked questions
       </h1>
@@ -12,7 +12,7 @@ const FAQ = () => {
         Quick answers to questions you may have. Can't find what you're looking
         for? Check out our full documentation
       </p>
-      <div className="grid md:grid-cols-2 gap-2 justify-center items-center mt-7 w-[80%] m-auto">
+      <div className="grid md:grid-cols-2 gap-2 justify-center items-center mt-7 md:w-[80%] m-auto">
         <Accordion>
           <Accordion.Panel>
             <Accordion.Title>

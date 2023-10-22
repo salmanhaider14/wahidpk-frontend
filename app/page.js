@@ -540,63 +540,69 @@ export default function Home() {
           leftButtonId="leftButton4"
           rightButtonId="rightButton4"
         >
-          <div className="w-[350px] h-[330px] p-1 relative ">
-            <img src="/assets/propertyimg.png" />
-            <div className="flex justify-between items-center mt-4">
-              <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
-                Wade Warren
-              </h1>
-              <div className="flex items-center gap-2">
-                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
-                  <FaPhone color="#8E8E93" size={20} />
-                </div>{" "}
-                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
-                  <FaEnvelope color="#8E8E93" size={20} />
-                </div>{" "}
+          <Link href={"/single-agent"}>
+            <div className="md:w-[350px] w-[200px] h-[330px] p-1 relative ">
+              <img src="/assets/propertyimg.png" />
+              <div className="flex justify-between items-center mt-4">
+                <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                  Wade Warren
+                </h1>
+                <div className="flex items-center gap-2">
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaPhone color="#8E8E93" size={20} />
+                  </div>{" "}
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaEnvelope color="#8E8E93" size={20} />
+                  </div>{" "}
+                </div>
               </div>
+              <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+                Salesperson
+              </p>
             </div>
-            <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
-              Salesperson
-            </p>
-          </div>
-          <div className="w-[350px] h-[330px] p-1 relative ">
-            <img src="/assets/propertyimg.png" />
-            <div className="flex justify-between items-center mt-4">
-              <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
-                Wade Warren
-              </h1>
-              <div className="flex items-center gap-2">
-                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
-                  <FaPhone color="#8E8E93" size={20} />
-                </div>{" "}
-                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
-                  <FaEnvelope color="#8E8E93" size={20} />
-                </div>{" "}
+          </Link>
+          <Link href={"/single-agent"}>
+            <div className="md:w-[350px] w-[200px] h-[330px] p-1 relative ">
+              <img src="/assets/propertyimg.png" />
+              <div className="flex justify-between items-center mt-4">
+                <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                  Wade Warren
+                </h1>
+                <div className="flex items-center gap-2">
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaPhone color="#8E8E93" size={20} />
+                  </div>{" "}
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaEnvelope color="#8E8E93" size={20} />
+                  </div>{" "}
+                </div>
               </div>
+              <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+                Salesperson
+              </p>
             </div>
-            <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
-              Salesperson
-            </p>
-          </div>
-          <div className="w-[350px] h-[330px] p-1 relative ">
-            <img src="/assets/propertyimg.png" />
-            <div className="flex justify-between items-center mt-4">
-              <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
-                Wade Warren
-              </h1>
-              <div className="flex items-center gap-2">
-                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
-                  <FaPhone color="#8E8E93" size={20} />
-                </div>{" "}
-                <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
-                  <FaEnvelope color="#8E8E93" size={20} />
-                </div>{" "}
+          </Link>
+          <Link href={"/single-agent"}>
+            <div className="md:w-[350px] w-[200px] h-[330px] p-1 relative ">
+              <img src="/assets/propertyimg.png" />
+              <div className="flex justify-between items-center mt-4">
+                <h1 className="text-zinc-900 text-lg font-semibold font-['Poppins']">
+                  Wade Warren
+                </h1>
+                <div className="flex items-center gap-2">
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaPhone color="#8E8E93" size={20} />
+                  </div>{" "}
+                  <div class="w-10 h-10 border border-white rounded-full flex items-center justify-center cursor-pointer">
+                    <FaEnvelope color="#8E8E93" size={20} />
+                  </div>{" "}
+                </div>
               </div>
+              <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
+                Salesperson
+              </p>
             </div>
-            <p className="text-neutral-700 text-xs font-normal  font-['Poppins'] leading-[18px]">
-              Salesperson
-            </p>
-          </div>
+          </Link>
         </CustomScrollContainer>
         {/* <div className="justify-center flex">
           <div className="flex items-start gap-4 ml-5 overflow-x-auto mt-6 py-6">
@@ -664,8 +670,8 @@ export default function Home() {
         className="overflow-x-hidden w-full "
         style={{ backgroundImage: "/assets/contactbg.png" }}
       >
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
-          <div className="flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-6 md:mt-16">
+          <div className="hidden md:flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
             <div className="flex flex-col gap-1 md:gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ms-10 ">
               <h1 className=" text-black md:text-[45px] text-lg font-['Poppins']  font-extrabold leading-normal ">
                 We provide the most <br /> suitable and quality
@@ -718,7 +724,7 @@ export default function Home() {
       </section>
       <section className=" bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
-          <div className="flex justify-center  items-center flex-col gap-2 md:gap-5 ">
+          <div className="hidden md:flex justify-center  items-center flex-col gap-2 md:gap-5 ">
             <h1 className="text-zinc-900 md:text-5xl text-xl font-bold font-['Poppins'] leading-[56.72px]">
               Become Our Agents
             </h1>

@@ -162,8 +162,8 @@ export default function Projects() {
         className="overflow-x-hidden w-full "
         style={{ backgroundImage: "/assets/contactbg.png" }}
       >
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-16">
-          <div className="flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 md:justify-center justify-start items-center mt-6 md:mt-16">
+          <div className="hidden md:flex md:justify-start lg:justify-end md:items-end justify-center items-start  flex-wrap w-full min-h-[500px]">
             <div className="flex flex-col gap-1 md:gap-3  justify-start items-center md:items-start text-center md:text-start  w-[540px] min-h-[500px] flex-wrap ms-10 ">
               <h1 className=" text-black md:text-[45px] text-lg font-['Poppins']  font-extrabold leading-normal ">
                 We provide the most <br /> suitable and quality
@@ -216,9 +216,9 @@ export default function Projects() {
       </section>
       <section className=" bg-green-100">
         <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16">
-          <div className="flex justify-center  items-center flex-col gap-2 md:gap-5 ">
+          <div className="hidden md:flex justify-center  items-center flex-col gap-2 md:gap-5 ">
             <h1 className="text-zinc-900 md:text-5xl text-xl font-bold font-['Poppins'] leading-[56.72px]">
-              Join Developer's Pool
+              Join Developers Pool
             </h1>
             <p className="text-neutral-400 text-sm font-normal font-['Poppins'] leading-snug">
               Become an agent and get the commission you deserve

@@ -55,18 +55,18 @@ const SingleProperty = () => {
               {" "}
               <div className="flex flex-col  gap-6 ">
                 <div className="overflow-hidden relative shadow-md rounded-xl ">
-                  <div className="flex md:hidden items-center gap-3 absolute top-16 right-3 z-40">
+                  <div className="flex md:hidden items-center gap-3 absolute top-3 right-3 z-40">
                     <img src="/assets/01.png" className="w-7" />
                     <img src="/assets/02.png" className="w-7" />
                     <img src="/assets/03.png" className="w-7" />
                     <img src="/assets/04.png" className="w-7" />
                   </div>
-                  <div className="absolute top-16 left-0 z-40 w-[75.45px] h-[20.09px] px-[10.72px] py-2 bg-yellow-400 rounded justify-center items-center gap-[13.41px] inline-flex md:hidden">
+                  <div className="absolute top-5 left-0 z-40 w-[75.45px] h-[20.09px] px-[10.72px] py-2 bg-yellow-400 rounded justify-center items-center gap-[13.41px] inline-flex md:hidden">
                     <div className="text-white text-sm font-bold font-['Mulish']">
                       For sale
                     </div>
                   </div>
-                  <Carousel className="min-h-[500px] overflow-hidden mb-0">
+                  <Carousel className="md:min-h-[500px] h-[300px] overflow-hidden mb-0">
                     <img
                       alt="..."
                       src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
@@ -95,9 +95,6 @@ const SingleProperty = () => {
                     <h1 className="text-main text-[36px] font-bold font-['Poppins']">
                       $7,500
                     </h1>
-                    <h1 className="text-black md:text-[20px] py-2 text-lg font-bold font-['Poppins']">
-                      Villa Belo a large superior luxury villa
-                    </h1>
 
                     <div className="hidden md:flex items-center gap-3">
                       <img src="/assets/01.png" />
@@ -106,6 +103,9 @@ const SingleProperty = () => {
                       <img src="/assets/04.png" />
                     </div>
                   </div>
+                  <h1 className="text-black md:text-[20px] py-2 text-lg font-bold font-['Poppins']">
+                    Villa Belo a large superior luxury villa
+                  </h1>
                   <div className="flex justify-between items-center w-full gap-4  flex-wrap">
                     <div className="flex items-center gap-2 flex-wrap my-2">
                       <div className="w-[82.45px] h-[27.09px] px-[10.72px] py-2 bg-yellow-400 rounded justify-center items-center gap-[13.41px] hidden md:inline-flex">
@@ -142,19 +142,32 @@ const SingleProperty = () => {
                       1964 Sq Ft
                     </p>
                   </div>
-                  <div className="flex items-center gap-2 md:hidden my-2">
-                    <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                </div>
+                <div className="relative md:hidden shadow-md border rounded-xl ">
+                  {" "}
+                  <div className="flex items-center gap-2 md:hidden my-2 p-2">
+                    <button className="text-center grow flex justify-center items-center h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
                       Email
                     </button>
-                    <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                    <button className="text-center grow flex justify-center items-center h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
                       SMS
                     </button>
-                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
+                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] grow flex justify-center items-center h-[40px] ">
                       Call
                     </button>
-                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                  </div>
+                  <div className="flex items-center gap-2 my-2 p-2">
+                    <button className="text-center grow flex justify-center items-center text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
                       Whatsapp
                     </button>
+                    <Link
+                      href={"#schedule-tour"}
+                      className="grow flex justify-center items-center"
+                    >
+                      <button className="text-center grow flex justify-center items-center text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                        Schedule Tour
+                      </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="max-w-[1070px] min-h-[200px] flex flex-col flex-wrap gap-1 relative shadow-md rounded-xl p-2 border">
@@ -242,7 +255,7 @@ const SingleProperty = () => {
                     </div>
                   </div>
                 </div>
-                <div className="max-w-[1070px]  flex-col flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
+                <div className="max-w-[1070px]  flex-col flex flex-wrap gap-2 md:gap-4 relative shadow-md rounded-xl p-1 md:p-2 border">
                   <h1 className="text-zinc-900 md:text-[22.74px] text-[20px] font-semibold font-['Poppins']">
                     Property Description
                   </h1>
@@ -253,19 +266,19 @@ const SingleProperty = () => {
                       : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam risus leo, blandit vitae diam a, vestibulum viverra nisi."}
                   </p>
                   <p
-                    className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]"
+                    className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight"
                     onClick={toggleExpand}
                     style={{ cursor: "pointer" }}
                   >
                     {isExpanded ? "Show less" : "Show more"}
                   </p>
                 </div>
-                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
+                <div className="max-w-[1070px] min-h-[300px] flex-col  flex flex-wrap gap-2 md:gap-4 relative shadow-md rounded-xl p-1 md:p-2 border">
                   <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
                     Property Details
                   </h1>
                   <hr />
-                  <div className="w-full grid grid-cols-2  ms-3 gap-1 md:gap-3 ">
+                  <div className="w-full grid grid-cols-2  ms-3  md:gap-3 ">
                     <div className="flex items-start gap:4 md:gap-16 text-start">
                       <h1 className="w-[100px]  text-neutral-700 md:text-[20.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
                         ID
@@ -354,16 +367,16 @@ const SingleProperty = () => {
                   </h1>
                   <hr />
                   <div className="w-full grid md:grid-cols-4 grid-cols-3  ms-3 gap-2 md:gap-6 ">
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight hidden md:block">
                       Outdoor features
                     </h1>
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight hidden md:block">
                       Indoor features
                     </h1>
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight hidden md:block">
                       Climate & Energy{" "}
                     </h1>
-                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight">
+                    <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-tight hidden md:block">
                       Plot features
                     </h1>
                     <p className="flex items-center gap-2 md:text-lg text-md">
@@ -437,52 +450,52 @@ const SingleProperty = () => {
                     Map Location
                   </h1>
                   <hr />
-                  <div className="w-full grid lg:grid-cols-2 ms-3 md:gap-3  ">
-                    <div className="flex items-start gap-4 md:gap-16 text-start flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                  <div className="w-full grid grid-cols-2  ms-3  md:gap-3 ">
+                    <div className="flex items-start gap:4 md:gap-16 text-start">
+                      <h1 className="w-[100px]  text-neutral-700 md:text-[20.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Address
                       </h1>
-                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px] text-start">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px] text-start">
                         Lahore
                       </p>
                     </div>
-                    <div className="flex items-start gap-4 md:gap-16 text-start flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <div className="flex items-start gap:4 md:gap-16 text-start">
+                      <h1 className="w-[100px] text-neutral-700 md:text-[20.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Postal Code
                       </h1>
-                      <p className="text-start text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className="text-start text-neutral-700 md:text-[20.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                         7.320
                       </p>
                     </div>
-                    <div className="flex items-start gap-4 md:gap-16 flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <div className="flex items-start gap:4 md:gap-16">
+                      <h1 className="w-[100px]  text-neutral-700 md:text-[20.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
                         City
                       </h1>
-                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                         Lahore
                       </p>
                     </div>
-                    <div className="flex items-start gap-4 md:gap-16 flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <div className="flex items-start gap:4 md:gap-16">
+                      <h1 className="w-[100px] text-neutral-700 md:text-[20.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Area
                       </h1>
-                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                         7.289
                       </p>
                     </div>
-                    <div className="flex items-start gap-4 md:gap-16 flex-wrap">
-                      <h1 className="max-w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
-                        State/Country
+                    <div className="flex items-start gap:4 md:gap-16">
+                      <h1 className="w-[100px] text-neutral-700 md:text-[20.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
+                        State
                       </h1>
-                      <p className="ml-9 md:ml-0 text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
-                        Lahore....
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
+                        Punjab
                       </p>
                     </div>
-                    <div className="flex items-start gap-4 md:gap-16 flex-wrap">
-                      <h1 className="w-[150px] text-neutral-700 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
+                    <div className="flex items-start gap:4 md:gap-16">
+                      <h1 className="w-[100px] text-neutral-700 md:text-[20.63px] text-[15px] font-semibold font-['Poppins'] leading-[42.95px]">
                         Country
                       </h1>
-                      <p className=" text-neutral-700 md:text-[20.63px] text-[16px] font-normal font-['Poppins'] leading-[42.95px]">
+                      <p className=" text-neutral-700 md:text-[20.63px] text-[15px] font-normal font-['Poppins'] leading-[42.95px]">
                         Pakistan
                       </p>
                     </div>
@@ -710,7 +723,10 @@ const SingleProperty = () => {
             </div>
             <div className="    flex flex-col gap-4  p-3  ">
               <ContactAgent />
-              <TourForm />
+              <div id="schedule-tour">
+                <TourForm />
+              </div>
+
               <div className=" rounded w-full relative  hidden md:flex flex-col gap-4 p-3 border">
                 <h1 className=" text-zinc-900 text-[18.87px] font-semibold font-['Poppins']">
                   Featured listings
@@ -975,8 +991,8 @@ const SingleProperty = () => {
         </CustomScrollContainer>
       </div>
 
-      <section className=" bg-[#E6FFE0] ">
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
+      <section className=" bg-[#E6FFE0] p-4 md:p-0">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center md:mt-16 w-full h-full">
           <div className="flex justify-center items-end md:mt-[150px]">
             <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
               <h1 className=" text-zinc-900 md:text-[45px] text-[25px] font-bold font-['Poppins'] leading-tight md:leading-[54px]">

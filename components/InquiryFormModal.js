@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { BiLockAlt } from "react-icons/bi";
@@ -13,7 +12,7 @@ import {
   TextField,
   NativeSelect,
 } from "@mui/material";
-const AgentSearchModal = ({ setShowModal }) => {
+const InquiryFormModal = ({ setShowModal }) => {
   const [age, setAge] = useState();
   const handleChange = () => {};
   const handleSubmit = () => {};
@@ -23,7 +22,7 @@ const AgentSearchModal = ({ setShowModal }) => {
         <div className="relative w-auto min-w-[300px] my-6 mx-auto max-w-3xl">
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
             <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-              <h3 className="text-2xl font-semibold">Find Property</h3>
+              <h3 className="text-2xl font-semibold">Inquiry Form</h3>
               <button
                 className="p-1 ml-auto border bg-transparent  text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                 onClick={() => {
@@ -49,25 +48,42 @@ const AgentSearchModal = ({ setShowModal }) => {
                 </span>
                 <TextField
                   id="standard-required"
-                  label="City"
+                  label="First Name"
                   variant="standard"
                 />
                 <TextField
                   id="standard-required"
-                  label="Location"
+                  label="Last Name"
                   variant="standard"
                 />
                 <TextField
+                  required
                   id="standard-required"
-                  label="Property Type"
+                  label="Phone No"
+                  variant="standard"
+                />
+                <FormControl fullWidth>
+                  <InputLabel variant="standard" htmlFor="uncontrolled-native">
+                    Inquiry Type
+                  </InputLabel>
+                  <NativeSelect
+                    defaultValue={30}
+                    inputProps={{
+                      name: "age",
+                      id: "uncontrolled-native",
+                    }}
+                  >
+                    <option value={20}>2</option>
+                    <option value={30}>5</option>
+                  </NativeSelect>
+                </FormControl>
+                <TextField
+                  required
+                  id="standard-required"
+                  label="Message"
                   variant="standard"
                 />
 
-                <TextField
-                  id="standard-required"
-                  label="Company Name"
-                  variant="standard"
-                />
                 <button class=" flex items-center justify-center gap-2 h-[56px] text-white text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
                   Search Now <FaSearch />
                 </button>
@@ -81,4 +97,4 @@ const AgentSearchModal = ({ setShowModal }) => {
   );
 };
 
-export default AgentSearchModal;
+export default InquiryFormModal;

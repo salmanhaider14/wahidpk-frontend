@@ -64,6 +64,12 @@ const SearchBarModal = ({ setShowModal }) => {
                   label="Property Type"
                   variant="standard"
                 />
+                <TextField
+                  required
+                  id="standard-required"
+                  label="Project Title"
+                  variant="standard"
+                />
                 <div className="w-[330px] h-[60px] ">
                   <div className="flex items-center md:justify-center gap-4">
                     <FormControl fullWidth>
@@ -161,12 +167,21 @@ const SearchBarModal = ({ setShowModal }) => {
                     <option value={30}>5</option>
                   </NativeSelect>
                 </FormControl>
-                <TextField
-                  required
-                  id="standard-required"
-                  label="Change Area Unit"
-                  variant="standard"
-                />
+                <FormControl fullWidth>
+                  <InputLabel variant="standard" htmlFor="uncontrolled-native">
+                    Change Area Unit
+                  </InputLabel>
+                  <NativeSelect
+                    defaultValue={30}
+                    inputProps={{
+                      name: "age",
+                      id: "uncontrolled-native",
+                    }}
+                  >
+                    <option value={20}>2</option>
+                    <option value={30}>5</option>
+                  </NativeSelect>
+                </FormControl>
                 <button class=" flex items-center justify-center gap-2 h-[56px] text-white text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
                   Search Now <FaSearch />
                 </button>

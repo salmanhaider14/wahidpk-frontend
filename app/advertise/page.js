@@ -67,17 +67,34 @@ export default function Agents() {
     <>
       <main className="">
         <section className="min-h-[50vh]  bg-[#25C55B] relative p-2 flex justify-center items-center flex-col md:flex-row  gap-7">
-          <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
-            <FaArrowRight /> For Individuals
-          </button>
-          <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
-            <FaArrowRight /> For Agency
-          </button>
-          <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
-            <FaArrowRight /> For Developers
-          </button>
+          <div className="flex items-center gap-4 flex-col md:flex-row w-full">
+            <Link
+              href={"#individuals"}
+              className="w-[70%] flex justify-center items-center gap-2"
+            >
+              <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+                <FaArrowRight /> For Individuals
+              </button>
+            </Link>
+            <Link
+              href={"#agency"}
+              className="w-[70%] flex justify-center items-center gap-2"
+            >
+              <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-start items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+                <FaArrowRight /> For Agency
+              </button>
+            </Link>
+            <Link
+              href={"#developers"}
+              className="w-[70%] flex justify-center items-center gap-2"
+            >
+              <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+                <FaArrowRight /> For Developers
+              </button>
+            </Link>{" "}
+          </div>
         </section>
-        <section className="my-6 bg-white">
+        <section className="my-6 bg-white" id="individuals">
           <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
             Pricing plans for every budget
           </h1>
@@ -204,7 +221,7 @@ export default function Agents() {
             </div>
           </div> */}
         </section>
-        <section className="min-h-[100vh] bg-white">
+        <section className="min-h-[100vh] bg-white" id="agency">
           <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[30px]">
             For Agencies
           </h1>
@@ -1015,7 +1032,7 @@ export default function Agents() {
             </div>
           </CustomScrollContainer>
         </section>
-        <section className="min-h-[100vh] bg-white">
+        <section className="min-h-[100vh] bg-white" id="developers">
           <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[30px]">
             For Developers
           </h1>
@@ -1828,11 +1845,11 @@ export default function Agents() {
           </CustomScrollContainer>
         </section>
         <FAQ />
-        <section className="min-h-[60vh] bg-[#E6FFE0] ">
-          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
-            <div className="flex justify-center items-end mt-[150px]">
+        <section className=" bg-[#E6FFE0] p-6 md:p-0">
+          <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center md:mt-16 w-full h-full">
+            <div className="flex justify-center items-end md:mt-[150px]">
               <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
-                <h1 className=" text-zinc-900 text-[45px] font-bold font-['Poppins'] leading-[54px]">
+                <h1 className=" text-zinc-900 md:text-[45px] text-[25px] font-bold font-['Poppins'] leading-tight md:leading-[54px]">
                   Find for your dream home
                   <br />
                   and increase your investment opportunities
@@ -1841,12 +1858,15 @@ export default function Agents() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                   sed tristique metus proin id lorem odio
                 </p>
-                <button class="text-white flex items-center gap-3 text-[15px] font-bold font-poppins leading-snug bg-[#25C55B]   hover:bg-green-700 rounded-[10px] px-[18px] py-4">
+                <button class="text-white flex items-center gap-3 text-[15px] font-bold font-poppins leading-snug bg-[#25C55B] my-2  hover:bg-green-700 rounded-[10px] px-[18px] py-4">
                   <FaPhone /> Contact Seller
                 </button>
               </div>
             </div>
-            <img src="/assets/storyimg.png" className="h-full mt-10 mb-5" />
+            <img
+              src="/assets/storyimg.png"
+              className="h-full md:mt-10 mt-2 hidden md:block"
+            />
           </div>
         </section>
       </main>
