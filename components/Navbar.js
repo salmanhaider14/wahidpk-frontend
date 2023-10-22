@@ -101,7 +101,7 @@ const Navbar = () => {
           >
             <img
               src="/assets/logo.png"
-              className="ms-10 w-[150px] md:w-[200px]"
+              className="ms-10 w-[150px] md:w-[200px] mt-2"
             />
           </a>
 

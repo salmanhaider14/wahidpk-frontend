@@ -59,13 +59,13 @@ const PropertyListing = () => {
             <div className="flex flex-col items-start gap-2  lg:col-span-2 ">
               <div className="flex md:hidden justify-center py-2 items-center gap-4 my-5  bg-main w-full">
                 <button
-                  className="bg-white border shadow-md hover:bg-gray-100 rounded-md w-[120px] h-[50px]  font-bold"
+                  className="bg-white border shadow-md hover:bg-gray-100 rounded-md w-[140px] h-[50px]  font-bold"
                   onClick={() => setShowModal(true)}
                 >
                   Buy
                 </button>{" "}
                 <button
-                  className="bg-white border shadow-md hover:bg-gray-100 rounded-md w-[120px] h-[50px]  font-bold"
+                  className="bg-white border shadow-md hover:bg-gray-100 rounded-md w-[140px] h-[50px]  font-bold"
                   onClick={() => setShowModal(true)}
                 >
                   Rent
@@ -154,7 +154,7 @@ const PropertyListing = () => {
                     ))}
                   </div>
                 </div> */}
-                <div className="hidden md:block">
+                <div>
                   <CustomScrollContainer
                     containerId="container15"
                     leftButtonId="leftButton15"
@@ -312,8 +312,8 @@ const PropertyListing = () => {
           </div>
         </div>
       </section>
-      <section className=" bg-[#E6FFE0] ">
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
+      <section className=" bg-[#E6FFE0] p-6 md:p-0">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center md:mt-16 w-full h-full">
           <div className="flex justify-center items-end md:mt-[150px]">
             <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
               <h1 className=" text-zinc-900 md:text-[45px] text-[25px] font-bold font-['Poppins'] leading-tight md:leading-[54px]">

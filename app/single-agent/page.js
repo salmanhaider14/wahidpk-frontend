@@ -51,7 +51,7 @@ const SingleAgent = () => {
   return (
     <div>
       <section className="min-h-screen ">
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center md:mt-10">
           <div className="grid lg:grid-cols-3 gap-10 lg:w-[80%] w-full  md:p-4 relative">
             <div className="flex flex-col items-start gap-2  lg:col-span-2 relative ">
               {" "}
@@ -59,7 +59,7 @@ const SingleAgent = () => {
                 <div className="max-w-[1070px] md:min-h-[200px] flex-wrap md:flex-nowrap flex gap-2  relative shadow-md rounded-xl p-2 border">
                   <img
                     src="/assets/propertyimg.png"
-                    className="w-full md:w-[40%] "
+                    className="w-full md:w-[40%]  "
                   />
                   <div className="flex flex-col ">
                     <h1 className=" text-zinc-900 md:text-[22.79px] text-lg font-bold font-['Poppins']">
@@ -93,20 +93,33 @@ const SingleAgent = () => {
                       <BiLogoTwitter size={35} color="#8E8E93" />
                       <BiLogoLinkedin size={35} color="#8E8E93" />
                     </div>
-                    <div className="flex items-center gap-2 md:hidden my-3">
-                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
-                        Email
+                  </div>
+                </div>
+                <div className="relative md:hidden shadow-md border rounded-xl ">
+                  {" "}
+                  <div className="flex items-center gap-2 md:hidden my-2 p-2">
+                    <button className="text-center grow flex justify-center items-center h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                      Email
+                    </button>
+                    <button className="text-center grow flex justify-center items-center h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
+                      SMS
+                    </button>
+                    <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] grow flex justify-center items-center h-[40px] ">
+                      Call
+                    </button>
+                  </div>
+                  <div className="flex items-center gap-2 my-2 p-2">
+                    <button className="text-center grow flex justify-center items-center text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                      Whatsapp
+                    </button>
+                    <Link
+                      href={"#schedule-tour"}
+                      className="grow flex justify-center items-center"
+                    >
+                      <button className="text-center grow flex justify-center items-center text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
+                        Schedule Tour
                       </button>
-                      <button className="text-center w-[75px] h-[40px] shadow-lg   text-black rounded-md bg-[#E6FFE0] gap-2 text-base font-bold font-['Poppins'] leading-normal ">
-                        SMS
-                      </button>
-                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[75px] h-[40px] ">
-                        Call
-                      </button>
-                      <button className="text-center  text-white rounded-md bg-[#25C55B] text-sm font-bold font-['Poppins'] w-[80px] h-[40px] ">
-                        Whatsapp
-                      </button>
-                    </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="max-w-[1070px]  flex-col flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
@@ -230,13 +243,15 @@ const SingleAgent = () => {
             <div className=" flex flex-col gap-4  p-3  ">
               <ContactAgent />
               <AgentSearch />
-              <TourForm />
+              <div id="schedule-tour">
+                <TourForm />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className=" bg-[#E6FFE0] ">
-        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center mt-16 w-full h-full">
+      <section className=" bg-[#E6FFE0] p-6 md:p-0">
+        <div className="grid md:grid-cols-2 gap-3 grid-cols-1 justify-center items-center md:mt-16 w-full h-full">
           <div className="flex justify-center items-end md:mt-[150px]">
             <div className="flex flex-col justify-start items-start gap-6 w-[600px]">
               <h1 className=" text-zinc-900 md:text-[45px] text-[25px] font-bold font-['Poppins'] leading-tight md:leading-[54px]">
