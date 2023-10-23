@@ -66,36 +66,23 @@ export default function Agents() {
   return (
     <>
       <main className="">
-        <section className="min-h-[50vh]  bg-[#25C55B] relative p-2 flex justify-center items-center flex-col md:flex-row  gap-7">
-          <div className="flex items-center gap-4 flex-col md:flex-row w-full">
-            <Link
-              href={"#individuals"}
-              className="w-[70%] flex justify-center items-center gap-2"
-            >
-              <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
-                <FaArrowRight /> For Individuals
-              </button>
-            </Link>
-            <Link
-              href={"#agency"}
-              className="w-[70%] flex justify-center items-center gap-2"
-            >
-              <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-start items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
-                <FaArrowRight /> For Agency
-              </button>
-            </Link>
-            <Link
-              href={"#developers"}
-              className="w-[70%] flex justify-center items-center gap-2"
-            >
-              <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
-                <FaArrowRight /> For Developers
-              </button>
-            </Link>{" "}
+        <section className="min-h-[50vh]  bg-[#25C55B] relative p-2 hidden md:flex justify-center items-center flex-col md:flex-row  gap-7">
+          <div className="flex justify-center items-center gap-4 flex-col md:flex-row w-full">
+            <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+              <FaArrowRight /> For Individuals
+            </button>
+
+            <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+              <FaArrowRight /> For Agency
+            </button>
+
+            <button className="w-[70%] md:w-[200px] lg:w-[280px] h-[70px] flex justify-center items-center gap-2 text-xl font-bold bg-white hover:bg-gray-400">
+              <FaArrowRight /> For Developers
+            </button>
           </div>
         </section>
         <section className="my-6 bg-white" id="individuals">
-          <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] pt-[50px]">
+          <h1 className="text-zinc-900 md:text-[45px] text-3xl text-center font-bold font-['Poppins'] md:pt-[50px]">
             Pricing plans for every budget
           </h1>
           <p className="text-neutral-400 text-sm text-center font-normal pt-4 font-['Poppins'] leading-[21px]">
@@ -109,7 +96,7 @@ export default function Agents() {
           >
             {" "}
             {Individualpackages.map((pkg) => (
-              <div className="md:w-[330px] w-[230px] md:h-[350px] h-[280px] relative cursor-pointer border flex flex-col gap-2 md:gap-6 p-4 rounded-xl shadow-md">
+              <div className="md:w-[330px] w-[230px] md:h-[350px] h-[280px] relative cursor-pointer border flex flex-col gap-2 md:gap-6 p-4 rounded-xl shadow-lg">
                 <h1 className=" text-zinc-900 md:text-[25.38px] text-md font-bold font-['Poppins']">
                   {pkg.title}
                 </h1>
@@ -168,7 +155,7 @@ export default function Agents() {
             rightButtonId="rightButton12"
           >
             {Individualpackages2.map((pkg) => (
-              <div className="md:w-[280px] w-[180px] h-[300px] relative cursor-pointer border flex flex-col gap-3 p-4 rounded-xl shadow-md">
+              <div className="md:w-[280px] w-[180px] h-[300px] relative cursor-pointer border flex flex-col gap-3 p-4 rounded-xl shadow-lg">
                 <h1 className=" text-zinc-900 text-md md:text-[25.38px] font-bold font-['Poppins']">
                   {pkg.title}
                 </h1>
@@ -634,7 +621,7 @@ export default function Agents() {
             leftButtonId="leftButton13"
             rightButtonId="rightButton13"
           >
-            <div className="w-[350px] h-[668px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[350px] h-[668px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-zinc-900 text-3xl font-bold font-['Poppins']">
@@ -715,7 +702,7 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[350px] h-[680px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[350px] h-[680px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-zinc-900 text-3xl font-bold font-['Poppins']">
@@ -802,7 +789,7 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[350px] h-[750px] p-[30px]  bg-[#25C55B] text-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[350px] h-[750px] p-[30px]  bg-[#25C55B] text-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-white text-3xl font-bold font-['Poppins']">
@@ -901,7 +888,7 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[350px] h-[970px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[350px] h-[970px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-zinc-900 text-3xl font-bold font-['Poppins']">
@@ -1446,7 +1433,7 @@ export default function Agents() {
             rightButtonId="rightButton14"
           >
             {" "}
-            <div className="w-[350px] h-[668px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[350px] h-[668px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-zinc-900 text-3xl font-bold font-['Poppins']">
@@ -1527,7 +1514,7 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[360px] h-[680px] p-[25px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[360px] h-[680px] p-[25px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className=" h-[68px] w-full flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-zinc-900 text-3xl font-bold font-['Poppins']">
@@ -1614,7 +1601,7 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[350px] h-[750px] p-[30px] bg-[#25C55B] text-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[350px] h-[750px] p-[30px] bg-[#25C55B] text-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-white text-3xl font-bold font-['Poppins']">
@@ -1713,7 +1700,7 @@ export default function Agents() {
                 </button>
               </div>
             </div>
-            <div className="w-[350px] h-[970px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
+            <div className="shadow-xl w-[350px] h-[970px] p-[30px] bg-white rounded-[10px] border border-zinc-100 flex-col justify-start items-start gap-6 inline-flex">
               <div className="flex-col justify-start items-start gap-[30px] flex">
                 <div className="self-stretch h-[68px] flex-col justify-start items-start gap-0.5 flex">
                   <div className="text-zinc-900 text-3xl font-bold font-['Poppins']">

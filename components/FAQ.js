@@ -12,7 +12,7 @@ const FAQ = () => {
         Quick answers to questions you may have. Can't find what you're looking
         for? Check out our full documentation
       </p>
-      <div className="grid md:grid-cols-2 gap-2 justify-center items-center mt-7 md:w-[80%] m-auto">
+      <div className="grid md:grid-cols-2 gap-2 justify-center items-center mt-7 w-[80%] m-auto">
         <Accordion>
           <Accordion.Panel>
             <Accordion.Title>
