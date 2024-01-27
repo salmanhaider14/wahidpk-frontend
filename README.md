@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wahid.pk - Real Estate Frontend
 
-## Getting Started
+Welcome to Wahid.pk, the Next.js frontend for a sophisticated real estate platform. This project provides users with a feature-rich interface to explore listed properties, discover experienced agents, view property details, and access pricing information.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Wahid.pk is a powerful real estate frontend built with Next.js, offering a seamless experience for users looking to explore and engage with the real estate market. With a user-friendly design, this platform provides comprehensive features for property listings, agent discovery, and property details.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Property Listings:**
+  - Browse a curated list of available properties.
+  - Filter and search for properties based on preferences.
 
-To learn more about Next.js, take a look at the following resources:
+- **Agent Discovery:**
+  - Find experienced real estate agents for assistance.
+  - View agent profiles and contact information.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Property Details:**
+  - Explore detailed information about each property.
+  - High-quality images, descriptions, and amenities.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Pricing Pages:**
+  - Access pricing information for various properties.
+  - Clear and transparent pricing details.
 
-## Deploy on Vercel
+- **User Authentication:**
+  - Create accounts and log in for personalized experiences.
+  - Save favorite properties and searches.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Responsive Design:**
+  - Enjoy a seamless experience on desktop and mobile devices.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Demo
+ Here's the live project : https://wahidpk.vercel.app/
+ 
+## Contributing
+We welcome contributions! Feel free to open issues, submit pull requests, or provide suggestions to enhance this project. Please refer to the Contributing Guidelines for more details.
+ ## Contact
+ For any inquiries or feedback, please reach out to me at salmanpatrick5@gmail.com.
